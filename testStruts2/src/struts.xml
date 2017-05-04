@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- struts2默认的常量都在struts2-core-2.3.24.1.jar->org.apache.struts2->default.properties中 -->
+	<!-- 配置开发模式常量struts.devMode的值为true;如果为false,每次修改struts.xml文件后就要重新部署项目或重新启动服务器.[经测试有效] -->
+	<!-- 但如果修改了src中java类后，仍然要重新部署(有时不用) -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" /><!-- struts2默认的编码是UTF-8，所有这行代码可不写 -->
+	
+	<!-- true表示通过ognl表达式可以访问类的静态方法，默认是false -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	
+	<!-- 使用UI标签的主题，默认是xhml,还可以为xhtml、simple等(在),也可自己定义,可通过查看源码得知他定义的一些html元素 -->
+	<!-- 自己定义的主题要在src目录下，最终才会被编译到classes下，且起名为"template.你的主题名",其中的template是默认参数 -->
+	<constant name="struts.ui.theme" value="mytheme"/>
+	
+	<!-- i18n国际化配置文件的前缀 -->
+	<constant name="struts.custom.i18n.resources" value="testStruts2"/>
+
+	<include file="/cn/aezo/others/include.xml" /><!-- 导入模块配置文件 -->
+
+    <!-- ========= 1.Hello World访问：http://localhost:8080/testStruts2/hello ========== -->
+    <package name="default" namespace="/" extends="struts-default">
+        <!-- Struts2 Hello World! -->
+        <action name="hello"><!-- 省略class，则自动调用xwork的一个ActionSupport类，也可以使用cn.aezo.hello包中的任意一个类(建议使用继承ActionSupport); 省略method,表示自动调用class中的execute()方法 -->
+            <result>/hello.jsp</result><!-- name属性省略，表示此action返回的字符串是"success" -->
+        </action>
+    </package>
+
+    
+	
+	<package name="others" namespace="/others" extends="struts-default">
+	    <!-- 默认action,只要找不到action就访问"def"这个action -->
+        <default-action-ref name="def"/><!-- 要写在此package的所有action之前 -->
+		<action name="def">
+        	<result>/others/default.jsp</result>
+        </action>
+        
+        <!-- 路径问题测试 -->
+        <action name="path">
+            <result>/others/testPath.jsp</result>
+        </action>
+            
+        <!-- 编码问题 -->
+        <action name="encode">
+        	<result>/others/encode.jsp</result>
+        </action>
+        <action name="encodeForm" class="cn.aezo.param.ParamAction" method="getParam">
+        	<result>/others/encode.jsp</result>
+        </action>
+        
+		<!-- 动态结果集,是用ognl表达,很少使用 -->
+        <action name="dynamic">
+        	<result>/others/dynamic.jsp</result>
+        </action>
+        <action name="dynamicResult" class="cn.aezo.others.DynamicResultAction">
+        	<result>${result}</result><!-- 获取valueStack中的result的属性值，此result的值是DynamicResultAction传出的 -->
+        </action>
+        
+		<!-- 带参数的结果集,访问"http://localhost:8080/testStruts2/others/paramResult?id=1" -->
+        <action name="paramResult" class="cn.aezo.others.ParamResultAction">
+            <result type="redirect">/others/paramResult.jsp?t=${id}</result>
+        </action>
+        
+        <!-- i18n国际化 -->
+		<action name="i18n" class="cn.aezo.others.TestI18nAction">
+            <result>/others/i18n.jsp</result>
+        </action>
+        
+        <!-- 常用数据类型转换，实际上市struts2内置拦截器起的作用，当然也可自己定义转换规则 -->
+		<action name="dataformat" class="cn.aezo.others.DataFormat">
+            <result>/others/dataFormat.jsp</result>
+        </action>
+    </package>
+    
+    <!-- 通配符测试 -->
+	<package name="wildcard" namespace="/wildcard" extends="struts-default">
+		<action name="test">
+            <result>/wildcard/index.jsp</result>
+        </action>
+		
+		<!-- {1}匹配第一个*,{2}匹配第二个* -->
+        <action name="*_*" class="cn.aezo.wildcard.{1}" method="{2}">
+            <result>/wildcard/{1}_{2}.jsp</result>
+        </action>
+    </package>
+    
+    <!-- 接收用户传入参数测试 -->
+	<package name="param" namespace="/param" extends="struts-default">	
+        <!-- action传参测试(1):用Action属性接收url中的参数.访问"http://localhost:8080/testStruts2/param/param?name=smalle" -->
+        <action name="param" class="cn.aezo.param.ParamAction" method="getParam">
+            <result>/param/param.jsp</result>
+        </action>
+        <!-- action传参测试(2):使用域模型DomainModel接收参数,较常用.访问"http://localhost:8080/testStruts2/param/paramDM?user.name=smalle",注意参数赋值的形式user.name=smalle -->
+        <action name="paramDM" class="cn.aezo.param.ParamDMAction" method="getParam">
+            <result>/param/param.jsp</result>
+        </action>
+        <!-- action传参测试(3):使用模型驱动ModelDriven接收参数,不常用但含MVC概念.访问"http://localhost:8080/testStruts2/param/paramMD?name=smalle" -->
+        <action name="paramMD" class="cn.aezo.param.ParamMDAction" method="getParam">
+            <result>/param/param.jsp</result>
+        </action>
+    </package>
+    
+    <!-- 简单数据校验和Struts2标签初步 -->
+	<package name="dataCheck" namespace="/check" extends="struts-default">
+		<action name="index">
+            <result>/dataCheck/index.jsp</result>
+        </action>
+        	
+        <action name="check" class="cn.aezo.data_check.DataAction" method="getData">
+            <result name="success">/dataCheck/success.jsp</result>
+            <result name="error">/dataCheck/error.jsp</result>
+        </action>
+    </package>
+    
+    <!-- action中访问web元素(request、session、application) -->
+	<package name="webElement" namespace="/web" extends="struts-default">
+		<action name="index">
+            <result>/webElement/index.jsp</result>
+        </action>
+        	
+        <action name="web*" class="cn.aezo.web_element.WebAction{1}">
+            <result>/webElement/web.jsp</result>
+        </action>
+    </package>
+    
+    <!-- result类型,除下面4种还有一些不常用的，如：freemarker、httpheader、stream、xslt、plaintext、tiles -->
+	<package name="result" namespace="/result" extends="struts-default">	
+        <action name="r1">
+            <result type="dispatcher">/resultType/r1.jsp</result><!-- 服务器端跳转，只能跳转到页面(jsp/html)，不能是action -->
+        </action>
+        <action name="r2">
+            <result type="redirect">/resultType/r2.jsp</result><!-- 客户端跳转，只能跳转到页面(jsp/html)，不能是action -->
+        </action>
+        <action name="r3">
+            <result type="chain">r1</result><!-- 服务器端跳转，指forward到action,result中的action不要加/,同包不需要加namespace -->
+        </action>
+        <action name="r4">
+            <result type="redirectAction">r2</result><!-- 客户端跳转，可跳转到action,result中的action不要加/ -->
+        </action>
+		<action name="r5">
+            <result type="chain"><!-- action位于其他包中时 -->
+            	<param name="namespace">/others</param>
+            	<param name="actionName">path</param>
+            </result>
+        </action>
+    </package>
+    
+    <!-- 全局结果集 -->
+	<package name="global" namespace="/global" extends="struts-default">
+		<global-results><!-- 相当于该包和该包的子包所有的action中都包含这条result -->
+            <result name="mainPage">/global/mainPage.jsp</result>
+        </global-results>
+        
+        <action name="index">
+            <result>/global/index.jsp</result>
+        </action>
+        	
+        <action name="global" class="cn.aezo.others.GlobalResultsAction">
+            <result>/global/success.jsp</result>
+            <result name="error">/global/error.jsp</result>
+        </action>
+    </package>
+    
+    <!-- 包的继承,所有的包都继承了struts-default，来自struts2-core-2.3.24.1.jar->struts-default.xml -->
+	<package name="child" namespace="/child" extends="global">    
+        <action name="child">
+            <result>/others/child.jsp</result>
+        </action>
+        
+		<action name="global" class="cn.aezo.others.ChildAction">
+            <result>/global/success.jsp</result>
+            <result name="error">/global/error.jsp</result>
+        </action>
+    </package>
+    
+    <!-- ognl表达式 -->
+	<package name="ognl" namespace="/ognl" extends="struts-default">
+		<action name="index">
+            <result>/ognl/index.jsp</result>
+        </action>
+        
+        <action name="domain" class="cn.aezo.ognl.DAction">
+            <result type="chain">ognl</result>
+        </action>
+        <action name="ognl" class="cn.aezo.ognl.OgnlAction">
+            <result>/ognl/ognl.jsp</result>
+        </action>
+    </package>
+
+	<!-- struts2标签 -->
+	<package name="tags" namespace="/tags" extends="struts-default">
+		<action name="index">
+            <result>/tags/index.jsp</result>
+        </action>
+
+        <action name="tags" class="cn.aezo.tags.TagsAction">
+            <result>/tags/tags.jsp</result>
+        </action>
+    </package>
+    
+    <!-- 拦截器interceptor -->
+	<package name="interceptor" namespace="/interceptor" extends="struts-default">
+		<interceptors>
+			<interceptor name="myInterceptor" class="cn.aezo.others.MyInterceptor"/>
+		</interceptors>
+	
+		<action name="interceptor" class="cn.aezo.others.MyInterceptorAction">
+            <result>/others/interceptor.jsp</result>
+            
+            <interceptor-ref name="myInterceptor"/>
+            <interceptor-ref name="defaultStack"/><!-- 要加上默认的拦截器 -->
+        </action>
+    </package>
+    
+	<!-- 使用token拦截器防止重复提交 -->
+	<package name="token" namespace="/token" extends="struts-default">
+		<action name="input" class="cn.aezo.token.InputAction">
+            <result>/token/input.jsp</result>
+        </action>
+	
+		<action name="user">
+            <result>/token/addOK.jsp</result>
+            
+            <interceptor-ref name="defaultStack"/><!-- 要加上默认的拦截器 -->
+            <interceptor-ref name="token"/><!-- struts2定义了此拦截器，知识没有加入到默认拦截器列表中 -->
+            <result name="invalid.token">/token/error.jsp</result>
+        </action>
+    </package>
+
+
+
+
+
+<!--
+    模板配置
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+
+    <include file="example.xml"/>
+-->
+    <!-- Add packages here -->
+
+</struts>
