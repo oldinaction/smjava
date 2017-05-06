@@ -13,28 +13,32 @@
 	<!-- true表示通过ognl表达式可以访问类的静态方法，默认是false -->
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
 	
-	<!-- 使用UI标签的主题，默认是xhml,还可以为xhtml、simple等(在),也可自己定义,可通过查看源码得知他定义的一些html元素 -->
+	<!-- 使用UI标签的主题，默认是xhtml,还可以为simple等,也可自己定义,可通过查看源码得知他定义的一些html元素 -->
 	<!-- 自己定义的主题要在src目录下，最终才会被编译到classes下，且起名为"template.你的主题名",其中的template是默认参数 -->
 	<constant name="struts.ui.theme" value="mytheme"/>
 	
-	<!-- i18n国际化配置文件的前缀 -->
+	<!-- i18n(internationalization and localization)国际化配置文件的前缀, 解决接受参数乱码问题 -->
 	<constant name="struts.custom.i18n.resources" value="testStruts2"/>
 
 	<include file="/cn/aezo/others/include.xml" /><!-- 导入模块配置文件 -->
 
     <!-- ========= 1.Hello World访问：http://localhost:8080/testStruts2/hello ========== -->
-    <package name="default" namespace="/" extends="struts-default">
+    <package name="default" namespace="/" extends="struts-default"><!--struts-default位于struts2-core-2.3.24.1.jar->struts-default.xml-->
         <!-- Struts2 Hello World! -->
         <action name="hello"><!-- 省略class，则自动调用xwork的一个ActionSupport类，也可以使用cn.aezo.hello包中的任意一个类(建议使用继承ActionSupport); 省略method,表示自动调用class中的execute()方法 -->
             <result>/hello.jsp</result><!-- name属性省略，表示此action返回的字符串是"success" -->
         </action>
     </package>
 
-    
-	
 	<package name="others" namespace="/others" extends="struts-default">
 	    <!-- 默认action,只要找不到action就访问"def"这个action -->
         <default-action-ref name="def"/><!-- 要写在此package的所有action之前 -->
+
+        <!--全局异常-->
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="def"/>
+        </global-exception-mappings>
+
 		<action name="def">
         	<result>/others/default.jsp</result>
         </action>
@@ -44,7 +48,7 @@
             <result>/others/testPath.jsp</result>
         </action>
             
-        <!-- 编码问题 -->
+        <!-- 编码问题（中文传参最好使用post提交） -->
         <action name="encode">
         	<result>/others/encode.jsp</result>
         </action>
@@ -57,7 +61,7 @@
         	<result>/others/dynamic.jsp</result>
         </action>
         <action name="dynamicResult" class="cn.aezo.others.DynamicResultAction">
-        	<result>${result}</result><!-- 获取valueStack中的result的属性值，此result的值是DynamicResultAction传出的 -->
+        	<result>${result}</result><!-- ognl表达式：获取valueStack中的result的属性值，此result的值是DynamicResultAction传出的 -->
         </action>
         
 		<!-- 带参数的结果集,访问"http://localhost:8080/testStruts2/others/paramResult?id=1" -->
@@ -74,6 +78,14 @@
 		<action name="dataformat" class="cn.aezo.others.DataFormat">
             <result>/others/dataFormat.jsp</result>
         </action>
+
+        <!--声明式异常处理-->
+        <action name="exception" class="cn.aezo.others.DataFormat" method="myexception">
+            <result>/others/dataFormat.jsp</result>
+            <!--如果exception="java.sql.SQLException"，此处没有catch到会去找global-exception-mappings-->
+            <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
+            <result name="error">/others/error.jsp</result>
+        </action>
     </package>
     
     <!-- 通配符测试 -->
@@ -88,7 +100,7 @@
         </action>
     </package>
     
-    <!-- 接收用户传入参数测试 -->
+    <!-- 2.接收用户传入参数测试 -->
 	<package name="param" namespace="/param" extends="struts-default">	
         <!-- action传参测试(1):用Action属性接收url中的参数.访问"http://localhost:8080/testStruts2/param/param?name=smalle" -->
         <action name="param" class="cn.aezo.param.ParamAction" method="getParam">
@@ -110,7 +122,7 @@
             <result>/dataCheck/index.jsp</result>
         </action>
         	
-        <action name="check" class="cn.aezo.data_check.DataAction" method="getData">
+        <action name="check" class="cn.aezo.datacheck.DataAction" method="getData">
             <result name="success">/dataCheck/success.jsp</result>
             <result name="error">/dataCheck/error.jsp</result>
         </action>
@@ -122,7 +134,7 @@
             <result>/webElement/index.jsp</result>
         </action>
         	
-        <action name="web*" class="cn.aezo.web_element.WebAction{1}">
+        <action name="web*" class="cn.aezo.webelement.WebAction{1}">
             <result>/webElement/web.jsp</result>
         </action>
     </package>
@@ -170,7 +182,8 @@
         <action name="child">
             <result>/others/child.jsp</result>
         </action>
-        
+
+        <!--继承了global的全局结果集global-results-->
 		<action name="global" class="cn.aezo.others.ChildAction">
             <result>/global/success.jsp</result>
             <result name="error">/global/error.jsp</result>
@@ -182,7 +195,7 @@
 		<action name="index">
             <result>/ognl/index.jsp</result>
         </action>
-        
+
         <action name="domain" class="cn.aezo.ognl.DAction">
             <result type="chain">ognl</result>
         </action>
@@ -226,7 +239,7 @@
             <result>/token/addOK.jsp</result>
             
             <interceptor-ref name="defaultStack"/><!-- 要加上默认的拦截器 -->
-            <interceptor-ref name="token"/><!-- struts2定义了此拦截器，知识没有加入到默认拦截器列表中 -->
+            <interceptor-ref name="token"/><!-- struts2定义了此拦截器，只是没有加入到默认拦截器列表中 -->
             <result name="invalid.token">/token/error.jsp</result>
         </action>
     </package>

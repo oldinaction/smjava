@@ -1,12 +1,11 @@
-package cn.aezo.web_element;
+package cn.aezo.webelement;
 
-import java.util.Map;
-
+import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.opensymphony.xwork2.ActionSupport;
+import java.util.Map;
 
 //action中访问web元素(request、session、application)
 //一般使用此方法(DI/IoC),DI:dependency injection依赖注入,IoC:inverse of control控制反转

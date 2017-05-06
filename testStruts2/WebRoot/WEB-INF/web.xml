@@ -14,7 +14,7 @@
     </filter-mapping>
 
 
-    <!-- 访问项目根路径的欢迎页面，如："http://127.0.0.1:8080/"-->
+    <!-- 访问项目根路径的欢迎页面，如："http://127.0.0.1:8080/testStruts2/"-->
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>

@@ -11,7 +11,7 @@
   <body>
 
 	<form action="/testStruts2/others/encodeForm" method="post">
-		姓名：<input type="text" name="name" />
+		姓名(可输入中文)：<input type="text" name="name" />
 		<input type="submit" value="提交">请在后台查看参数值
 	</form>
 	

@@ -16,10 +16,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
 
 	<form name="f" action="" method="post">
-		<input type="button1" value="提交1" onclick="javascript:document.f.action='web/web1';document.f.submit();">
-		<input type="button2" value="提交2" onclick="javascript:document.f.action='web/web2';document.f.submit();">
-		<input type="button3" value="提交3" onclick="javascript:document.f.action='web/web3';document.f.submit();">
-		<input type="button4" value="提交4" onclick="javascript:document.f.action='web/web4';document.f.submit();">
+		<input type="button" value="提交1" onclick="javascript:document.f.action='web/web1';document.f.submit();">
+		<input type="button" value="提交2" onclick="javascript:document.f.action='web/web2';document.f.submit();">
+		<input type="button" value="提交3" onclick="javascript:document.f.action='web/web3';document.f.submit();">
+		<input type="button" value="提交4" onclick="javascript:document.f.action='web/web4';document.f.submit();">
 	</form>
 	
 

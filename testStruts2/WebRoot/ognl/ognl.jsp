@@ -30,7 +30,7 @@
 	10、访问List(重写了toString方法，访问数组类似)value="users"：<s:property value="users" /><br />
 	11、访问List中某个元素value="users[1]"：<s:property value="users[1]" /><br />
 	12、访问List中元素的所有属性的集合value="users.{age}"：<s:property value="users.{age}" /><br />
-	13、访问List中元素的所有属性的某个特定值value="users.{age}[1]" /> | value="users[1].age"：<s:property value="users.{age}[1]" /> | <s:property value="users[1].age" /><br />
+	13、访问List中元素的所有属性的某个特定值value="users.{age}[1]" | value="users[1].age"：<s:property value="users.{age}[1]" /> | <s:property value="users[1].age" /><br />
 	14、访问Set(重写了toString方法)value="dogs"：<s:property value="dogs" /><br />
 	15、访问Set中某个元素(Set是无序的，因此这是获取不到的)：<s:property value="dogs[1]" /><br />
 	16、访问Set中元素的所有属性的集合value="dogs.{name}"：<s:property value="dogs.{name}" /><br />
@@ -40,7 +40,7 @@
 	20、访问Map中所有的Value,value="userMaps.values"：<s:property value="userMaps.values" /><br />
 	21、访问容器大小value="users.size()" |　value="userMaps.size"：<s:property value="users.size()" /> | <s:property value="userMaps.size" /><br />
 	<hr>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相当于给users集合做循环，this指循环中当前的那个对象，?#this.age==1表示元素age=1的集合，^表示开头的元素，$表示结尾的元素	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相当于给users集合做循环，this指循环中当前的那个对象，?#this.age==1表示元素age=1的集合，^表示开头的元素，$表示结尾的元素<br />
 	22、投影(过滤)value="users.{?#this.age==1}：<s:property value="users.{?#this.age==1}" /><br />
 	23、投影value="users.{?#this.age==1}[1]：<s:property value="users.{?#this.age==1}[1]" /><br />
 	24、投影value="users.{^#this.age>1}.{age}：<s:property value="users.{^#this.age>1}.{age}" /><br />
@@ -48,8 +48,8 @@
 	26、投影(可以判断此条件下的集合是否为null)value="users.{$#this.age>1}.{age} == null"：<s:property value="users.{$#this.age>1}.{age} == null" /><br />
 	<hr>
 	27、使用[0]访问所有action和DefaultTextProvider组成集合的对象(只有服务器端跳转是才会有多个action)value="[0]"：<s:property value="[0]" /><br />
-	27.1：(value="[1]")：<s:property value="[1]" /><br />
-	27.2：(value="[0].name")：<s:property value="[0].name" />
+	27.1：value="[1]"：<s:property value="[1]" /><br />
+	27.2：value="[0].name"：<s:property value="[0].name" />
 	
 	<s:debug></s:debug>
 

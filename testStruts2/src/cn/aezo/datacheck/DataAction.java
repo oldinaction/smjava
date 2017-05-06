@@ -1,4 +1,4 @@
-package cn.aezo.data_check;
+package cn.aezo.datacheck;
 
 import com.opensymphony.xwork2.ActionSupport;
 

@@ -18,7 +18,7 @@
 	<s:property value="#session.s1"/> | <%=session.getAttribute("s1") %><br />
 	<s:property value="#application.a1"/> | <%=application.getAttribute("a1") %><br />
 	
-	<s:debug></s:debug>
+	<s:debug/>
 
   </body>
 </html>

@@ -1,10 +1,10 @@
 package cn.aezo.others;
 
+import com.opensymphony.xwork2.ActionSupport;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import com.opensymphony.xwork2.ActionSupport;
 
 public class DataFormat extends ActionSupport {
 
@@ -15,6 +15,13 @@ public class DataFormat extends ActionSupport {
 	
 	
 	public String execute() {
+		return SUCCESS;
+	}
+
+	public String myexception() throws Exception {
+		if(id < 0) {
+			throw(new Exception());
+		}
 		return SUCCESS;
 	}
 

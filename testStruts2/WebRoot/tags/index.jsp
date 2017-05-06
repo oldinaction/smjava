@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	5、set设定adminName：<a href="tags/tags?username=smalle">tags/tags?username=smalle</a><br />
 	6、set设置adminPassword，并指定范围为session：<a href="tags/tags?password=123">tags/tags?password=123</a><br />
 	<br />
-	10、if elseif else：<a href="tags/tags?age=-1">tags/tags?age=-1</a>、<a href="tags/tags?age=10">tags/tags?age=10</a>、<a href="tags/tags?age=25">tags/tags?age=25</a>
+	10、if elseif else：<a href="tags/tags?age=-1">tags/tags?age=-1</a>、<a href="tags/tags?age=10&age=25">tags/tags?age=10&age=25</a>、<a href="tags/tags?age=25">tags/tags?age=25</a>
 	
 	
   </body>

@@ -1,12 +1,11 @@
-package cn.aezo.web_element;
+package cn.aezo.webelement;
+
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.ServletRequestAware;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
-import org.apache.struts2.interceptor.ServletRequestAware;
-
-import com.opensymphony.xwork2.ActionSupport;
 
 //此方法不常用
 public class WebAction4 extends ActionSupport implements ServletRequestAware {
