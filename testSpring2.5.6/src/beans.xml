@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="u" class="cn.aezo.hello.dao.impl.UserDAOImpl" lazy-init="true"/><!-- 此时lazy-init="true"表示当读取xml文件时先不自动初始化这个bean,如果容器需要再初始化这个bean;此处id="u"也可以写成name="u" -->
+	<bean id="userService" class="cn.aezo.hello.service.UserService" scope="prototype"><!-- 配置对外服务的UserService对象，最终容器会帮助我们自动实例化；scope是生存范围 -->
+		<property name="userDAO" ref="u"></property><!-- 在实例 UserService时，根据成员变量userDAO，所有此时需要一个UserDAO(或者UserDAOImpl)的实例；此处userDAO要和UserService中的属性一致 -->
+	</bean>
+	
+	<!-- autowire自动装配,autowire="byName"表示通过name(id)属性进行装配，只要此处name/id的值与相应类UserDAOImpl中的属性userDAO相同即可 -->
+	<bean name="userDAO" class="cn.aezo.hello.dao.impl.UserDAOImpl">
+		<property name="daoId" value="0"></property><!-- 简单属性注入 -->
+	</bean>
+	<bean name="userDAO1" class="cn.aezo.hello.dao.impl.UserDAOImpl">
+		<property name="daoId" value="1"></property>
+	</bean>
+	<bean id="userService1" class="cn.aezo.hello.service.UserService" autowire="byName"/>
+	
+	<!-- 测试生命周期 -->
+	<bean id="u1" class="cn.aezo.hello.dao.impl.UserDAOImpl"/>
+	<bean id="userService2" class="cn.aezo.hello.service.UserService" init-method="init" destroy-method="destory">
+		<property name="userDAO" ref="u1"></property>
+	</bean>
+	
+	<!-- 测试xml的aop -->
+	<bean id="logInterceptor" class="cn.aezo.hello.aop.LogInterceptor"/><!-- 一个切面的bean -->
+	<aop:config>
+		<aop:pointcut expression="execution(* cn.aezo.hello.dao..*.*(..))" id="daoPointCut"/>
+		<aop:aspect id="logAspect" ref="logInterceptor">
+			<aop:before method="before" pointcut-ref="daoPointCut"/>
+			<aop:after-returning method="after" pointcut-ref="daoPointCut"/>
+		</aop:aspect>
+	</aop:config>
+	
+	
+
+  <!-- more bean definitions go here -->
+
+</beans>

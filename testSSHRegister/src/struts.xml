@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<!-- struts2默认的常量都在struts2-core-2.3.24.1.jar->org.apache.struts2->default.properties中 -->
+	<!-- 配置开发模式常量struts.devMode的值为true;如果为false,每次修改Struts.xml文件后就要重新部署项目或重新启动服务器.[经测试有效] -->
+	<!-- 但如果修改了src中java类后，仍然要重新部署(有时不用) -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" /><!-- struts2默认的编码是UTF-8，所有这行代码可不写 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" /><!-- 打开动态方法调用，官方现在推荐使用通配符所有默认是false -->
+	 
+    <package name="registration" namespace="/" extends="struts-default">
+    	<!-- 法一：使用struts产生action的bean， 此时注明class="cn.aezo.register.action.UserAction"，此时不需要写@Component("")和@Scope("prototype")。缺点是不能使用Junit测试Action -->
+    	<!-- 法二：使用spring产生action的bean，此时注明class="@Component的value值"，且要在相应Action类中注明@Component("")和@Scope("prototype") -->
+        <action name="user" class="u"><!-- 省略method,表示自动调用class中的execute()方法 -->
+            <result>/registerSuccess.jsp</result><!-- name属性省略，表示此action返回的字符串是"success" -->
+            <result name="error">/registerError.jsp</result>
+            <result name="list">/userList.jsp</result>
+            <result name="load">/user.jsp</result>
+        </action>
+    </package>
+
+
+
+
+
+<!--
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+
+    <include file="example.xml"/>
+-->
+    <!-- Add packages here -->
+
+</struts>

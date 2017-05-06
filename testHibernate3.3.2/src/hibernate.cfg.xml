@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- 配置链接数据信息，配置后不需要自己写连接代码Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hiber</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <!-- <property name="connection.pool_size">1</property> -->
+
+        <!-- 方言,告诉hibernate使用的sql语言是mysql规定的 SQL dialect-->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- 通过getCurrentSession()获取此上下文的session，没有则自动创建。thread表示线程级别,jta用于分布式事物管理(不同的数据库服务器),使用时需要中间件 -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- 展示sql语句 -->
+        <property name="show_sql">true</property>
+        <!-- 展示sql语句是格式化一下，更加美观 -->
+        <property name="format_sql">true</property>
+
+        <!-- 自动生成建表语句,update有表时不会删除表,没表时自动创建。create没有表时自动创建,有表时删除再创建 -->
+        <property name="hbm2ddl.auto">update</property>
+		
+		<!-- 测试那个就映射那个，将其他映射先去掉防止干扰 -->
+		<mapping resource="cn/aezo/hibernate/hello/Student.hbm.xml"/><!-- 使用xml方式需要的映射格式 -->
+		<mapping class="cn.aezo.hibernate.hello.Teacher"/><!-- 使用annotation方式需要的映射格式 -->
+
+        <mapping class="cn.aezo.hibernate.coreapi.Teacher1"/>
+        
+        <mapping class="cn.aezo.hibernate.one2one_uni_fk.Husband"/>
+        <mapping class="cn.aezo.hibernate.one2one_uni_fk.Wife"/>
+        
+		<mapping class="cn.aezo.hibernate.one2one_bi_fk.Husband1"/>
+        <mapping class="cn.aezo.hibernate.one2one_bi_fk.Wife1"/>
+
+		<mapping class="cn.aezo.hibernate.one2one_uni_fk_composite.Husband2"/>
+        <mapping class="cn.aezo.hibernate.one2one_uni_fk_composite.Wife2"/>
+        
+		<mapping class="cn.aezo.hibernate.component.Husband3"/><!-- 此处是组件关联，故不用写Wife3的映射 -->
+
+		<mapping class="cn.aezo.hibernate.many2one_uni.Group"/>
+        <mapping class="cn.aezo.hibernate.many2one_uni.User"/>
+        
+		<mapping class="cn.aezo.hibernate.one2many_uni.Group1"/>
+        <mapping class="cn.aezo.hibernate.one2many_uni.User1"/>
+        
+        <mapping class="cn.aezo.hibernate.many2many_uni.Teacher2"/>
+        <mapping class="cn.aezo.hibernate.many2many_uni.Student2"/>
+        
+		<mapping class="cn.aezo.hibernate.one2many_many2one_bi.Group2"/>
+        <mapping class="cn.aezo.hibernate.one2many_many2one_bi.User2"/>
+
+		<mapping class="cn.aezo.hibernate.one2many_many2one_bi_curd.Group3"/>
+        <mapping class="cn.aezo.hibernate.one2many_many2one_bi_curd.User3"/>
+
+        <mapping class="cn.aezo.hibernate.collections_mapping.Group4"/>
+        <mapping class="cn.aezo.hibernate.collections_mapping.User4"/>
+
+		<mapping class="cn.aezo.hibernate.tree.Org"/>
+		
+        <mapping class="cn.aezo.hibernate.tree.Org"/>
+		
+		<mapping class="cn.aezo.hibernate.hql1.Category"/>
+		<mapping class="cn.aezo.hibernate.hql1.Msg"/>
+		<mapping class="cn.aezo.hibernate.hql1.Topic"/>
+		
+		<mapping class="cn.aezo.hibernate.hql2.Category1"/>
+		<mapping class="cn.aezo.hibernate.hql2.Msg1"/>
+		<mapping class="cn.aezo.hibernate.hql2.Topic1"/>
+		
+		<mapping class="cn.aezo.hibernate.qbc.Category2"/>
+		<mapping class="cn.aezo.hibernate.qbc.Msg2"/>
+		<mapping class="cn.aezo.hibernate.qbc.Topic2"/>
+		
+		<mapping class="cn.aezo.hibernate.qbe.Category3"/>
+		<mapping class="cn.aezo.hibernate.qbe.Msg3"/>
+		<mapping class="cn.aezo.hibernate.qbe.Topic3"/>
+        
+    </session-factory>
+
+</hibernate-configuration>
