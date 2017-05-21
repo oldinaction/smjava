@@ -7,8 +7,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import cn.aezo.hibernate.hello.Student;
-
 public class StudentTest {
 	private static SessionFactory sf;
 

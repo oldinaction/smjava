@@ -25,6 +25,9 @@ cn.aezo.hibernate.one2many_uni
 cn.aezo.hibernate.one2many_many2one_bi
 	一对多、多对一双向关联
 	
+cn.aezo.hibernate.many2many_uni
+	多对多单向外键关联
+
 cn.aezo.hibernate.one2many_many2one_bi_curd
 	一对多、多对一双向关联的增删查改
 	

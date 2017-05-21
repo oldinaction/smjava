@@ -1,9 +1,7 @@
 package cn.aezo.hibernate.hello;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
-import javax.persistence.IdClass;
+import java.io.Serializable;
 
 //当使用联合主键时,xml方式需要将联合主键定义为一个类。这个类必须要
 //必须实现Serializable接口，且重写equals方法和hashCode方法
@@ -38,7 +36,7 @@ public class TeacherPK implements Serializable {
 		this.id = id;
 	}
 	
-	@Column(length=100)//联合主键的长度不能超过256个字节
+	@Column(length=100)//联合主键的长度不能超过256个字节(必须写在这个类里面)
 	public String getName() {
 		return name;
 	}

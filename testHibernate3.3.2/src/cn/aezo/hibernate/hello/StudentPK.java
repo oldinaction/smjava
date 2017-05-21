@@ -1,5 +1,6 @@
 package cn.aezo.hibernate.hello;
 
+import javax.persistence.Column;
 import java.io.Serializable;
 
 //当使用联合主键时,xml方式需要将联合主键定义为一个类
@@ -34,7 +35,8 @@ public class StudentPK implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
+	@Column(length=100)//联合主键的长度不能超过256个字节(必须写在这个类里面)
 	public String getName() {
 		return name;
 	}

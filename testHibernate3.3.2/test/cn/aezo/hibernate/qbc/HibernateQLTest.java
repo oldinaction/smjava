@@ -1,17 +1,16 @@
 package cn.aezo.hibernate.qbc;
 
-import java.util.Date;
-
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.annotations.FetchMode;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Date;
 
 public class HibernateQLTest {
 	private static SessionFactory sf;
@@ -75,18 +74,17 @@ public class HibernateQLTest {
 	public void testQBC() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		//criterion ��׼/׼��/Լ��
-		Criteria c = session.createCriteria(Topic2.class) //from Topic
-					 
-					 .add(Restrictions.gt("id", 2)) //greater than = id > 2
-					 .add(Restrictions.lt("id", 8)) //little than = id < 8
+		//criterion 约束/标准/准则
+		Criteria c = session.createCriteria(Topic2.class) // from Topic
+					 .add(Restrictions.gt("id", 2)) // greater than = id > 2
+					 .add(Restrictions.lt("id", 8)) // little than = id < 8
 					 .add(Restrictions.like("title", "t_"))
 					 .createCriteria("category")
-					 .add(Restrictions.between("id", 3, 5)) //category.id >= 3 and category.id <=5
+					 .add(Restrictions.between("id", 3, 5)) // category.id >= 3 and category.id <=5
 					 ;
 		//DetachedCriterea
 		for(Object o : c.list()) {
-			Topic2 t = (Topic2)o;
+			Topic2 t = (Topic2) o;
 			System.out.println(t.getId() + "-" + t.getTitle());
 		}
 		session.getTransaction().commit();

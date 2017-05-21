@@ -1,7 +1,5 @@
 package cn.aezo.hibernate.coreapi;
 
-import java.util.Date;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -9,6 +7,8 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Date;
 
 
 public class TeacherTest {
@@ -55,7 +55,7 @@ public class TeacherTest {
 		Session session = sf.getCurrentSession();//从上下文找(要在hibernate配置文件中配置session运行的上下文)，如果有直接用，如果没有重新创建。事务提交自动close，下次获取的就是新的session
 		session.beginTransaction();//开始一个事物
 		session.save(teacher1);
-	//session.delete(teacher1);//删除数据库的任务单元
+		//session.delete(teacher1);//删除数据库的任务单元
 		session.getTransaction().commit();//提交事物
 	}
 	
@@ -63,12 +63,21 @@ public class TeacherTest {
 	public void testLoad() {
 		Session session = sf.getCurrentSession();
 		session.beginTransaction();
-		//Teacher.class表示拿出来的对象是一个Teacher类，拿出id=1的那条数据
-		Teacher1 teacher1 = (Teacher1)session.load(Teacher1.class, 1);//此时load返回的是代理对象,等到真正用到对象的内容时才发出sql语句,没有获取真正的对象
-	System.out.println(teacher1.getClass());//load返回的是代理对象，打印可知是Teacher1_$$_javassist_1
-	System.out.println(teacher1.getName());//在这里可以获取到
+		//Teacher1.class表示拿出来的对象是一个Teacher1类，拿出id=1的那条数据
+		Teacher1 teacher1 = (Teacher1)session.load(Teacher1.class, 1);//这里没有发出sql语句。此时load返回的是代理对象,等到真正用到对象的内容时才发出sql语句,没有获取真正的对象
+		System.out.println(teacher1.getClass()); // load返回的是代理对象，打印可知是Teacher1_$$_javassist_1
+		System.out.println(teacher1.getName()); // 这里才开始发出sql语句
 		session.getTransaction().commit();
-	//System.out.println(teacher1.getName());//此时session已经关闭，就获取不到了真正的对象了
+		System.out.println(teacher1.getName());
+
+		/*
+		// 此时会报错：org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+		Teacher1 teacher1 = (Teacher1)session.load(Teacher1.class, 1);
+		System.out.println(teacher1.getClass()); // load返回的是代理对象，打印可知是Teacher1_$$_javassist_1
+		// session关闭前没有发出sql语句
+		session.getTransaction().commit();
+		System.out.println(teacher1.getName());//此时session已经关闭，就获取不到了真正的对象了
+		*/
 	}
 	
 	@Test
@@ -76,10 +85,10 @@ public class TeacherTest {
 		Session session = sf.getCurrentSession();
 		session.beginTransaction();
 		Teacher1 teacher1 = (Teacher1)session.get(Teacher1.class, 1);//此时get已经向数据库发出sql语句了，并将对象拿到了
-	System.out.println(teacher1.getClass());//打印的是Teacher1
-	//System.out.println(teacher1.getName());//这里可以获取到
+		System.out.println(teacher1.getClass());//打印的是Teacher1
+		System.out.println(teacher1.getName());//这里可以获取到
 		session.getTransaction().commit();
-	System.out.println(teacher1.getName());//get是直接从数据库加载，所有在此处可以获取到数据
+		System.out.println(teacher1.getName());//get是直接从数据库加载，所有在此处可以获取到数据
 	}
 	
 	@Test
@@ -97,8 +106,7 @@ public class TeacherTest {
 		session2.beginTransaction();
 		session2.update(teacher1);//用来更新detached对象，更新完成后转为persistent
 		session2.getTransaction().commit();
-		
-		
+
 		//法二：使用HQL(EjBQL)，只更新某条数据
 		Session session3 = sf.getCurrentSession();
 		session3.beginTransaction();

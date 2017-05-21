@@ -1,8 +1,5 @@
 package cn.aezo.hibernate.hql2;
 
-import java.util.Date;
-import java.util.List;
-
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
@@ -12,6 +9,9 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Date;
+import java.util.List;
 
 public class HibernateQLTest {
 	private static SessionFactory sf;
@@ -62,10 +62,7 @@ public class HibernateQLTest {
 			session.save(m);
 			
 		}
-		
-		
-		
-		
+
 		session.getTransaction().commit();
 		session.close();
 	}
@@ -75,7 +72,7 @@ public class HibernateQLTest {
 	public void testHQL_20() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.msgs is empty");
+		Query q = session.createQuery("from Topic1 t where t.msgs is empty");
 		
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
@@ -90,7 +87,7 @@ public class HibernateQLTest {
 	public void testHQL_21() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.title like '%5'");
+		Query q = session.createQuery("from Topic1 t where t.title like '%5'");
 		
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
@@ -105,7 +102,7 @@ public class HibernateQLTest {
 	public void testHQL_22() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.title like '_5'");
+		Query q = session.createQuery("from Topic1 t where t.title like '_5'");
 		
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
@@ -158,7 +155,7 @@ public class HibernateQLTest {
 	public void testHQL_25() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("select current_date, current_time, current_timestamp, t.id from Topic t");
+		Query q = session.createQuery("select current_date, current_time, current_timestamp, t.id from Topic1 t");
 		
 		for(Object o : q.list()) {
 			Object[] arr = (Object[])o;
@@ -173,7 +170,7 @@ public class HibernateQLTest {
 	public void testHQL_26() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.createDate < :date");
+		Query q = session.createQuery("from Topic1 t where t.createDate < :date");
 		q.setParameter("date", new Date());
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
@@ -188,7 +185,7 @@ public class HibernateQLTest {
 	public void testHQL_27() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("select t.title, count(*) from Topic t group by t.title") ;
+		Query q = session.createQuery("select t.title, count(*) from Topic1 t group by t.title");
 		for(Object o : q.list()) {
 			Object[] arr = (Object[])o;
 			System.out.println(arr[0] + "|" + arr[1]);
@@ -202,7 +199,7 @@ public class HibernateQLTest {
 	public void testHQL_28() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("select t.title, count(*) from Topic t group by t.title having count(*) >= 1") ;
+		Query q = session.createQuery("select t.title, count(*) from Topic1 t group by t.title having count(*) >= 1") ;
 		for(Object o : q.list()) {
 			Object[] arr = (Object[])o;
 			System.out.println(arr[0] + "|" + arr[1]);
@@ -216,7 +213,7 @@ public class HibernateQLTest {
 	public void testHQL_29() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.id < (select avg(t.id) from Topic t)") ;
+		Query q = session.createQuery("from Topic1 t where t.id < (select avg(t.id) from Topic1 t)") ;
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
 			System.out.println(t.getTitle());
@@ -230,7 +227,7 @@ public class HibernateQLTest {
 	public void testHQL_30() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Topic t where t.id < ALL (select t.id from Topic t where mod(t.id, 2)= 0) ") ;
+		Query q = session.createQuery("from Topic1 t where t.id < ALL (select t.id from Topic1 t where mod(t.id, 2)= 0) ") ;
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
 			System.out.println(t.getTitle());
@@ -239,15 +236,13 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//��in ����ʵ��exists�Ĺ���
-	//����existsִ��Ч�ʸ�
+
 	@Test
 	public void testHQL_31() {
 		Session session = sf.openSession();
 		session.beginTransaction();// t.id not in (1)
-		Query q = session.createQuery("from Topic t where not exists (select m.id from Msg m where m.topic.id=t.id)") ;
-//		Query q = session.createQuery("from Topic t where exists (select m.id from Msg m where m.topic.id=t.id)") ;
+		Query q = session.createQuery("from Topic1 t where not exists (select m.id from Msg1 m where m.topic.id=t.id)") ;
+//		Query q = session.createQuery("from Topic1 t where exists (select m.id from Msg1 m where m.topic.id=t.id)") ;
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
 			System.out.println(t.getTitle());
@@ -258,28 +253,25 @@ public class HibernateQLTest {
 	}
 	
 	//update and delete
-	//�淶��û��˵���ǲ���Ҫ����persistent object���������Ҫʹ�ã������ڵ�����trasaction��ִ��
-	
 	@Test
 	public void testHQL_32() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("update Topic t set t.title = upper(t.title)") ;
+		Query q = session.createQuery("update Topic1 t set t.title = upper(t.title)") ;
 		
 		q.executeUpdate();
-		q = session.createQuery("from Topic");
+		q = session.createQuery("from Topic1");
 		for(Object o : q.list()) {
 			Topic1 t = (Topic1)o;
 			System.out.println(t.getTitle());
 		}
-		session.createQuery("update Topic t set t.title = lower(t.title)")
+		session.createQuery("update Topic1 t set t.title = lower(t.title)")
 			.executeUpdate();
 		session.getTransaction().commit();
 		session.close();
 		
 	}
-	
-	//����Ҫ
+
 	@Test
 	public void testHQL_33() {
 		Session session = sf.openSession();
@@ -292,8 +284,7 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//Native���˽⣩
+
 	@Test
 	public void testHQL_34() {
 		Session session = sf.openSession();
@@ -310,7 +301,7 @@ public class HibernateQLTest {
 	
 	@Test
 	public void testHQL_35() {
-		//��δʵ��JPA�����NativeSQL
+
 		
 	}
 	

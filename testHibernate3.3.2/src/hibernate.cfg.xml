@@ -20,6 +20,7 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- 通过getCurrentSession()获取此上下文的session，没有则自动创建。thread表示线程级别,jta用于分布式事物管理(不同的数据库服务器),使用时需要中间件 -->
+        <!---->
         <property name="current_session_context_class">thread</property>
 
         <!-- Disable the second-level cache  -->
@@ -38,56 +39,57 @@
 		<mapping class="cn.aezo.hibernate.hello.Teacher"/><!-- 使用annotation方式需要的映射格式 -->
 
         <mapping class="cn.aezo.hibernate.coreapi.Teacher1"/>
-        
+
         <mapping class="cn.aezo.hibernate.one2one_uni_fk.Husband"/>
         <mapping class="cn.aezo.hibernate.one2one_uni_fk.Wife"/>
-        
-		<mapping class="cn.aezo.hibernate.one2one_bi_fk.Husband1"/>
+
+        <mapping class="cn.aezo.hibernate.one2one_bi_fk.Husband1"/>
         <mapping class="cn.aezo.hibernate.one2one_bi_fk.Wife1"/>
 
-		<mapping class="cn.aezo.hibernate.one2one_uni_fk_composite.Husband2"/>
+        <mapping class="cn.aezo.hibernate.one2one_uni_fk_composite.Husband2"/>
         <mapping class="cn.aezo.hibernate.one2one_uni_fk_composite.Wife2"/>
-        
-		<mapping class="cn.aezo.hibernate.component.Husband3"/><!-- 此处是组件关联，故不用写Wife3的映射 -->
 
-		<mapping class="cn.aezo.hibernate.many2one_uni.Group"/>
+        <mapping class="cn.aezo.hibernate.component.Husband3"/><!-- 此处是组件关联，故不用写Wife3的映射 -->
+
+        <mapping class="cn.aezo.hibernate.many2one_uni.Group"/>
         <mapping class="cn.aezo.hibernate.many2one_uni.User"/>
-        
-		<mapping class="cn.aezo.hibernate.one2many_uni.Group1"/>
+
+        <mapping class="cn.aezo.hibernate.one2many_uni.Group1"/>
         <mapping class="cn.aezo.hibernate.one2many_uni.User1"/>
-        
+
         <mapping class="cn.aezo.hibernate.many2many_uni.Teacher2"/>
         <mapping class="cn.aezo.hibernate.many2many_uni.Student2"/>
-        
-		<mapping class="cn.aezo.hibernate.one2many_many2one_bi.Group2"/>
+
+        <mapping class="cn.aezo.hibernate.one2many_many2one_bi.Group2"/>
         <mapping class="cn.aezo.hibernate.one2many_many2one_bi.User2"/>
 
-		<mapping class="cn.aezo.hibernate.one2many_many2one_bi_curd.Group3"/>
+        <mapping class="cn.aezo.hibernate.one2many_many2one_bi_curd.Group3"/>
         <mapping class="cn.aezo.hibernate.one2many_many2one_bi_curd.User3"/>
 
         <mapping class="cn.aezo.hibernate.collections_mapping.Group4"/>
         <mapping class="cn.aezo.hibernate.collections_mapping.User4"/>
 
-		<mapping class="cn.aezo.hibernate.tree.Org"/>
-		
         <mapping class="cn.aezo.hibernate.tree.Org"/>
-		
-		<mapping class="cn.aezo.hibernate.hql1.Category"/>
-		<mapping class="cn.aezo.hibernate.hql1.Msg"/>
-		<mapping class="cn.aezo.hibernate.hql1.Topic"/>
-		
-		<mapping class="cn.aezo.hibernate.hql2.Category1"/>
-		<mapping class="cn.aezo.hibernate.hql2.Msg1"/>
-		<mapping class="cn.aezo.hibernate.hql2.Topic1"/>
-		
-		<mapping class="cn.aezo.hibernate.qbc.Category2"/>
-		<mapping class="cn.aezo.hibernate.qbc.Msg2"/>
-		<mapping class="cn.aezo.hibernate.qbc.Topic2"/>
-		
-		<mapping class="cn.aezo.hibernate.qbe.Category3"/>
-		<mapping class="cn.aezo.hibernate.qbe.Msg3"/>
-		<mapping class="cn.aezo.hibernate.qbe.Topic3"/>
-        
+
+        <mapping class="cn.aezo.hibernate.tree.Org"/>
+
+        <mapping class="cn.aezo.hibernate.hql1.Category"/>
+        <mapping class="cn.aezo.hibernate.hql1.Msg"/>
+        <mapping class="cn.aezo.hibernate.hql1.Topic"/>
+
+        <mapping class="cn.aezo.hibernate.hql2.Category1"/>
+        <mapping class="cn.aezo.hibernate.hql2.Msg1"/>
+        <mapping class="cn.aezo.hibernate.hql2.Topic1"/>
+
+        <!--
+        <mapping class="cn.aezo.hibernate.qbc.Category2"/>
+        <mapping class="cn.aezo.hibernate.qbc.Msg2"/>
+        <mapping class="cn.aezo.hibernate.qbc.Topic2"/>
+
+        <mapping class="cn.aezo.hibernate.qbe.Category3"/>
+        <mapping class="cn.aezo.hibernate.qbe.Msg3"/>
+        <mapping class="cn.aezo.hibernate.qbe.Topic3"/>
+        -->
     </session-factory>
 
 </hibernate-configuration>

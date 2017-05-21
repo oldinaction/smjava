@@ -25,7 +25,7 @@ public class Husband {
 	}
 	
 	@OneToOne
-	@JoinColumn(name="wifeId")//指定生成的数据库字段名，否则默认生成外键名为wife_id
+	@JoinColumn(name="wifeId")// 指定生成的数据库字段名，不写@JoinColumn则默认生成外键名为wife_id
 	public Wife getWife() {
 		return wife;
 	}

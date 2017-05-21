@@ -1,10 +1,6 @@
 package cn.aezo.hibernate.hql1;
 
-import java.util.Date;
-import java.util.List;
-
-import org.hibernate.Query; 
-
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
@@ -12,6 +8,9 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Date;
+import java.util.List;
 
 public class HibernateQLTest {
 	private static SessionFactory sf;
@@ -62,10 +61,7 @@ public class HibernateQLTest {
 			session.save(m);
 			
 		}
-		
-		
-		
-		
+
 		session.getTransaction().commit();
 		session.close();
 	}
@@ -152,8 +148,7 @@ public class HibernateQLTest {
 		Session session = sf.openSession();
 		session.beginTransaction();
 		Query q = session.createQuery("from Category c where c.id > ? and c.id < ?");
-		q.setParameter(0, 2)
-			.setParameter(1, 8);
+		q.setParameter(0, 2).setParameter(1, 8);
 //		q.setParameter(1, 8);
 		List<Category> categories = (List<Category>)q.list();
 		for(Category c : categories) {
@@ -163,7 +158,8 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	//��ҳ
+
+	// 分页
 	@Test
 	public void testHQL_07() {
 		Session session = sf.openSession();
@@ -193,8 +189,8 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//�趨fetch type Ϊlazy�󽫲����еڶ���sql���
+
+	// Topic下的Category是@ManyToOne，默认在查询Topic的会取Category
 	@Test
 	public void testHQL_09() {
 		Session session = sf.openSession();
@@ -203,14 +199,13 @@ public class HibernateQLTest {
 		List<Topic> topics = (List<Topic>)q.list();
 		for(Topic t : topics) {
 			System.out.println(t.getTitle());
-			//System.out.println(t.getCategory().getName());
+			// System.out.println(t.getCategory().getName()); // 此时设为lazy的话，当调用t.getCategory()才会发查询Category信息的sql
 		}
 		session.getTransaction().commit();
 		session.close();
 		
 	}
-	
-	//�趨fetch type Ϊlazy�󽫲����еڶ���sql���
+
 	@Test
 	public void testHQL_10() {
 		Session session = sf.openSession();
@@ -239,14 +234,14 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	//�˽⼴��
+
 	//VO Value Object
 	//DTO data transfer object
 	@Test
 	public void testHQL_12() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("select new com.bjsxt.hibernate.MsgInfo(m.id, m.cont, m.topic.title, m.topic.category.name) from Msg");
+		Query q = session.createQuery("select new cn.aezo.hibernate.hql1.MsgInfo(m.id, m.cont, m.topic.title, m.topic.category.name) from Msg m");
 		
 		for(Object o : q.list()) {
 			MsgInfo m = (MsgInfo)o;
@@ -256,10 +251,7 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//���ֲ���left right join
-	//Ϊʲô����ֱ��дCategory������дt.category
-	//��Ϊ�п��ܴ��ڶ����Ա������ͬһ���ࣩ����Ҫָ������һ����Ա����������������������
+
 	@Test
 	public void testHQL_13() {
 		Session session = sf.openSession();
@@ -273,13 +265,12 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//ѧϰʹ��uniqueResult
+
 	@Test
 	public void testHQL_14() {
 		Session session = sf.openSession();
 		session.beginTransaction();
-		Query q = session.createQuery("from Msg m where m = :MsgToSearch "); //����Ҫ
+		Query q = session.createQuery("from Msg m where m = :MsgToSearch ");
 		Msg m = new Msg();
 		m.setId(1);
 		q.setParameter("MsgToSearch", m);
@@ -346,8 +337,7 @@ public class HibernateQLTest {
 		session.close();
 		
 	}
-	
-	//is null �� is not null
+
 	@Test
 	public void testHQL_19() {
 		Session session = sf.openSession();

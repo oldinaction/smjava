@@ -64,6 +64,7 @@ public class ORMappingTest {
 		session.beginTransaction();
 		User3 user3 = (User3)session.get(User3.class, 1);//当多对一时，取多时，默认会把一也取出来。此时取用户的信息时也会把组的信息取出来
 		session.getTransaction().commit();
+		System.out.println("user3.getGroup().getName() = " + user3.getGroup().getName());
 	}
 	
 	@Test
@@ -73,9 +74,10 @@ public class ORMappingTest {
 		Session session = sf.getCurrentSession();
 		session.beginTransaction();
 		Group3 group3 = (Group3)session.get(Group3.class, 1);//取一对多时，默认只会取出一不会取出多。但如果在关联的批注处设定了fetch=FetchType.EAGER，则会同时取出用户信息
+		// Set<User3> user3s = group3.getUsers(); // 如果fetch没有设定了eager，则可以在此处手动把User都拿出来放到内存中
 		session.getTransaction().commit();
 		
-		/*如果fetch设定了eager则已经将用户信息取到内存中了
+		/*如果fetch设定了eager则已经将用户信息取到内存中了. 否则此处会报错
 		for(User3 u : group3.getUsers()) {
 			System.out.println(u.getName());
 		}

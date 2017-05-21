@@ -1,2 +1,5 @@
+/out/
 /bin/
 *.class
+
+!lib/*.jar

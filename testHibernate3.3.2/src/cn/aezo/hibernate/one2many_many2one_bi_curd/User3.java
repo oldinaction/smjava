@@ -2,6 +2,7 @@ package cn.aezo.hibernate.one2many_many2one_bi_curd;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
