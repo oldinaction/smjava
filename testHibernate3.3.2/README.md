@@ -51,12 +51,13 @@
 > `test/cn.aezo.hibernate.hello.StudentTest`
 
 1. 配置`hibernate.cfg.xml`(配置数据源、加入)
-    ```
+
+    ```xml
     <?xml version="1.0"?>
     <!DOCTYPE hibernate-mapping PUBLIC
             "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
             "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-    
+
     <!-- hibernate使用xml配置数据库映射的helloworld案例。 -->
     <hibernate-mapping package="cn.aezo.hibernate.hello">
     	<class name="Student" table="student">
@@ -64,7 +65,7 @@
     			<generator class="native"></generator><!-- 定义id自动生成器 -->
     		</id>
             <property name="name" column="name"/>
-            
+
             <!-- 当使用联合主键时的配置 -->
             <!-- 因为使用UTF-8编码是主键长度不能超过256个字节，而默认id长度是int(11),name长度是varchar(255)，则超出长度，故此处应该定义长度 -->
             <!--
@@ -73,7 +74,7 @@
             	<key-property name="name" length="50"></key-property>
             </composite-id>
             -->
-            
+
             <property name="age" column="age"/>
         </class>
     </hibernate-mapping>
@@ -98,42 +99,42 @@
     <!DOCTYPE hibernate-configuration PUBLIC
             "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
             "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
-    
+
     <hibernate-configuration>
-    
+
         <session-factory>
-    
+
             <!-- 配置链接数据信息，配置后不需要自己写连接代码Database connection settings -->
             <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
             <property name="connection.url">jdbc:mysql://localhost:3306/hiber</property>
             <property name="connection.username">root</property>
             <property name="connection.password">root</property>
-    
+
             <!-- JDBC connection pool (use the built-in) -->
             <!-- <property name="connection.pool_size">1</property> -->
-    
+
             <!-- 方言,告诉hibernate使用的sql语言是mysql规定的 SQL dialect-->
             <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-    
+
             <!-- 通过getCurrentSession()获取此上下文的session，没有则自动创建。thread表示线程级别,jta用于分布式事物管理(不同的数据库服务器),使用时需要中间件 -->
             <property name="current_session_context_class">thread</property>
-    
+
             <!-- Disable the second-level cache  -->
             <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
-    
+
             <!-- 展示sql语句 -->
             <property name="show_sql">true</property>
             <!-- 展示sql语句是格式化一下，更加美观 -->
             <property name="format_sql">true</property>
-    
+
             <!-- 自动生成建表语句,update有表时不会删除表,没表时自动创建。create没有表时自动创建,有表时删除再创建 -->
             <property name="hbm2ddl.auto">update</property>
-    		
+
     		<!-- 测试那个就映射那个，将其他映射先去掉防止干扰 -->
     		<mapping resource="cn/aezo/hibernate/hello/Student.hbm.xml"/><!-- 使用xml方式需要的映射格式 -->
     		<mapping class="cn.aezo.hibernate.hello.Teacher"/><!-- 使用annotation方式需要的映射格式 -->
         </session-factory>
-    
+
     </hibernate-configuration>
     ```
 
@@ -144,8 +145,9 @@
     - **`@Entity`**: 注解实体类, 最终会和数据库的表对应. **注解了之后需要将该类加到hibernate.cfg.xml的mapping中**
     - **`@Table(name="_teacher")`** 当实体类的类名和对应的表名不一致时批注,此时对应表的实际名为_teacher
     - `@IdClass(TeacherPK.class)` 定义联合主键的类
-        
+
         > 如 `cn.aezo.hibernate.hello.Teacher`
+
         - `@EmbeddedlD`/`@ Embeddable`也可以定义联合主键
     - `@SequenceGenerator(name = "teacherSeq", sequenceName = "teacherSeq_db")` Id生成策略使用能够sequence
         - 在主键上加注解 `@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "teacherSeq")`
@@ -160,34 +162,35 @@
     - `@Transient` 透明的.表示此字段在更新时不保存到数据库中,即不参加持久化.这是annotation的写法,在xml中则不写此属性即可
     - `@Temporal(value=TemporalType.DATE)` 表示相应日期类型只记录日期,最终表的字段类型是DATE。不写的话默认是记录日期和时间,字段类型是TIMESTAMP。此处可以省略"value="。不常用
     - `@Enumerated(EnumType.STRING)` 声明枚举类型。EnumType.STRING表示在表中生成的字段类型是varchar;EnumType.ORDINAL表示表中生成的字段类型是int，并且拿枚举的下表存储
-    
+
         > 如 `test/cn.aezo.hibernate.hello.TeacherTest`
+
 - annotation字段映射位置：可以在field上或者get方法上(建议)，如果写在field则破坏了面向对象的机制，写在get方法是public的，所有一般写在get方法上
 
 ## 核心开发接口
 
 1. 示例
-    
+
     > 如 `test/cn.aezo.hibernate.coreapi.TeacherTest`
 
     ```java
     // Configuration cfg = Configuration().configure(); // xml可以使用
     AnnotationConfiguration acfg = new AnnotationConfiguration().configure(); // xml和Annotation都能使用
-    
+
     SessionFactory　session = acfg.buildSessionFactory();
-    
+
     Session session = sf.getCurrentSession(); //从上下文找(要在hibernate配置文件中配置session运行的上下文)，如果有直接用，如果没有重新创建。事务提交自动close，下次获取的就是新的session
     // Session session =  sf.openSession(); //每次都是新的，需要close
-    
+
     session.beginTransaction(); //开始一个事物
- 
+
     session.save(teacher1);
     Teacher1 teacher1 = (Teacher1)session.load(Teacher1.class, 1); // 存在懒加载
     // Teacher1 teacher1 = (Teacher1)session.get(Teacher1.class, 1); // 不存在懒加载
- 
+
     session.getTransaction().commit(); //提交事物
     // session.close();
- 
+
     System.out.println(teacher1.getName()); // 懒加载时，此处会报错
     ```
 2. 接口
@@ -230,7 +233,7 @@
 1. 一对一
     - `@0ne20ne` 指定关系, `@JoinColumn` 用于指定外键名称, 省略该注解则使用默认的外键名称,  `@JoinColumns` 联合主键使用, `@Embedded` 组件映射使用
     - **一对一单向外键关联**(src/cn.aezo.hibernate.one2one_uni_fk)
-    
+
         ```java
         // Husband类的被约束表字段的get方法上加@0ne20ne @JoinColumn. 最终会在Husband的表中生成外键
         @OneToOne
@@ -241,7 +244,7 @@
         ```
         - **Husband表会多出一个字段wifeId, 即为外键**
         - xml设置
-        
+
             ```xml
             <class name="cn.aezo.hibernate.one2one_uni_fk.Husband">
                     <id name="id">
@@ -253,7 +256,7 @@
             </class>
             ```
     - **一对一双向外键关联**(src/cn.aezo.hibernate.one2one_bi_fk, 视频37)
-    
+
         ```java
         // Husband1类
         @OneToOne
@@ -261,7 +264,7 @@
         public Wife1 getWife1() {
             return wife1;
         }
-        
+
         // Wife1类
         // 此处表示Husband中对"getWife"中的wife字段设置的外键是主导，此处只是指明关系但是并不会在Wife1表中生成外键。双向关系必须指明
         // 双向时这个地方也需要一个关联关系，但是Husband1中wife1已经指明了关联关系且有一个外键了，故不应该再在Wife1生成一个外键。mappedBy就表明此处参考(映射到)Husband1中的wife1字段
@@ -275,7 +278,7 @@
     - 一对一单向主键关联(`@OneToOne、@primaryKeyJoinColumn`)
     - 一对一双向主键关联(`@OneToOne、@primaryKeyJoinColumn`)
     - **一对一的单向联合主键的外键关联**(src/cn.aezo.hibernate.one2one_uni_fk_composite)
-        
+
         ```java
         // Husband2类(Wife2是一个联合主键类, name是只最终会在Husband2中生成的字段名即外键名, referencedColumnName指这个外键参考的字段)
         @OneToOne
@@ -295,7 +298,7 @@
 2. **多对一、一对多**
     - 指当前类(写注解的类)相对于注解属性(对应的类)的关系
     - 多对一单向关联：`@ManyToOne`(src/cn.aezo.hibernate.many2one_uni)
-        
+
         ```java
         // User类. 外键保存在User类中
         @ManyToOne
@@ -304,16 +307,16 @@
         }
         ```
         - xml中
-        
+
             ```xml
-            <!-- 
+            <!--
                 cascade取值all,none,save-update,delete,对象间的级联操作,只对增删改起作用.
                 在存储时User时,设置了cascade="all"会自动存储相应的t_group.而不用管user关联的对象(通常情况下会优先存储关联的对象,然后再存储user)
-             ->
+             -->
             <many-to-one name="group" column="groupid" cascade="all"/>
             ```
     - 一对多单向关联：`@OneToMany`(src/cn.aezo.hibernate.one2many_uni)
-       
+
         ```java
         // Group1类. 外键保存在User1类中
         @OneToMany
@@ -323,7 +326,7 @@
         }
         ```
         - xml中
-        
+
             ```xml
             <set name="users">
                 <key column="groupId"/>指定生成外键字段的名字
@@ -331,14 +334,14 @@
             </set>
             ```
     - 一对多/多对一双向关联(src/cn.aezo.hibernate.one2many_many2one_bi)
-        
+
         ```java
         // User2类
         @ManyToOne // 配置规则:一般以多的一端为主,先配置多的一端
         public Group2 getGroup() {
             return group;
         }
-        
+
         // Group2类
         @OneToMany(mappedBy="group")
         public Set<User2> getUsers() {
@@ -348,10 +351,10 @@
 3. 多对多(会生成中间表)
     - `@ManyToMany`、`@JoinTable`
     - 多对多单向外键关联(src/cn.aezo.hibernate.many2many_uni)
-        
+
         ```java
         // Teacher2类
-        @ManyToMany// 多对多关联 Teacher是主的一方 Student是附属的一方 
+        @ManyToMany// 多对多关联 Teacher是主的一方 Student是附属的一方
         @JoinTable(
             joinColumns={@JoinColumn(name="teacherId")},//本类主键在中间表生成的对应字段名
             inverseJoinColumns={@JoinColumn(name="student2Id")}//对方类主键在中间表生成的对应字段名
@@ -361,7 +364,7 @@
         }
         ```
     - 多对多双向外键关联
-        
+
         ```
         // 在Teacher这一端的students上配置
         @ManyToMany
@@ -370,24 +373,24 @@
             joinColumns={@JoinColumn(name="teacher_id")},
             inverseJoinColumns={@JoinColumn(name="student_id")}
         )
-        
+
         // 在Student一端的teachers只需要配置
         @ManyToMany(mappedBy="students")    
         ```
 4. 关联关系中的CRUD、Cascade(级联)、Fetch(test/cn.aezo.hibernate.one2many_many2one_bi_curd)
     - **设定`cascade`以设定在持久化时对于关联对象的操作（CUD，R归Fetch管）**
-        
-        ```
+
+        ```java
         // Group3类
         @OneToMany(
             mappedBy="group",
             cascade={CascadeType.ALL}//cascade=CascadeType.ALL表示存储user表时把与他相关联的表也存储，否则需要自己先手动存储关联的那个表
-            //,fetch=FetchType.EAGER//取一对多时，默认只会取出一不会取出多,即fetch默认是lazy，此时设置了eager则会在取组的同时取出用户信息。一般不这么用	
+            //,fetch=FetchType.EAGER//取一对多时，默认只会取出一不会取出多,即fetch默认是lazy，此时设置了eager则会在取组的同时取出用户信息。一般不这么用
         )//cascade设定CUD，fetch设定R
         public Set<User3> getUsers() {
             return users;
         }
-        
+
         // User3类
         @ManyToOne(cascade={CascadeType.ALL})//cascade=CascadeType.ALL表示存储user表时把与他相关联的表也存储，否则需要自己先手动存储关联的那个表
         public Group3 getGroup() {
@@ -405,7 +408,7 @@
         - 查询时@ManyToOne默认会把一的那一方取出来(默认为EAGER)，@OneToMany则不会默认把多的那一方取出来(默认为LAZY). 修改fetch则可以改变默认取值方式
         - 取值有：`FetchType.LAZY`(懒惰) 和 `FetchType.EAGER`(渴望)
         - 示例
-            
+
             ```java
             // 示例一
             Session session = sf.getCurrentSession();
@@ -414,14 +417,14 @@
             User3 user3 = (User3)session.get(User3.class, 1); //当多对一时，取多时，默认会把一也取出来。此时取用户的信息时也会把组的信息取出来放到内存中
             session.getTransaction().commit();
             System.out.println(user3.getGroup().getName()); // 可以正常获取, @ManyToOne默认是EAGER。如果上面是load则此处会报错
-            
+
             // 示例二
             Session session = sf.getCurrentSession();
             session.beginTransaction();
             Group3 group3 = (Group3)session.get(Group3.class, 1);//取一对多时，默认只会取出一不会取出多。但如果在关联的批注处设定了fetch=FetchType.EAGER，则会同时取出用户信息
             // Set<User3> user3s = group3.getUsers(); // ### 如果fetch没有设定了eager，则可以在此处手动把User都拿出来放到内存中. 一般是一对多时手动获取多的那一方 ###
             session.getTransaction().commit();
-            
+
             // ### 如果fetch设定了eager则已经将用户信息取到内存中了. 否则此处会报错 ###
             for(User3 u : group3.getUsers()) {
                 System.out.println(u.getName());
@@ -431,7 +434,7 @@
         - 直接写Hql语句执行删除（推荐）
         - 去掉@ManyToOne(cascade={CascadeType.All})设置, 手动执行CRU
         - 将user对象的group属性设为null，相当于打断User与Group间的关联
-            
+
             ```java
             session.beginTransaction();
             User user = (User)session.load(User.class,1);
@@ -441,7 +444,7 @@
             ```
 5. 集合映射(src/cn.aezo.hibernate.collections_mapping)
     - 多的一方是什么的存储方式：Set(常用)、List、Map
-    
+
         ```java
         // 使用Map存储
         @OneToMany(mappedBy="group",cascade={CascadeType.ALL})
@@ -458,7 +461,7 @@
         - 查询必须使用进行联合
 7. 树状结构设计(src/cn.aezo.hibernate.tree)
     - 在一个类中同时使用一对多和多对一
-    
+
         ```java
         // Org组织类，对应表Org(id, pid, name)
         @OneToMany(
@@ -469,7 +472,7 @@
         public Set<Org> getChildren() {
             return children;
         }
-        
+
         @ManyToOne
         @JoinColumn(name="parent_id")//只需写在关联处即可，所有也可写在@OneToMany的下面
         public Org getParent() {
@@ -484,58 +487,58 @@
     ```java
     import org.hibernate.Query;
     import org.hibernate.Session;
-    
+
     // HQL 面向对象的查询语言，此处要写类名而不是表名，可以省略 select *
     Query q = session.createQuery("from Category c where c.name > 'c5' order by c.name desc");
     List<Category> categories = (List<Category>) q.list(); // q.iterate()
-    
+
     // 链式编程
     Query q = session.createQuery("from Category c where c.id > :min and c.id < :max")
                      .setInteger("min", 2)
                      .setInteger("max", 8);
     List<Category> categories = (List<Category>) q.list();
-    
+
     // setParameter会自动转换参数类型
     Query q = session.createQuery("from Category c where c.id > ? and c.id < ?");
     q.setParameter(0, 2).setParameter(1, 8);
-    
+
     // 分页(取第二条到第4条数据)
     Query q = session.createQuery("from Category c order by c.name desc");
     q.setMaxResults(4);
     q.setFirstResult(2);
-    
+
     // 获取Topic的Category类的属性id (Topic下的Category是@ManyToOne，默认在查询Topic的会取Category)
     Query q = session.createQuery("from Topic t where t.category.id = 1");
     // 如果设置成Lazy，则当调用t.getCategory()的时候才会查询Category
-    
+
     // 从实体中取出一个VO/DTO（下面的MsgInfo不是一个实体，是一个VO/DTO，他需要一个对应的构造方法）
     Query q = session.createQuery("select new cn.aezo.hibernate.hql1.MsgInfo(m.id, m.cont, m.topic.title, m.topic.category.name) from Msg m");
-    		
+
     // join连接(left join)
     Query q = session.createQuery("select t.title, c.name from Topic t join t.category c");
-    
+
     // 对象查询（调用的是equals方法）
     Query q = session.createQuery("from Msg m where m = :MsgToSearch");
     Msg m = new Msg();
     m.setId(1);
     q.setParameter("MsgToSearch", m);
     Msg mResult = (Msg) q.uniqueResult(); // 返回唯一结果(确定里面只有一条)
- 
+
     // is empty 和 is not empty（最终sql语句使用了exists、not exists）
     Query q = session.createQuery("from Topic1 t where t.msgs is empty");
     Query q = session.createQuery("from Topic1 t where not exists (select m.id from Msg1 m where m.topic.id=t.id)");
-    
+
     // 获取时间
     Query q = session.createQuery("select current_date, current_time, current_timestamp, t.id from Topic1 t");
-    
+
     // 时间比较
     Query q = session.createQuery("from Topic1 t where t.createDate < :date");
     q.setParameter("date", new Date());
-    
+
     // 分组
     Query q = session.createQuery("select t.title, count(*) from Topic1 t group by t.title");
     Query q = session.createQuery("select t.title, count(*) from Topic1 t group by t.title having count(*) >= 1");
- 
+
     // 原生sql查询
     SQLQuery q = session.createSQLQuery("select * from category limit 2,4").addEntity(Category1.class);
     List<Category1> categories = (List<Category1>)q.list();
@@ -548,7 +551,7 @@
     Query q = session.createQuery("from Msg m where m.cont is not null");
     Query q = session.createQuery("from Topic1 t where t.title like '%5'");
     Query q = session.createQuery("from Topic1 t where t.title like '_5'");
- 
+
     // 别名查询
     // (1) 在实体上进行注解查询语句，去别名topic.selectCertainTopic（原生sql语句查询别名注解@NamedNativeQueries）
     @NamedQueries({
@@ -558,7 +561,7 @@
     // (2) 使用上叙别名
     Query q = session.getNamedQuery("topic.selectCertainTopic");
     q.setParameter("id", 5);
- 
+
     // 执行修改/删除
     Query q = session.createQuery("update Topic1 t set t.title = upper(t.title)") ;
     q.executeUpdate();
@@ -567,7 +570,7 @@
 
     ```java
     // QBC (Query By Criteria). 此时不需要sql语句, 纯面向对象了
-    //criterion 约束/标准/准则
+    // criterion 约束/标准/准则
     Criteria c = session.createCriteria(Topic2.class) // from Topic
                  .add(Restrictions.gt("id", 2)) // greater than = id > 2
                  .add(Restrictions.lt("id", 8)) // little than = id < 8
@@ -575,12 +578,12 @@
                  .createCriteria("category")
                  .add(Restrictions.between("id", 3, 5)) // category.id >= 3 and category.id <=5
                  ;
-    //DetachedCriterea
+    // DetachedCriterea
     for(Object o : c.list()) {
         Topic2 t = (Topic2) o;
         System.out.println(t.getId() + "-" + t.getTitle());
     }
- 
+
     // QBE (Query By Example)
     Topic3 tExample = new Topic3();
     tExample.setTitle("T_");
@@ -592,7 +595,7 @@
                  .add(Restrictions.lt("id", 8))
                  .add(e)
                  ;
-                 
+
     for(Object o : c.list()) {
         Topic3 t = (Topic3)o;
         System.out.println(t.getId() + "-" + t.getTitle());
@@ -615,7 +618,7 @@
     - 一级缓存是session级别的缓存；二级缓存是SessionFactory级别的缓存，可以跨越session存在；
     - 二级缓存
         - 打开二级缓存，hibernate.cfg.xml设定：
-                
+
             ```xml
             <property name= "cache.use_second_level_cache">true</property><!--使用二级缓存-->
             <property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property><!--使用EhCache提供商提供的二级缓存-->
@@ -654,5 +657,3 @@
                 - 法二：使用另一种load方法：`load(xxx.class, i, LockMode.Upgrade)` i=1/2/4/8
             - Hibernate(JPA)乐观锁定(ReadCommitted)
                 - 实体类中增加version属性(数据库也会对应生成该字段,初始值为0)，并在其get方法前加`@Version`注解，则在操作过程中没更新一次该行数据则version值加1，即可在事务提交前判断该数据是否被其他事务修改过
-                
-          
