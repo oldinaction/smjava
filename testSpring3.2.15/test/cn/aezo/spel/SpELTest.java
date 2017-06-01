@@ -1,22 +1,22 @@
 package cn.aezo.spel;
 
-import javax.annotation.Resource;
-
+import cn.aezo.model.User;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import cn.aezo.model.User;
-import cn.aezo.spel.MyBean;
+import javax.annotation.Resource;
 
 //Spring的SpEL动态语言测试
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:beans.xml")
-public class SpELTest extends AbstractJUnit4SpringContextTests {
+public class SpELTest {
 	@Resource(name="myBean")
 	private MyBean myBean;
 	

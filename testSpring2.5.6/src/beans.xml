@@ -7,9 +7,12 @@
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
-	<bean id="u" class="cn.aezo.hello.dao.impl.UserDAOImpl" lazy-init="true"/><!-- 此时lazy-init="true"表示当读取xml文件时先不自动初始化这个bean,如果容器需要再初始化这个bean;此处id="u"也可以写成name="u" -->
-	<bean id="userService" class="cn.aezo.hello.service.UserService" scope="prototype"><!-- 配置对外服务的UserService对象，最终容器会帮助我们自动实例化；scope是生存范围 -->
-		<property name="userDAO" ref="u"></property><!-- 在实例 UserService时，根据成员变量userDAO，所有此时需要一个UserDAO(或者UserDAOImpl)的实例；此处userDAO要和UserService中的属性一致 -->
+	<!-- 此时lazy-init="true"表示当读取xml文件时先不自动初始化这个bean,如果容器需要再初始化这个bean;此处id="u"也可以写成name="u" -->
+	<bean id="u" class="cn.aezo.hello.dao.impl.UserDAOImpl" lazy-init="true"/>
+	<!-- 配置对外服务的UserService对象，最终容器会帮助我们自动实例化；scope是生存范围(singleton 单例模式) -->
+	<bean id="userService" class="cn.aezo.hello.service.UserService" scope="prototype">
+		<!-- 在实例化UserService时，有成员变量userDao，根据setter方法setUserDAO，所有此时需要一个name="userDAO"的对象 -->
+		<property name="userDAO" ref="u"></property>
 	</bean>
 	
 	<!-- autowire自动装配,autowire="byName"表示通过name(id)属性进行装配，只要此处name/id的值与相应类UserDAOImpl中的属性userDAO相同即可 -->
@@ -21,7 +24,7 @@
 	</bean>
 	<bean id="userService1" class="cn.aezo.hello.service.UserService" autowire="byName"/>
 	
-	<!-- 测试生命周期 -->
+	<!-- 测试生命周期：init-method对象初始化时调用，destroy-method对象销毁时调用 -->
 	<bean id="u1" class="cn.aezo.hello.dao.impl.UserDAOImpl"/>
 	<bean id="userService2" class="cn.aezo.hello.service.UserService" init-method="init" destroy-method="destory">
 		<property name="userDAO" ref="u1"></property>
@@ -36,7 +39,6 @@
 			<aop:after-returning method="after" pointcut-ref="daoPointCut"/>
 		</aop:aspect>
 	</aop:config>
-	
 	
 
   <!-- more bean definitions go here -->
