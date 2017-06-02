@@ -102,8 +102,9 @@
     - name:此action名称(在浏览器的url中要访问此action就要输入此名称)
     - class:当访问此action时，就会调用相应的java类(如果没有就默认访问ActionSupport，ActionSupport是xwork的一个类，他实现了Action接口；**实际中一般使用类继承ActionSupport**)
         - **每一个访问请求都会重新new一个对象**
-    - method:当访问此action时，要调用相应class类的相应的方法。默认调用execute()方法
-    - 注：除了用method属性指定相应的action调用方法(缺点是产生太多action)；还可以在url地址中动态指定(动态方法调用DMI，使用!，视频13还没测试成功)；实际中多使用通配符
+    - method:当访问此action时，要调用相应class类的相应的方法。默认调用`execute()`方法
+        - 动态方法调用：添加配置`<constant name="struts.enable.DynamicMethodInvocation" value="true" />`，使用myAction!myMethod方式调用
+        - 注：除了用method属性指定相应的action调用方法(缺点是产生太多action)；还可以在url地址中动态指定(动态方法调用DMI，使用!，视频13还没测试成功)；实际中多使用通配符
 - `package`>`action`>`result`
     - name:此result名称
     - 原理：访问时，先获取实现了Action接口的类或者其子类的execute()方法的返回值，然后匹配name属性为此返回值的result，再显示此result标签中的页面

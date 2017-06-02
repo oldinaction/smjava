@@ -67,7 +67,7 @@
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="bussinessService"/>
 	</aop:config>
 	
-	<!-- 将sessionFactory再包一层，变成HibernateTemplate的一个bean(他会自动帮我们处理异常)。UserDaoImpl中进行注入 -->
+	<!-- 将sessionFactory再包一层，变成HibernateTemplate的一个bean(他会自动帮我们处理异常) -->
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>

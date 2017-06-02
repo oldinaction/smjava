@@ -14,8 +14,8 @@
 	 
     <package name="registration" namespace="/" extends="struts-default">
     	<!-- 法一：使用struts产生action的bean， 此时注明class="cn.aezo.register.action.UserAction"，此时不需要写@Component("")和@Scope("prototype")。缺点是不能使用Junit测试Action -->
-    	<!-- 法二：使用spring产生action的bean，此时注明class="@Component的value值, @Component("u")"，且要在相应Action类中注明@Component("")和@Scope("prototype") -->
-        <action name="user" class="u"><!-- class="u"是使用spring产生action。省略method,表示自动调用class中的execute()方法 -->
+    	<!-- 法二：使用spring产生action的bean，此时注明class="@Component的value值"，且要在相应Action类中注明@Component("")和@Scope("prototype") -->
+        <action name="user" class="u"><!-- 省略method,表示自动调用class中的execute()方法 -->
             <result>/registerSuccess.jsp</result><!-- name属性省略，表示此action返回的字符串是"success" -->
             <result name="error">/registerError.jsp</result>
             <result name="list">/userList.jsp</result>

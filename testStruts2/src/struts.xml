@@ -12,6 +12,7 @@
 	
 	<!-- true表示通过ognl表达式可以访问类的静态方法，默认是false -->
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" /><!-- 打开动态方法调用(myAction!myMethod)，官方现在推荐使用通配符所有默认是false -->
 	
 	<!-- 使用UI标签的主题，默认是xhtml,还可以为simple等,也可自己定义,可通过查看源码得知他定义的一些html元素 -->
 	<!-- 自己定义的主题要在src目录下，最终才会被编译到classes下，且起名为"template.你的主题名",其中的template是默认参数 -->
