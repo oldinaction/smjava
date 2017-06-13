@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/js/jquery-1.11.1.min.js,WebRoot/taglib/a1.jsp,WebRoot/WEB-INF/tld/sm.tld
+validator.Unchecked=

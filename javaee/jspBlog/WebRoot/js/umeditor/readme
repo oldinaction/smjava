@@ -1,0 +1,23 @@
+1、激活umeditor图片上传功能
+	umeditor的本质是点击富文本的上传图片按钮，就访问imageUp.jsp，具体的业务在Uploader.java中实现
+(1)直接将commons-fileupload-1.2.2.jar(apache提供的文件上传的主jar包)
+		和ueditor-mini.jar(百度的文件上传功能，在imageUp.jsp中的com.baidu.ueditor.um.Uploader即为这个jar包中的)
+		复制到WEB-INF/lib目录下
+(2)将commons-fileupload-1.2.2.jar(apache提供的文件上传的主jar包)复制到WEB-INF/lib目录下
+	将Uploader.java(ueditor-mini.jar里面也就放了这个类)放到src的某个包下(如cn.smalle.upload)，并修复源代码的包名
+	修改imageUp.jsp导入的Uploader的包名信息
+	
+2、设置图片的上传目录(如放在根目录下的upload目录下)
+(1)设置上传目录的位置==>修改Uploader.java中的getPhysicalPath方法为：
+		String realPath = this.request.getSession().getServletContext()
+				.getRealPath("/");
+		return realPath + path;
+	这样修改之后可以上传到服务器的相应目录，但是在副编辑器中却显示不了图片
+	(imageUp.jsp中up.getUrl()获取的Uploader对象的url值如"upload/*.*"，而在前端解析时umeditor.config.js中有对图片路径的配置)
+(2)设置回调路径==>修改umeditor.config.js中的
+		imagePath:URL + "jsp/" 改为  imagePath:""
+	
+	
+	
+	
+	

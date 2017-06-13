@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CityList>
+	<City Name="北京">
+		<Description>京有着三千余年的建城史和八百五十余年的建都史...</Description>
+	</City>
+	<City Name="上海">
+		<Description>上海，中国大陆第一大城市；四个中央直辖市之一</Description>
+	</City>
+	<City Name="广州">	
+		<Description>广州，简称穗，别称羊城、穗城、穗垣、仙城、花城；解放前旧称省城。</Description>
+	</City>
+	<City Name="成都">	
+		<Description>位于四川省中部，是中西部地区重要的中心城市。西南地区科技中心、商贸中心、金融中心和交通通信枢纽。</Description>
+	</City>
+	<City Name="沈阳">	
+		<Description>沈阳，辽宁省省会，中国15个副省级城市之一，中国七大区域中心城市之一</Description>
+	</City>
+</CityList>

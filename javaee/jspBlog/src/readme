@@ -1,0 +1,34 @@
+1、省市区级联
+	com.smalle.province
+	WebRoot/jspdemo/province
+	js/jQuery.js
+	lib/mysql struts2 xwork
+	
+2、通过jQuery的ajax解析json xml html txt文件
+	WebRoot/ajax
+	注：主要掌握json的，然后是xml，txt和html和前两种差不多只做了解
+	
+3、javaBean
+	com.smalle.bean/User.java
+	WebRoot/jspdemo/others/javaBean.jsp
+	
+4、统计报表
+	WebRoot/jspdemo/fusioncharts
+	js/chart
+	
+5、EL表达式
+	WebRoot/jspdemo/others/el.jsp
+	com.smalle.bean/User.java
+	
+6、form表单提交(ajax)
+	WebRoot/jspdemo/formajax
+	js/jQuery.js
+	
+7、业务的自定义标签获取表中的数据
+	src/cn.smalle.tag/ContentTag.java
+	WebRoot/jspdemo/others/contentTag.jsp
+	WEB-INF/tld/sm.tld部分代码
+	
+8、验证码
+	WebRoot/jspdemo/code
+	

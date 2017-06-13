@@ -1,0 +1,72 @@
+JSP===静态部分(html)+动态部分{指令(page、include、taglib),脚本[脚本(<% %>)、表达式(<%= %>)、申明(<%! %>)、注释(<%-- --%>)],动作(jsp)}
+访问地址注意大小写，同文件夹名的大小写
+
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+1、JSP简介
+(1)JSP就是Servlet.它是一个类。最终会在访问的是编译成.class文件
+(2)JSP页面就是带有Jsp元素常规的web页面。它是有静态内容和动态内容构成。其中
+	静态内容就是：指的HTML页面元素。
+	动态内容就是：指令元素，脚本元素，动作元素，注释等。
+
+2、<%@ 指令名称  属性=属性值  %>  指令元素有三种：page,include,taglib
+	如：<%@ page language="java" import="java.util.*,java.io.*,com.keke.util.*" pageEncoding="UTF-8" %>
+
+(1)page指令:该指令用于整个页面，定义与页面相关的属性，他是JSP页面和容器的通信员，一般放在JSP页面的第一行。其中的import是唯一一个可以重复的属性
+(2)inclue指令:用于在JSP页面包含一个文件。	<%@include file="文件的URL路径" %>
+	注意：在包含的文件中最好不要使用<html></html>,<body></body>标签。
+(3)taglib指令:允许页面使用定制的标签或者JSP自身提供的标签。	<%@ taglib uri="url" prefix="前缀"%>
+	如:
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %><!--迭代标签-->
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %><!--国际化标签和数据日期格式化->
+	<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %><!--字符串操作标签-->
+	<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %><!--数据库标签-->
+	<%@ taglib prefix="tm" uri="/WEB-INF/tlds/online.tld" %><!--自定义标签-->
+	
+3、脚本元素
+(1)<% java代码 %> 最终是编译到Servlet的service方法中。
+(2)<%= java表达式 %> 如:<%= user.getName()%>表达式的本质，在讲JSP页面转换成Servlet后，使用Out.println将表达式的值输出。
+(3)<%-- 注释文本，会被编译到.java文件中 --%>
+(4)<%! 定义变量属性和方法 %>
+
+4、el的使用
+	el表达式获取jsp页面超链接参数的值,用${param.参数名}获取;或者使用<%=request.getParameter("user")%>获取.动态包含传递的参数就需要这样获取
+	el表达式获取session里保存的数据,${session.变量名},其他同理
+
+5、javabean : javabean就是一个java类
+	javaBean定义规范
+	(1)类是public的，implements Serializable接口(java.io.Serializable)，产生一个Version ID
+	(2)必须要有一个无参的构造方法
+	(3)属性私有化(private定义)，通过生成getter/setter(public的)方法公有化
+	(4)属性名不能以大写字母开头
+	(5)建议在定义属性是采用统一的数据类型，都使用封装数据类型，不要采用基础数据类型
+		因为在开发过程中经常使用了泛型,并且封住数据类型的默认值都为null,而基础数据类型则不一
+	(6)javaBean放在bean model vo pojo命名的文件夹下
+	
+6、获取表单提交的数据
+	注意是通过name属性进行提交的，通过request.getParameter("表单元素的name属性值");获取数据的
+	(作用域中的值是通过request.getAttribute()获取的)
+	
+7、EL表达式
+ 	EL:全称:Expression Language:表达式语言，格式${表达式/作用域的key} ($的转义字符为&#36;)
+ 	表达式:算术运算(+-*/%);逻辑判断 >(gt) ,<(lt) ,>=(ge), <=(le),==(eq),!=(ne);条件运算  ? : empty || && (位移运算符不能用) 
+	只要值放在了application,session,request,pageContext作用域里面。那么都可以用el表达式获取通过作用域的key获取对应的值
+ 	jsp里面el表达式对null或者空的判断不严格，就算为空也可能不报错，所以可用empty来判断
+ 	${作用域中的key} 获取的优先级为pageContext request session application
+ 		准确获取想要的作用域中的值 ${pageContextScope.key}、${requestScope.key}、${sessionScope.key}、${applicationScope.key}
+	获取表单提交过来的数据或者<jsp:param name="key" value="value">中的数据要使用${param.key}
+	el表达式也是如此，可以在script、style中，但是不能脱离页面
+
+
+
+
+
+
+
+
+
+
+
+
+
+

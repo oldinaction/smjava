@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="cn.aezo.spring.spel" /><!-- 查找这个包下所有配置类，获取里面的bean -->
+	
+	<!-- SpEL动态语言，使用#{}，T(java.lang.Math)表示一个类，systemProperties是SpEL的内部变量，也可以同过System.getProperty("user.country");获得 -->
+	<bean id="myBean" class="cn.aezo.spring.spel.spel.MyBean">
+		<property name="randomNumber" value="#{T(java.lang.Math).random() * 100}"></property>
+		<property name="userRegion" value="#{systemProperties['user.country']}"></property>
+	</bean>
+
+
+</beans>

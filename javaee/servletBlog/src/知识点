@@ -1,0 +1,48 @@
+
+1、LoginServlet和login.jsp利用ajax异步和服务器进行数据交互。
+	是通过表单提交数据，在servlet中获取数据并和数据库中的数据比较，然会返回数据到原始页面，并实行提示或跳转
+	
+2、关于乱码：
+(1)
+==》req.setCharacterEncoding("utf-8");
+==》resp.setCharacterEncoding("utf-8");
+==》html页面加上设置<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		等价于 resp.setContentType("text/html;charset=utf-8");目的是为了控制浏览器的行为，即控制浏览器用UTF-8进行解码
+==》jsp页面在顶部设置<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+==》xml页面顶部加<?xml version="1.0" encoding="UTF-8"?>
+==》设置文件编码
+(2)html文件中头部的"content-type"中设置的"charset"是告诉浏览器打开该文件的编码方式。
+html文件显示正确编码：
+	文件的编码要是utf-8:在properties中选择other(utf-8)
+	浏览器(查看文件)的编码要是utf-8:
+		设置charset=utf-8告诉浏览器一次编码集解析
+		在浏览器中打开html文件后(出现乱码),右键-选择编码为utf-8(乱码消失)
+
+3、在java,html,jsp文件中有关url的填写:
+	(1)有/代表绝对路径(/项目名/目录名/文件名),可写为url="/项目名/目录名/文件名"【或者为request.getContextPath() + "/目录名/文件名"】
+	(2)无/代表相对路径,相对于请求的链接地址
+		向下跳转：如果是根目录的文件请求跳转到某目录下的文件，可以可直接填写url="目录名/文件名"
+		向上跳转：如果是某目录下的文件请求跳转到根目录的文件，则只能用(1)的绝对路径的表示方法
+	(除了web.xml中的url-parrern中的/斜杠)
+request.getContextPath()获取的是/项目名
+如果是WEB-INF下面的文件：
+req.getRequestDispatcher("/WEB-INF/pages/comment.jsp").forward(req, resp); 此时不能加 /项目名
+
+4、浏览器提示404：WEB-INF下有pages/detail.jsp
+	(1)输入http://127.0.0.1:8080/myBlog/pages/detail.jsp
+		HTTP Status 404 - /myBlog/pages/detail.jsp 代表路径错了，访问不了
+	(2)http://127.0.0.1:8080/myBlog/WEB-INF/pages/detail.jsp
+		HTTP Status 404 - 代表路径对了可是无权访问
+
+
+
+
+
+
+
+
+
+
+
+
+

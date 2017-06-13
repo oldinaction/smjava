@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>testServlet</display-name><!-- 描述性标签，无实际作用 -->
+  
+  <!-- 全局参数，对所有的servlet有效，都可以获取对应的参数值 -->
+  <context-param>
+  	<param-name>encoding</param-name>
+  	<param-value>UTF-8</param-value> <!-- 多个参数用逗号隔开 -->
+  </context-param>
+  
+	<servlet>
+		<!-- 给servlet签名 -->
+		<servlet-name>hello</servlet-name>
+		<!-- 指定要注册的Servlet，即对于src目录中的类 -->
+		<servlet-class>com.smalle.servlet.HelloServlet</servlet-class>
+	</servlet>
+	<!-- Servlet映射 -->
+	<servlet-mapping>
+		<!-- 给Servlet签名 必须和某个Servlet的签名保持一致。 -->
+		<servlet-name>hello</servlet-name>
+		<!-- 浏览器截获的请求地址，此处必须加/,此时/代表项目根目录（即http://127.0.0.1:8080/项目名）-->
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+  	
+  	<!-- 定义一个拦截器CharacterEncodingFilter  -->
+	<filter>
+		<!-- 过滤器的标识名 -->
+		<filter-name>characterEncodingFilter</filter-name>
+		<!-- 过滤器对应的实现类 -->
+		<filter-class>com.smalle.filter.CharacterEncodingFilter</filter-class>
+		<!-- 配置初始化参数 -->
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<!-- 过滤器的标识名 -->
+		<filter-name>characterEncodingFilter</filter-name>
+		<!-- 过滤器的URL匹配模式 -->
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  	
+  	<servlet>
+		<servlet-name>URLPattern</servlet-name>
+		<servlet-class>com.smalle.servlet.URLPattern</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>URLPattern</servlet-name>
+		<url-pattern>/pages/urlPatternPage.html</url-pattern>
+	</servlet-mapping>
+  	
+	<servlet>
+		<servlet-name>parameter</servlet-name>
+		<servlet-class>com.smalle.servlet.GetParameterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>parameter</servlet-name>
+		<url-pattern>/parameter</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>getHeader</servlet-name>
+		<servlet-class>com.smalle.servlet.GetHeaderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getHeader</servlet-name>
+		<url-pattern>/head</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>targetURL</servlet-name>
+		<servlet-class>com.smalle.servlet.TargetURLServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>targetURL</servlet-name>
+		<url-pattern>/targetURL</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>servletConfig</servlet-name>
+		<servlet-class>com.smalle.servlet.ServletConfigServlet</servlet-class>
+		<init-param>
+            <param-name>name</param-name>
+            <param-value>小易</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>18</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletConfig</servlet-name>
+		<url-pattern>/config</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletContext</servlet-name>
+		<servlet-class>com.smalle.servlet.ServletContextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContext</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetCookieServlet</servlet-name>
+		<servlet-class>com.smalle.servlet.SetCookieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetCookieServlet</servlet-name>
+		<url-pattern>/set</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCookieServlet</servlet-name>
+		<servlet-class>com.smalle.servlet.GetCookieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCookieServlet</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ClearCookieServlet</servlet-name>
+		<servlet-class>com.smalle.servlet.ClearCookieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClearCookieServlet</servlet-name>
+		<url-pattern>/clear</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetSession</servlet-name>
+		<servlet-class>com.smalle.servlet.SetSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetSession</servlet-name>
+		<url-pattern>/setSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetSession</servlet-name>
+		<servlet-class>com.smalle.servlet.GetSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetSession</servlet-name>
+		<url-pattern>/getSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>WebInf</servlet-name>
+		<servlet-class>com.smalle.servlet.WebInf</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WebInf</servlet-name>
+		<url-pattern>/inf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>jspFile</servlet-name>
+		<!-- 注意不要掉了WEB-INF -->
+		<jsp-file>/WEB-INF/inf.jsp</jsp-file> <!-- 此处只能是jsp文件，如果为html文件则会出现乱码 -->
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jspFile</servlet-name>
+		<url-pattern>/webinf</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 注册一个监听器 -->
+	<listener>
+		<listener-class>com.smalle.listener.DemoListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>com.smalle.listener.DemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/demoListener</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>com.smalle.listener.OnlineListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.smalle.listener.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginListener</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.smalle.listener.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logoutListener</url-pattern>
+	</servlet-mapping>
+		
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

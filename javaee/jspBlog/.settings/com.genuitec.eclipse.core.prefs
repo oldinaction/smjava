@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/js/editor,WebRoot/js/chart/fusioncharts.js,WebRoot/js/chart/fusioncharts-bak.js,WebRoot/yunpan/js/jquery-1.11.1.min.js,WebRoot/js/chart/fusioncharts - \u526F\u672C.js,WebRoot/js/chart/fusioncharts.powercharts.js,WebRoot/js/jquery-1.11.1.min.js,WebRoot/js/umeditor,WebRoot/WEB-INF/tld/sm.tld,WebRoot/jspdemo/uploader/upload.jsp
+validator.Unchecked=

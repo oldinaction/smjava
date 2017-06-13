@@ -1,0 +1,31 @@
+1、HelloServlet 第一个servlet
+
+2、GetHeaderServlet 获取表头信息
+
+3、GetParameterServlet 获取参数
+
+4、ServletConfigServlet
+
+5、ServletContextServlet
+
+6、URLPattern pages/urlPatternPage.html page.html 关于web.xml中url-pattern和jsp中的href的小知识点
+
+7、TargetURLServlet success.html fail.html 请求分派和重定向
+
+8、SetCookieServlet GetCookieServlet ClearCookieServlet 关于Cookie的设置、获取、清除
+
+9、SetSession GetSession 关于Session的设置和获取
+
+10、WebInf WEB-INF/inf.jsp inf.html 关于WEB-INF目录下文件具有安全性，直接在浏览器中是不能访问的
+
+11、CharacterEncodingFilter 通过拦截器设置页面的字符编码
+
+12、DemoListener、DemoServlet 关于监听器的小例子
+
+13、OnlineLisener、LoginServlet、LogoutServlet、index.html 利用监听器实现在线人数监控
+
+
+
+
+
+

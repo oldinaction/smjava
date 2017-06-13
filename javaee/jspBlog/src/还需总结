@@ -1,0 +1,19 @@
+1、统计报表
+	如fushionchart amchart hichart
+	fusionchart amchart --2012年以前是没有javascript版本，都是flash版本 swf
+	fusionchart最新的html5版本 使用了svg技术
+	
+2、form表单提交（没整理）
+	？？？ajax提交的url页面只能有一个out.print()输出
+  	通过submit按钮提交的话，会直接跳转到action页面。如果通过点击普通按钮异步提交的话，则form的action属性无效（页面不跳转）
+  	1==>从提交页面获取表单元素的值，存放在对象{}中。
+  	2==>ajax。
+  	3==>服务器页面获取数据，做出反应(out.print)。
+  	4==>提交页面做出反应
+  		利用jQuery的serializeArray()方法序列化表单值，表单元素必须要有name属性(name="key")。最终是一个json数据 [{name: "key", value: "value"},{},{}]
+  		ajax成功调用success函数中的data是ajax的url页面out.print();中的数据，此时必须trim()一下来去除左右空格才是out.print();的原始数据
+  	form表单对于checkbox的提交是以数组对象的方式进行提交的。可通过request.getParameterValues()获取此数组对象	
+	
+3、JRE System Library 要是自己安装的jdk(右键-properties-Workspace defalut jar(自己安装的jdk))	
+	
+	

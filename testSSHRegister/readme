@@ -1,7 +1,0 @@
-测试入口：http://127.0.0.1:8080/testSSHRegister/register.jsp
-
-功能说明：利用status2、hibernate、spring完成了一个简单的用户注册功能，主要体现这三个框架的融合
-status2.3.24
-hibernate3.3.2
-spring2.5.6
-(junit4.7)

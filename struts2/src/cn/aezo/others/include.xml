@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<!-- 包含模块配置文件,访问"http://127.0.0.1:8080/testStruts2/include" -->
+   <package name="include" namespace="/include" extends="struts-default">	
+        <action name="include">
+            <result>/others/include.jsp</result>
+        </action>
+    </package>
+
+</struts>

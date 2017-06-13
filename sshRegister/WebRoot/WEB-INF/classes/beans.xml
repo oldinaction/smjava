@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+	<!-- 由spring自动注入beans.xml中的相应id/name的bean到批注有@Resource(name="")的set方法中；name参数不写默认取set方法名去掉"set"后首字母小写的那个变量名(如setUserDao就取值userDao) -->
+	<context:annotation-config/>
+	<!-- 由spring自动初始化批注有@Component(value="")的类，相应对象的变量名为value的值；如果value参数不写默认取首字母小写的类名(如UserDao就取值userDao)；这样生成的bean不在配置文件中，某个set方法直接使用@Resource(name="@Component中的value")就可以找到相应的bean了，spring也就帮忙自动注入了 -->
+	<context:component-scan base-package="cn.aezo"></context:component-scan>
+	
+	<!-- 配置数据库信息的config的bean -->
+	<bean id="config" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:jdbc.properties</value>
+		</property>
+	</bean>	
+	<!-- 数据源的bean(实例化时根据上面数据库config的bean的信息进行注入)，如果实例化后则已经可以和数据库进行交互 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+
+	<!-- 此处的配置相当于hibernate的配置文件，id最好定为sessionFactory，有时候spring内部需要使用，默认就找sessionFactory，如在web.xml中定义拦截器解决懒加载问题是，找的就是sessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<!-- 将数据源dataSource注入到hibernate的SessionFactory中(使用的是Spring包装后的Hibernate) -->
+		<property name="dataSource" ref="dataSource" />
+		<!-- annotation方式的映射。name不能瞎写，因为AnnotationSessionFactoryBean有setAnnotatedClasses等方法将参数进行注入-->
+		<property name="packagesToScan"><!-- 使用packagesToScan则只需要写包，annotatedClasses就要写全所有的类 -->
+			<list>
+				<value>cn.aezo.register.model</value><!-- 将所有的Model映射进来，但是需要自己去实例化 -->
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 将sessionFactory再包一层，交由HibernateTransactionManager的一个bean管理 -->
+	<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- xml方式声明事物(常用) -->
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="exists" read-only="true"/><!-- read-only默认是false,表示该transaction可读可写 -->
+			<tx:method name="add*" propagation="REQUIRED"/><!-- propagation="REQUIRED"表示在执行add开头的方法时如果有transaction则直接把add开头的方法加进该事物中，如果没有就新建一个事物 -->
+		</tx:attributes>
+	</tx:advice>
+	<!-- 定义一个切面(此时将transaction的临界面放在service层)，执行transaction时使用上面的advice； -->
+	<aop:config>
+		<aop:pointcut id="bussinessService" expression="execution(* cn.aezo.register.service..*.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="bussinessService"/>
+	</aop:config>
+	
+	<!-- 将sessionFactory再包一层，变成HibernateTemplate的一个bean(他会自动帮我们处理异常)。UserDaoImpl中进行注入 -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	
+
+</beans>

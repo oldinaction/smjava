@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//WebRoot/index.html=UTF-8
+encoding//WebRoot/jspdemo/code/numCode.jsp=UTF-8
+encoding//WebRoot/jspdemo/code/stringCode.jsp=UTF-8
+encoding//WebRoot/jspdemo/code/test.jsp=UTF-8
+encoding//src/cn/smalle/filter/CharacterEncodingFilter.java=UTF-8
+encoding//src/cn/smalle/util/SmStringUtils.java=UTF-8

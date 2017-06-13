@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/pages/login.jsp=UTF-8
+encoding//WebRoot/error.html=UTF-8
+encoding//WebRoot/success.html=UTF-8
+encoding//src/com/smalle/dao/comment/TmCommentDao.java=UTF-8
+encoding//src/com/smalle/filter/CharacterEncodingFilter.java=UTF-8
+encoding//src/com/smalle/servlet/LoginCookieServlet.java=UTF-8
+encoding//src/com/smalle/util/TmStringUtils.java=UTF-8
+encoding//src/\u77E5\u8BC6\u70B9=UTF-8
+encoding/<project>=UTF-8
