@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lucene:war exploded">
+    <output-path>$PROJECT_DIR$/target/lucene</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lucene" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="lucene-4.9.1" />
+          <element id="library" level="project" name="commons" />
+          <element id="library" level="project" name="jericho" />
+          <element id="library" level="project" name="spring-3.2.0" />
+          <element id="library" level="project" name="IKAnalyzer2012_FF" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF" />
+      <element id="javaee-facet-resources" facet="lucene/web/Web" />
+    </root>
+  </artifact>
+</component>

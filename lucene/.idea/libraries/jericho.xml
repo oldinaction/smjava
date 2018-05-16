@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jericho">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/commons-logging-api-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/jericho-html-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/log4j-api-2.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/slf4j-api-1.7.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

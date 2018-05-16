@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="spring-3.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-beans-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-context-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-context-support-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-core-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-expression-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-web-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/spring-webmvc-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/jstl-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

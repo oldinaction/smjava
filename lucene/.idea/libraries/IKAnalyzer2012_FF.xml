@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IKAnalyzer2012_FF">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/lib/IKAnalyzer2012_FF.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
