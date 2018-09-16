@@ -1,0 +1,5 @@
+- `bwtwixt` XML和Bean之间相互转换工具
+- `freemaker` freeMaker模版引擎渲染过程示例
+- `jackson` Json/Bean/XML转换工具(com.fasterxml.jackson)
+- `jsonlib` 基于net.sf.json实现JSON 和 Map/List的转换
+- `xml` 基于org.w3c.dom和javax.xml.parsers原始java类库生成xml文件

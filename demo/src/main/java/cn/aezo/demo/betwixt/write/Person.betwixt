@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<info>
+    <element name='一个Person对象'>
+        <attribute name='这个配置文件中定义的值' value='1.0'/>
+        <attribute name='String类型对象_姓名' property='name'/>
+        <element name='int类型对象_年龄' property='age'/>
+        <element name='ArrayList类型对象_爱好'>
+            <element name='ArrayList中的值' property='hobbys'/>
+        </element>
+
+        <element name='Map类型对象_特征'>
+            <element name='Map中的值'  property='feature'/>
+        </element>
+    </element>
+</info>
