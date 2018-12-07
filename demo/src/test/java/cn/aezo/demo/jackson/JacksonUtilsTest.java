@@ -102,10 +102,12 @@ public class JacksonUtilsTest {
             this.id = id;
             this.name = name;
         }
+
         @Override
         public String toString() {
             return "{\"id\":"+id+",\"name\":\""+name+"\"}";
         }
+
         public int getId() {
             return id;
         }

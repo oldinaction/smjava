@@ -3,6 +3,7 @@
 1. [http://www.studytrails.com/tag/jackson/](http://www.studytrails.com/tag/jackson/)
 2. [http://www.baeldung.com/jackson](http://www.baeldung.com/jackson)
 3. [http://zzc1684.iteye.com/blog/2209692 (Zh)](http://zzc1684.iteye.com/blog/2209692)
+4. xml转Bean对应的Bean不能是内部类
 
 ### dependence
 
@@ -19,6 +20,7 @@
 2. 解析xml
 
 ```xml
+<!-- 会包含core、annotations、databind -->
 <dependency>
     <groupId>com.fasterxml.jackson.dataformat</groupId>
     <artifactId>jackson-dataformat-xml</artifactId>

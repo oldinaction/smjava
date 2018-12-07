@@ -7,8 +7,8 @@
 	String sex = request.getParameter("sex");
 	
 	StringBuffer hobbysBuf = new StringBuffer();
-	String[] hobbys = request.getParameterValues("hobbys");
-	for(String str : hobbys){
+	String[] hobbyes = request.getParameterValues("hobbyes");
+	for(String str : hobbyes){
 		hobbysBuf.append(str + " ");
 	}
 	

@@ -37,9 +37,9 @@
   		性别：<label><input type="radio" class="sex" name="sex" value="1" checked>男</label>
   			<label><input type="radio" class="sex" name="sex" value="0">女 </label>
   		<br /><br />
-  		爱好：<label><input type="checkbox" class="hobbys" name="hobbys" value="读书">读书 </label>
-  			<label><input type="checkbox" class="hobbys" name="hobbys" value="写作" checked="checked">写作 </label>
-  			<label><input type="checkbox" class="hobbys" name="hobbys" value="游戏" checked>游戏 </label>
+  		爱好：<label><input type="checkbox" class="hobbyes" name="hobbyes" value="读书">读书 </label>
+  			<label><input type="checkbox" class="hobbyes" name="hobbyes" value="写作" checked="checked">写作 </label>
+  			<label><input type="checkbox" class="hobbyes" name="hobbyes" value="游戏" checked>游戏 </label>
   		<br /><br />
   		个人说明：<textarea id="description" name="description" style="width:400px;height:200px;">这个人很懒，什么也没留下!</textarea> <!-- 尽量不使用rows和cols来控制文本域的大小，存在浏览器兼容问题 -->
   		<br /><br />
@@ -77,16 +77,16 @@
 			var age = $("#age").val();
 				//使用元素方式获取获取
 				//var sex = $("input[type='radio'][name='sex']:checked").val();
-				//var hobbys = $("input[type='checkbox'][name='hobbys']:checked"); //此处不能有val()
+				//var hobbyes = $("input[type='checkbox'][name='hobbyes']:checked"); //此处不能有val()
 			//使用class获取
 			var sex =$(".sex").val();
 				
-				//$(".hobbys").val();获取的总是匹配到的第一个元素的值，此时一直是"读书"
-				//$(".hobbys:checked").val();获取的总是匹配到的第一个元素的值，此时一直是选择的第一个选项
-				//直接alert($(".hobbys:checked"));或者alert($(".hobbys:checked").toString());都返回[object Object]
-			var hobbys = $(".hobbys:checked");//下面这样获取的就是一个jQuery对象(里面有多个匹配到的元素)。
+				//$(".hobbyes").val();获取的总是匹配到的第一个元素的值，此时一直是"读书"
+				//$(".hobbyes:checked").val();获取的总是匹配到的第一个元素的值，此时一直是选择的第一个选项
+				//直接alert($(".hobbyes:checked"));或者alert($(".hobbyes:checked").toString());都返回[object Object]
+			var hobbyes = $(".hobbyes:checked");//下面这样获取的就是一个jQuery对象(里面有多个匹配到的元素)。
 			var hobbysArr = [];
-			hobbys.each(function(){
+			hobbyes.each(function(){
 				hobbysArr.push($(this).val());
 			});
 			
@@ -96,7 +96,7 @@
 				"password":password,
 				"age":age,
 				"sex":sex,
-				"hobbys":hobbysArr.toString(),//浏览器和服务器之间不能传递对象，只能传递字符串
+				"hobbyes":hobbysArr.toString(),//浏览器和服务器之间不能传递对象，只能传递字符串
 				"description":description,
 			};
 			
@@ -121,14 +121,14 @@
 			var password = document.getElementById("password").value;
 			var age = document.getElementById("age").value;
 			var sex = checkValues("sex").toString();
-			var hobbys = checkValues("hobbys").toString();
+			var hobbyes = checkValues("hobbyes").toString();
 			var description = document.getElementById("description").value;
 			var params = {
 					"username":username,
 					"password":password,
 					"age":age,
 					"sex":sex,
-					"hobbys":hobbys,
+					"hobbyes":hobbyes,
 					"description":description
 			};
   			$.ajax({

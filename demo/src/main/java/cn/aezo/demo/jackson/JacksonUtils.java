@@ -8,6 +8,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -98,6 +101,51 @@ public class JacksonUtils {
         jg.close();
         return w.toString();
     }
+
+    /**
+     * XML To Object(此Bean不能是内部类)
+     *
+     * @param xmlPath
+     * @param cls
+     * @param <T>
+     * @return
+     * @throws IOException
+     */
+    public static <T> T xmlToBean(String xmlPath, Class<T> cls) throws IOException {
+        T obj = xmlMapper.readValue(new File(xmlPath), cls);
+        return obj;
+    }
+
+    public static <T> T xmlToBean2(String xml, Class<T> cls) throws IOException {
+        T obj = xmlMapper.readValue(xml, cls);
+        return obj;
+    }
+
+    /**
+     * @param xmlFile
+     * @param cls
+     * @param <T>
+     * @return
+     * @throws IOException
+     */
+    public static <T> T xmlToBean(File xmlFile, Class<T> cls) throws IOException {
+        T obj = xmlMapper.readValue(xmlFile, cls);
+        return obj;
+    }
+
+    /**
+     * @param xmlInputStream
+     * @param cls
+     * @param <T>
+     * @return
+     * @throws IOException
+     */
+    public static <T> T xmlToBean(InputStream xmlInputStream, Class<T> cls) throws IOException {
+        T obj = xmlMapper.readValue(xmlInputStream, cls);
+        return obj;
+    }
+
+
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> map = MiscU.Instance.toMap("a", 1, "b", "bb", "c", MiscU.Instance.toList("DD", "EE"));

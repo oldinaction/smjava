@@ -1,9 +1,0 @@
-String jsonStr = "[{'id':'1','name':'smalle'},{'id':'2','name':'aezo'},{'id':'3','name':'moon'},{'id':'4','name':'ysq'},{'id':'5','name':'unilog'}]";
-		String jsonStr1 = "[{\"id\":\"1\",\"name\":\"smalle\"},{\"id\":\"2\",\"name\":\"aezo\"}]";
-		JSONArray jsonArray = JSONArray.fromObject(jsonStr);  
-		try {
-			response.getWriter().print(jsonArray); // 所有的数据都能写到页面(包括对象)
-			//response.getWriter().write(jsonStr1); // 只能写字符串或整型
-		} catch (IOException e) {
-			e.printStackTrace();
-		}

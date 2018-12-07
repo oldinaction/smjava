@@ -5,7 +5,7 @@
         <attribute name='String类型对象_姓名' property='name'/>
         <element name='int类型对象_年龄' property='age'/>
         <element name='ArrayList类型对象_爱好'>
-            <element name='ArrayList中的值' property='hobbys'/>
+            <element name='ArrayList中的值' property='hobbyes'/>
         </element>
 
         <element name='Map类型对象_特征'>

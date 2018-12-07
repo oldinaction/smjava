@@ -37,9 +37,9 @@
   		性别：<label><input type="radio" name="sex" value="1">男</label>
   			<label><input type="radio" name="sex" value="0">女 </label>
   		<br /><br />
-  		爱好：<label><input type="checkbox" name="hobbys" value="读书">读书 </label>
-  			<label><input type="checkbox" name="hobbys" value="写作">写作 </label>
-  			<label><input type="checkbox" name="hobbys" value="游戏">游戏 </label>
+  		爱好：<label><input type="checkbox" name="hobbyes" value="读书">读书 </label>
+  			<label><input type="checkbox" name="hobbyes" value="写作">写作 </label>
+  			<label><input type="checkbox" name="hobbyes" value="游戏">游戏 </label>
   		<br /><br />
   		个人说明：<textarea name="description" style="width:400px;height:200px;">这个人很懒，什么也没留下!</textarea> <!-- 尽量不使用rows和cols来控制文本域的大小，存在浏览器兼容问题 -->
   		<br /><br />

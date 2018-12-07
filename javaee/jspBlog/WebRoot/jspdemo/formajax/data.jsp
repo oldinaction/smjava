@@ -23,9 +23,9 @@
 	年龄：<%=request.getParameter("age") %> 【用EL表达式获取：${param.age}】<br /><br />
 	性别：<%=request.getParameter("sex") %> 【用EL表达式获取：${param.sex}】<br /><br />
 	<%
-		String[] hobbys = request.getParameterValues("hobbys");
+		String[] hobbyes = request.getParameterValues("hobbyes");
 		StringBuffer hobbysBuf = new StringBuffer();
-		for(String str : hobbys){
+		for(String str : hobbyes){
 			hobbysBuf.append(str + " ");
 		}
 	%>
