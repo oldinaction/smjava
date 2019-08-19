@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- hibernate使用xml配置数据库映射的helloworld案例。 -->
+<hibernate-mapping package="cn.aezo.hibernate.hello">
+	<class name="Student" table="student">
+ 		<id name="id" column="id">
+			<generator class="native"></generator><!-- 定义id自动生成器 -->
+		</id>
+        <property name="name" column="name"/>
+        
+        <!-- 当使用联合主键时的配置 -->
+        <!-- 因为使用UTF-8编码是主键长度不能超过256个字节，而默认id长度是int(11),name长度是varchar(255)，则超出长度，故此处应该定义长度 -->
+        <!--
+        <composite-id name="pk" class="cn.aezo.hibernate.model.StudentPK">
+        	<key-property name="id"></key-property>
+        	<key-property name="name" length="50"></key-property>
+        </composite-id>
+        -->
+        
+        <property name="age" column="age"/>
+    </class>
+</hibernate-mapping>

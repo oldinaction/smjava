@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!-- 此时lazy-init="true"表示当读取xml文件时先不自动初始化这个bean,如果容器需要再初始化这个bean;此处id="ubase"也可以写成name="ubase" -->
+	<bean id="ubase" class="cn.aezo.spring.base.hello.dao.impl.UserDAOImpl" lazy-init="true"/>
+	<!-- 配置对外服务的UserService对象，最终容器会帮助我们自动实例化；scope是生存范围(singleton 单例模式) -->
+	<bean id="userServiceBase" class="cn.aezo.spring.base.hello.UserService" scope="prototype">
+		<!-- 在实例化UserService时，有成员变量userDao，根据setter方法setUserDAO，所有此时需要一个name="userDAO"的对象 -->
+		<property name="userDAO" ref="ubase"></property>
+	</bean>
+	
+	<!-- autowire自动装配,autowire="byName"表示通过name(id)属性进行装配，只要此处name/id的值与相应类UserDAOImpl中的属性userDAO相同即可 -->
+	<bean name="userDAOBase" class="cn.aezo.spring.base.hello.dao.impl.UserDAOImpl">
+		<property name="daoId" value="0"></property><!-- 简单属性注入 -->
+	</bean>
+	<bean name="userDAO1" class="cn.aezo.spring.base.hello.dao.impl.UserDAOImpl">
+		<property name="daoId" value="1"></property>
+	</bean>
+	<bean id="userService1" class="cn.aezo.spring.base.hello.UserService" autowire="byName"/>
+	
+	<!-- 测试生命周期：init-method对象初始化时调用，destroy-method对象销毁时调用 -->
+	<bean id="u1Base" class="cn.aezo.spring.base.hello.dao.impl.UserDAOImpl"/>
+	<bean id="userService2" class="cn.aezo.spring.base.hello.UserService" init-method="init" destroy-method="destory">
+		<property name="userDAO" ref="u1Base"></property>
+	</bean>
+
+	<!-- 测试xml的aop -->
+	<bean id="logInterceptor" class="cn.aezo.spring.base.hello.aop.LogInterceptor"/><!-- 一个切面的bean -->
+	<aop:config>
+		<aop:pointcut expression="execution(* cn.aezo.spring.base.hello.dao..*.*(..))" id="daoPointCut"/>
+		<aop:aspect id="logAspect" ref="logInterceptor">
+			<aop:before method="before" pointcut-ref="daoPointCut"/>
+			<aop:after-returning method="after" pointcut-ref="daoPointCut"/>
+		</aop:aspect>
+	</aop:config>
+
+
+	<!-- more bean definitions go here -->
+
+</beans>
