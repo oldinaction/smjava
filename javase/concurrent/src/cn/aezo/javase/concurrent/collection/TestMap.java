@@ -1,6 +1,6 @@
 package cn.aezo.javase.concurrent.collection;
 
-import cn.aezo.javase.concurrent.scattered.MultiThreadTestSimpleTemplate;
+import cn.aezo.javase.concurrent.tools.AbstractMultiThreadTestSimpleTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ public class TestMap {
     /**
      * 测试结果：HashMap等普通集合为线程不安全，此处Map的大小总小于10000；而ConcurrentHashMap则为线程安全
      */
-    static class Test1 extends MultiThreadTestSimpleTemplate {
+    static class Test1 extends AbstractMultiThreadTestSimpleTemplate {
         private Map<String, Object> hashMap = new HashMap<>();
         private Map<String, Object> concurrentHashMap = new ConcurrentHashMap<>();
 

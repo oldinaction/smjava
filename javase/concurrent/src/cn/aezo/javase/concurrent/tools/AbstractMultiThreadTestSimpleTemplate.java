@@ -1,4 +1,4 @@
-package cn.aezo.javase.concurrent.scattered;
+package cn.aezo.javase.concurrent.tools;
 
 import java.text.NumberFormat;
 import java.util.concurrent.ConcurrentHashMap;
@@ -7,13 +7,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 基于 ExecutorService 实现多线程测试模板
+ * 基于 ExecutorService 实现多线程测试模板(推荐)
  * @author smalle
  * @date 2019-07-23 13:58
  */
-public abstract class MultiThreadTestSimpleTemplate {
+public abstract class AbstractMultiThreadTestSimpleTemplate {
     // 测试案例=========================================================================================
-    static class DemoTest extends MultiThreadTestSimpleTemplate {
+    static class DemoTest extends AbstractMultiThreadTestSimpleTemplate {
         public static void main(String[] args) {
             // 总共测试执行10000遍，100个并发
             new DemoTest().run(10000, 100);
@@ -46,8 +46,8 @@ public abstract class MultiThreadTestSimpleTemplate {
     public abstract void afterExec();
 
     public void run(int totalNum, int threadNum) {
-        MultiThreadTestSimpleTemplate.totalNum = totalNum;
-        MultiThreadTestSimpleTemplate.threadNum = threadNum;
+        AbstractMultiThreadTestSimpleTemplate.totalNum = totalNum;
+        AbstractMultiThreadTestSimpleTemplate.threadNum = threadNum;
         this.run();
     }
 
@@ -63,17 +63,19 @@ public abstract class MultiThreadTestSimpleTemplate {
         for (int i = 0; i < totalNum; i++) {
             Runnable run = new Runnable() {
                 public void run() {
-                    int index = ++count;
-                    long systemCurrentTimeMillis = System.currentTimeMillis();
                     try {
+                        int index = ++count;
+                        long systemCurrentTimeMillis = System.currentTimeMillis();
+
                         exec();
+
+                        records.put(index, new ThreadRecord(systemCurrentTimeMillis, System.currentTimeMillis()));
                     } catch (Exception e) {
                         e.printStackTrace();
+                    } finally {
+                        // 每调用一次countDown()方法，计数器减1
+                        doneSignal.countDown();
                     }
-
-                    records.put(index, new ThreadRecord(systemCurrentTimeMillis, System.currentTimeMillis()));
-                    // 每调用一次countDown()方法，计数器减1
-                    doneSignal.countDown();
                 }
             };
             es.execute(run);

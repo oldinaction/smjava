@@ -1,5 +1,7 @@
 package cn.aezo.javase.concurrent.scattered;
 
+import cn.aezo.javase.concurrent.tools.AbstractMultiThreadTestTemplate;
+
 import java.util.Date;
 
 /**
@@ -19,21 +21,21 @@ public class StaticMethod {
         System.out.println(new Date() + " Thread End: " + id);
     }
 
-    static class DemoTest extends MultiThreadTestTemplate {
+    static class DemoTest extends AbstractMultiThreadTestTemplate {
         public static void main(String[] args) {
             new DemoTest().run(100);
         }
 
         @Override
-        void beforeExec() {}
+        public void beforeExec() {}
 
         @Override
-        void exec() {
+        public void exec() {
             testStaticMethod();
         }
 
         @Override
-        void afterExec() {}
+        public void afterExec() {}
     }
 }
 

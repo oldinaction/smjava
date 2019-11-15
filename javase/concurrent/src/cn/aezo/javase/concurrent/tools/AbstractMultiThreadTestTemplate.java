@@ -1,4 +1,4 @@
-package cn.aezo.javase.concurrent.scattered;
+package cn.aezo.javase.concurrent.tools;
 
 import net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner;
 import net.sourceforge.groboutils.junit.v1.TestRunnable;
@@ -8,15 +8,15 @@ import net.sourceforge.groboutils.junit.v1.TestRunnable;
  * @author smalle
  * @date 2019-07-23 13:58
  */
-public abstract class MultiThreadTestTemplate {
+public abstract class AbstractMultiThreadTestTemplate {
     private static int runnerCount = 20;
 
-    abstract void beforeExec();
-    abstract void exec();
-    abstract void afterExec();
+    public abstract void beforeExec();
+    public abstract void exec();
+    public abstract void afterExec();
 
     public void run(int runnerCount) {
-        MultiThreadTestTemplate.runnerCount = runnerCount;
+        AbstractMultiThreadTestTemplate.runnerCount = runnerCount;
         this.run();
     }
 
@@ -50,23 +50,23 @@ public abstract class MultiThreadTestTemplate {
         afterExec();
     }
 
-    static class TestDemo extends MultiThreadTestTemplate {
+    static class TestDemo extends AbstractMultiThreadTestTemplate {
         public static void main(String[] args) {
             new TestDemo().run(100);
         }
 
         @Override
-        void beforeExec() {
+        public void beforeExec() {
             System.out.println("开始...");
         }
 
         @Override
-        void exec() {
+        public void exec() {
             System.out.println(Thread.currentThread().getName() + "测试内容...");
         }
 
         @Override
-        void afterExec() {
+        public void afterExec() {
             System.out.println("结束...");
         }
     }

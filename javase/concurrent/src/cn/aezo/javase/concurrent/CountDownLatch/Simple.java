@@ -16,7 +16,6 @@ public class Simple {
 
     @Test
     public void countDownLatch() throws InterruptedException {
-
         // 线程安全的计数器
         AtomicInteger totalRows = new AtomicInteger(0);
 
@@ -27,11 +26,12 @@ public class Simple {
         // 或者
         // ExecutorService executor = Executors.newFixedThreadPool(10);
 
+        int countSize = 30; // 此数值和循环的大小必须一致
         // 初始化CountDownLatch，大小为30
-        CountDownLatch countDownLatch = new CountDownLatch(30);
+        final CountDownLatch countDownLatch = new CountDownLatch(countSize);
 
         // 模拟遍历参数集合
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < countSize; i++) {
             // 往线程池提交任务
             executor.execute(new Runnable() {
                 @Override
@@ -62,11 +62,11 @@ public class Simple {
             System.out.println("线程池中线程数目：" + executor.getPoolSize() + "，队列中等待执行的任务数目：" +
                     executor.getQueue().size() + "，已执行结束的任务数目：" + executor.getCompletedTaskCount());
         }
+        // 计数器大于0时，会阻塞程序继续执行。直到所有子线程完成(每完成一个子线程，计数器-1)
+        countDownLatch.await();
+
         // 标记多线程关闭，但不会立马关闭
         executor.shutdown();
-
-        // 计数器大于0时，会阻塞程序继续执行
-        countDownLatch.await();
 
         // 打印线程池运行状态
         System.out.println("线程池中线程数目：" + executor.getPoolSize() + "，队列中等待执行的任务数目：" +
