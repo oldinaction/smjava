@@ -1,7 +1,5 @@
 package gui;
 
-import java.awt.*;
-
 public class CenterPanel {
   public static void main(String args[]) {
     new MyFrame3(300,300,400,300,Color.BLUE);
