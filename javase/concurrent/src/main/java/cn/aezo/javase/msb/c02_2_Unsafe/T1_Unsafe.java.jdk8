@@ -1,0 +1,40 @@
+package cn.aezo.javase.msb.c02_2_Unsafe;
+
+import sun.misc.Unsafe;
+
+import java.lang.reflect.Field;
+
+/**
+ * @author smalle
+ * @date 2020-05-31 23:18
+ */
+public class T1_Unsafe {
+
+    static final Unsafe unsafe;
+    static {
+        try {
+            // 反射获取 Unsafe 的成员变量 theUnsafe（2.2.10）
+            Field field = Unsafe.class.getDeclaredField("theUnsafe");
+            // 设置为可存取（2.2.11）
+            field.setAccessible(true);
+            // 获取该变量的值（2.2.12）
+            unsafe = (Unsafe) field.get(null);
+        } catch (Exception ex) {
+            System.out.println(ex.getLocalizedMessage());
+            throw new Error(ex);
+        }
+    }
+
+    static class M {
+        private M() {}
+        int i =0;
+    }
+
+    public static void main(String[] args) throws InstantiationException {
+        // Unsafe.getUnsafe(); // 此方法获取会报错
+
+        M m = (M) unsafe.allocateInstance(M.class);
+        m.i = 9;
+        System.out.println(m.i);
+    }
+}
