@@ -8,7 +8,9 @@ package gui;
  */
 
 
-class SubPanel extends Panel{
+import java.awt.*;
+
+class SubPanel extends Panel {
 	public void paint(Graphics g){
 		g.drawString("this is a drawing test!",20,20);		
 		g.drawLine(30,60,100,120);
