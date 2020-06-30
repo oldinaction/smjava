@@ -1,0 +1,2 @@
+JMH S 39 cn.aezo.javase.msb.c08_2_JMH.T01_PSTest S 69 cn.aezo.javase.msb.c08_2_JMH.generated.T01_PSTest_testForeach_jmhTest S 11 testForeach S 10 Throughput E A 1 1 1 E I 1 1 T 3 3 s E I 1 1 T 3 3 s E I 1 5 E E E E E E E E E 
+JMH S 39 cn.aezo.javase.msb.c08_2_JMH.T01_PSTest S 83 cn.aezo.javase.msb.c08_2_JMH.generated.T01_PSTest_testParallelStreamForeach_jmhTest S 25 testParallelStreamForeach S 10 Throughput E A 1 1 1 E I 1 1 T 3 3 s E I 1 1 T 3 3 s E I 1 5 E E E E E E E E E 

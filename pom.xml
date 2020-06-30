@@ -14,6 +14,7 @@
         <module>javaee</module>
         <module>design-pattern</module>
         <module>demo</module>
+        <!--<module>lucene</module>-->
     </modules>
 
 

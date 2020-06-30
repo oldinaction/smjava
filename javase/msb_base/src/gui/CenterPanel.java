@@ -1,12 +1,14 @@
 package gui;
 
+import java.awt.*;
+
 public class CenterPanel {
   public static void main(String args[]) {
     new MyFrame3(300,300,400,300,Color.BLUE);
   }
 }
 
-class MyFrame3 extends Frame{
+class MyFrame3 extends Frame {
   private Panel p;
   MyFrame3(int x,int y,int w,int h,Color c){
     super("FrameWithPanel");

@@ -1,5 +1,7 @@
 package gui;
 
+import java.awt.*;
+
 public class AWTDrawing {
     private Frame f = new Frame(" Hello Out There!");
     private Panel p = new Panel();

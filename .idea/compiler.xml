@@ -9,17 +9,16 @@
         <module name="concurrent" />
         <module name="demo" />
         <module name="design-pattern" />
-        <module name="desing-pattern" />
         <module name="hibernate3" />
         <module name="hiebernate3" />
         <module name="jspBlog" />
+        <module name="JUC" />
         <module name="servletBlog" />
         <module name="spring" />
         <module name="springArch" />
         <module name="springmvc" />
         <module name="sshRegister" />
         <module name="struts2" />
-        <module name="test" />
         <module name="testAntXdoclet" />
         <module name="testJsp" />
         <module name="testServlet" />
@@ -27,15 +26,19 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="concurrent" target="1.8" />
+      <module name="concurrent" target="11" />
       <module name="demo" target="1.7" />
-      <module name="design-pattern" target="1.5" />
-      <module name="desing-pattern" target="1.8" />
+      <module name="design-pattern" target="1.8" />
       <module name="hibernate3" target="1.6" />
       <module name="hiebernate3" target="1.6" />
       <module name="javaee" target="1.5" />
       <module name="javase" target="1.5" />
       <module name="jspBlog" target="1.6" />
+      <module name="JUC" target="1.8" />
+      <module name="juc" target="1.8" />
+      <module name="lucene" target="1.5" />
+      <module name="netty_main" target="1.8" />
+      <module name="netty_test" target="1.8" />
       <module name="servletBlog" target="1.6" />
       <module name="smjava" target="1.8" />
       <module name="spring" target="1.7" />
