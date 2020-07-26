@@ -1,0 +1,33 @@
+package cn.aezo.jvm.c03_object_size;
+
+import java.lang.instrument.Instrumentation;
+
+/**
+ * 1.新建项目ObjectSizeAgent(java 1.8)
+ * 2.创建文件ObjectSizeAgent.java，如下
+ * 3.ObjectSizeAgent项目src目录下创建META-INF/MANIFEST.MF，内容如下(注意Premain-Class这行必需，且最后要有一个空行；表示在main方法前执行)
+ *
+ * Manifest-Version: 1.0
+ * Created-By: aezo.cn
+ * Premain-Class: cn.aezo.jvm.c03_object_size.ObjectSizeAgent
+ *
+ *
+ * 4.打包jar文件(先将java文件编译成class文件，然后删除java文件，再在src目录执行`jar -cvfm ObjectSizeAgent.jar META-INF\MANIFEST.MF cn`)
+ * 5.在需要使用该Agent Jar的项目中引入该Jar包 project structure - project settings - library 添加该jar包
+ * 6.运行时需要该Agent Jar的类，加入VM参数：-javaagent:D:/gitwork/smjava/jvm/src/main/resources/ObjectSizeAgent.jar
+ *
+ * @author smalle
+ * @date 2020-07-03 23:37
+ */
+public class ObjectSizeAgent {
+    private static Instrumentation inst;
+
+    // Agent必须定义此方法(名称和参数固定)
+    public static void premain(String agentArgs, Instrumentation _inst) {
+        inst = _inst;
+    }
+
+    public static long sizeOf(Object o) {
+        return inst.getObjectSize(o);
+    }
+}

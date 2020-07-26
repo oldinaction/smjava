@@ -34,7 +34,7 @@ public class Server {
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
         while (true) {
-            selector.select(); // 会在此处阻塞
+            selector.select(); // 会在此处阻塞，也可设置超时时间，或者selector.wakeup唤醒
             Set<SelectionKey> selectionKeys = selector.selectedKeys(); // 获取所有监听Channel里面的事件
             Iterator<SelectionKey> iterator = selectionKeys.iterator();
             while (iterator.hasNext()) {
