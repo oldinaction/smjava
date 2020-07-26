@@ -13,7 +13,10 @@
         <module>javase</module>
         <module>javaee</module>
         <module>design-pattern</module>
+        <module>concurrent</module>
         <module>demo</module>
+        <module>jvm</module>
+        <module>zookeeper</module>
         <!--<module>lucene</module>-->
     </modules>
 

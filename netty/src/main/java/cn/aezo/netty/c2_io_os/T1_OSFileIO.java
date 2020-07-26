@@ -39,9 +39,9 @@ public class T1_OSFileIO {
      * 1.编写如下启动脚本测试testBasicFileIO和testBufferedFileIO
      * rm -rf *out* # 为strace记录的日志文件(有多个线程所有有多个文件)，其中存储使用空间多的为主线程
      * javac T1_OSFileIO.java # 需提前去掉此类中的包名
-     * strace -ff -o out java T1_OSFileIO $1 # 其中strace可监控用户空间进程和内核的交互，比如系统调用
+     * strace -ff -o out java T1_OSFileIO $1 # 其中strace可监控用户空间进程和内核的交互，比如系统调用，将其输出到out
      *
-     * 2.testBasicFileIO对应out文件日志如(每次都会调用系统方法写入到文件)
+     * 2.testBasicFileIO对应out文件日志如(每次都会调用系统方法写入到文件；java程序启动后是多线程的，如GC线程，一般主线程是进程PID+1)
      * open("/root/io-test/out.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 5 # 获取到/root/io-test/out.txt的此进程文件描述符为5
      * fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
      * write(5, "123456789\n", 10)             = 10 # 对5号文件描述符(实际对应文件)进行写入
