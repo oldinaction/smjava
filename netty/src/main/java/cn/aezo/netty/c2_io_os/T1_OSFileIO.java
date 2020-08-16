@@ -126,15 +126,16 @@ public class T1_OSFileIO {
         // 随机写，将指针指到第0个字符后
         raf.seek(0);
 
+        // 测试ByteBuffer
         ByteBuffer buffer = ByteBuffer.allocate(8192);
-        // ByteBuffer buffer = ByteBuffer.allocateDirect(1024); // 分配jvm堆外内存(但在linux进程堆内)
+        // ByteBuffer buffer = ByteBuffer.allocateDirect(8192); // 分配jvm堆外内存(但在linux进程堆内)
 
         int read = rafChannel.read(buffer); // 将rafChannel对应的文件内容读到buffer中，类似调用buffer.put()
-        System.out.println("read: " + read); // 打印 read: 1024
-        System.out.println(buffer); // java.nio.DirectByteBuffer[pos=4096 lim=8192 cap=8192]
+        System.out.println("read: " + read); // 打印 read: 4096
+        System.out.println(buffer); // java.nio.HeapByteBuffer[pos=4096 lim=8192 cap=8192] 或 java.nio.DirectByteBuffer[pos=4096 lim=8192 cap=8192]
 
         buffer.flip(); // ByteBuffer读写交替
-        System.out.println(buffer); // java.nio.DirectByteBuffer[pos=0 lim=4096 cap=8192]
+        System.out.println(buffer); // java.nio.HeapByteBuffer[pos=0 lim=4096 cap=8192] 或 java.nio.DirectByteBuffer[pos=0 lim=4096 cap=8192]
         for (int i = 0; i < buffer.limit(); i++) {
             Thread.sleep(200);
             System.out.print(((char) buffer.get(i)));
@@ -146,7 +147,7 @@ public class T1_OSFileIO {
         ByteBuffer buffer = ByteBuffer.allocateDirect(1024); // 分配jvm堆外内存(但在linux进程堆内)
 
         System.out.println("position: " + buffer.position()); // 0，读写下标位置
-        System.out.println("limit: " + buffer.limit()); //,1024，能读写的下标最大位置(每次执行flip会在position和capacity间切换)
+        System.out.println("limit: " + buffer.limit()); // 1024，能读写的下标最大位置(每次执行flip会在position和capacity间切换)
         System.out.println("capacity: " + buffer.capacity()); // 1024，容量
         System.out.println("mark: " + buffer); // java.nio.DirectByteBuffer[pos=0 lim=1024 cap=1024] // 允许从0位置开始写入到1024位置
 

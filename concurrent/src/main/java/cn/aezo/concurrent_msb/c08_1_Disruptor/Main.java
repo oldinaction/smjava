@@ -7,6 +7,12 @@ import com.lmax.disruptor.util.DaemonThreadFactory;
 import java.nio.ByteBuffer;
 
 /**
+ * 打印：
+ * 0
+ * 1
+ * 2
+ * ...
+ *
  * @author smalle
  * @date 2020-05-31 11:53
  */
@@ -22,23 +28,21 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         // Specify the size of the ring buffer, must be power of 2. (长度为2的n次幂，利于二进制计算)
         int bufferSize = 1024;
-
         // 使用Lambda传入EventFactory，也可手动实现EventFactory接口再传入
         Disruptor<MyEvent> disruptor = new Disruptor<>(MyEvent::new, bufferSize, DaemonThreadFactory.INSTANCE);
-
         disruptor.handleEventsWith(Main::handleEvent);
-
         disruptor.start();
 
+        // 获取环形队列并往其中放值(产生事件)
         // Get the ring buffer from the Disruptor to be used for publishing.
         RingBuffer<MyEvent> ringBuffer = disruptor.getRingBuffer();
-
         ByteBuffer bb = ByteBuffer.allocate(8);
-        // 不推荐。原因是这是一个capturing lambda, 每一个lambda会产生一个对象来承接bb，这样会产生大量的小对象
-        // ringBuffer.publishEvent((event, sequence) -> event.set(bb.getLong(0)));
-        // 推荐
         for (long l = 0; true; l++) {
             bb.putLong(0, l);
+            // 不推荐。原因是这是一个capturing lambda, 每一个lambda会产生一个对象来承接bb，这样会产生大量的小对象
+            // ringBuffer.publishEvent((event, sequence) -> event.set(bb.getLong(0)));
+
+            // 推荐
             ringBuffer.publishEvent(Main::translate, bb);
             Thread.sleep(1000);
         }

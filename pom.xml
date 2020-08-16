@@ -17,6 +17,7 @@
         <module>demo</module>
         <module>jvm</module>
         <module>zookeeper</module>
+        <module>algorithms</module>
         <!--<module>lucene</module>-->
     </modules>
 
