@@ -1,41 +1,43 @@
 package gui;
 
-/*	·¶ÀıÃû³Æ£ºÄäÃûÀàÔÚÊÂ¼ş´¦ÀíÖĞµÄÊ¹ÓÃ
- * 	Ô´ÎÄ¼şÃû³Æ£ºTestAnonymous2.java
- *	Òª  µã£º
- *		1. ÄäÃûÀàÖ»ÄÜÊÇÄÚ²¿Àà
- *		2. ÄäÃûÀàµÄÁ½ÖÖ´´½¨·½Ê½----¼È¿ÉÒÔ¼Ì³Ğ¸¸Àà¡¢Ò²¿ÉÒÔµ¥ÖØÊµÏÖ½Ó¿Ú
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ê¹ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestAnonymous2.java
+ *	Òª  ï¿½ã£º
+ *		1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
+ *		2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½Ê½----ï¿½È¿ï¿½ï¿½Ô¼Ì³Ğ¸ï¿½ï¿½à¡¢Ò²ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½Êµï¿½Ö½Ó¿ï¿½
  */
 
 import java.awt.*;
 import java.awt.event.*;
 
 public class TestAnonymous2 {
-	Frame f = new Frame("Test");
-	TextField tf = new TextField(10);
-	Button b1 = new Button("Start");
-	
-	public TestAnonymous2(){
-		f.add(b1,"North");
-		f.add(tf,"South");
-		
-		b1.addActionListener(new ActionListener(){
-			private int i;
-			public void actionPerformed(ActionEvent e) {
-			 	tf.setText(e.getActionCommand() + ++i);    
-			}
-		});
-		
-		f.addWindowListener(new WindowAdapter(){
-			public void windowClosing(WindowEvent e){
-				System.exit(0);	
-			}	
-		});
-		
-		f.pack();        	
-		f.setVisible(true);		
-	}	
-	public static void main(String args[]) {
-		new TestAnonymous2();
-	}
+    Frame f = new Frame("Test");
+    TextField tf = new TextField(10);
+    Button b1 = new Button("Start");
+
+    public TestAnonymous2() {
+        f.add(b1, "North");
+        f.add(tf, "South");
+
+        b1.addActionListener(new ActionListener() {
+            private int i;
+
+            public void actionPerformed(ActionEvent e) {
+                tf.setText(e.getActionCommand() + ++i);
+            }
+        });
+
+        f.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        f.pack();
+        f.setVisible(true);
+    }
+
+    public static void main(String args[]) {
+        new TestAnonymous2();
+    }
 }

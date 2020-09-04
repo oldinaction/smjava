@@ -1,17 +1,18 @@
 package theNinthThread;
 
 public class Timer {
-	private static int num = 0;
-	//Èç¹û´ËÊ±ÎÞsynchronized¹Ø¼ü×Ö£¬ÔòÊä³öt2ÄãÊÇµÚ2¸öµ÷ÓÃTimer2µÄÏß³Ì   t1ÄãÊÇµÚ2¸öµ÷ÓÃTimer2µÄÏß³Ì (t1Ö´ÐÐÊ±±»t2ÖÐ¶ÏÁË£¬t2Ö´ÐÐÍêt1ÔÙ½Ó×ÅÖ´ÐÐ)
-	public synchronized void add(String name){
-		num++;
-		try {
-			Thread.sleep(1);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println(name + "ÄãÊÇµÚ" + num + "¸öµ÷ÓÃTimer2µÄÏß³Ì");
-	}
+    private static int num = 0;
+
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½synchronizedï¿½Ø¼ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½t2ï¿½ï¿½ï¿½Çµï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Timer2ï¿½ï¿½ï¿½ß³ï¿½   t1ï¿½ï¿½ï¿½Çµï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Timer2ï¿½ï¿½ï¿½ß³ï¿½ (t1Ö´ï¿½ï¿½Ê±ï¿½ï¿½t2ï¿½Ð¶ï¿½ï¿½Ë£ï¿½t2Ö´ï¿½ï¿½ï¿½ï¿½t1ï¿½Ù½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½)
+    public synchronized void add(String name) {
+        num++;
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        System.out.println(name + "ï¿½ï¿½ï¿½Çµï¿½" + num + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Timer2ï¿½ï¿½ï¿½ß³ï¿½");
+    }
 
 }

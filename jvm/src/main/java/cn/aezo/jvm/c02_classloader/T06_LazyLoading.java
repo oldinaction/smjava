@@ -13,8 +13,8 @@ public class T06_LazyLoading {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        // P p; // 无打印 ==> 未初始化
-        // X x = new X(); // 打印P ==> 初始化了
+        // P p; // 无打印 ==> 未初始化P
+        // X x = new X(); // 打印P ==> 初始化了P
         // System.out.println(P.i); // 打印8 ==> 未初始化
         // System.out.println(P.j); // 打印P、9 ==> 初始化了
         // Class.forName("cn.aezo.jvm.c02_classloader.T06_LazyInitializing$P"); // 打印P ==> 初始化了

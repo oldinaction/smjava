@@ -1,25 +1,25 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºPanelÓ¦ÓÃ¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestFrameWithPanel.java
- *	Òª  µã£º
- *		1. Panel×é¼þµÄÐÔÖÊ
- *		2. ÈÝÆ÷ºÍ×é¼þµÄ¸ÅÄî
- *		3. setSize£¬setBackground£¬setLayout£¬add£¬setVisibleµÈ³£ÓÃ·½·¨
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½PanelÓ¦ï¿½Ã¾ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestFrameWithPanel.java
+ *	Òª  ï¿½ã£º
+ *		1. Panelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+ *		3. setSizeï¿½ï¿½setBackgroundï¿½ï¿½setLayoutï¿½ï¿½addï¿½ï¿½setVisibleï¿½È³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
 
 public class TestFrameWithPanel {
-	public static void main(String args[]) {
-		Frame f = new Frame("MyTest Frame");
-		Panel pan = new Panel();
-		f.setSize(200,200);
-		f.setBackground(Color.blue);
-		f.setLayout(null); // È¡ÏûÄ¬ÈÏ²¼¾Ö¹ÜÀíÆ÷
-		pan.setSize(100,100);
-		pan.setBackground(Color.green);
-		f.add(pan);
-		f.setVisible(true);
-	}
+    public static void main(String args[]) {
+        Frame f = new Frame("MyTest Frame");
+        Panel pan = new Panel();
+        f.setSize(200, 200);
+        f.setBackground(Color.blue);
+        f.setLayout(null); // È¡ï¿½ï¿½Ä¬ï¿½Ï²ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½
+        pan.setSize(100, 100);
+        pan.setBackground(Color.green);
+        f.add(pan);
+        f.setVisible(true);
+    }
 }

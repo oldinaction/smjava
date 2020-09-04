@@ -3,22 +3,22 @@ package theEighthChapter;
 import java.io.*;
 
 public class TestDataStream {
-	public static void main(String[] args){
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();  //´´½¨Ò»¸öÊä³ö×Ö½Ú½ÚµãÁ÷
-		DataOutputStream dos = new DataOutputStream(baos);  //Ì××°Ò»¸öÊý¾ÝÁ÷
-		try {
-			dos.writeDouble(Math.random());  //½«¶«Î÷´Ó³ÌÐò Ð´³ö µ½ÄÚ´æ
-			dos.writeBoolean(true);
-			ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-			System.out.println(bais.available());
-			DataInputStream dis = new DataInputStream(bais);
-			System.out.println(dis.readDouble());  //½«¶«Î÷´ÓÄÚ´æ ¶ÁÈë µ½³ÌÐò£¬ÔÚÓÃprint´òÓ¡ÔÚ¿ØÖÆÌ¨
-			System.out.println(dis.readBoolean());  //ÏÈÐ´µÄÏÈ¶Á£¬¹ÊreadDouble()ÔÚreadBoolean()µÄÇ°Ãæ
-			dos.close();
-			dis.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();  //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú½Úµï¿½ï¿½ï¿½
+        DataOutputStream dos = new DataOutputStream(baos);  //ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        try {
+            dos.writeDouble(Math.random());  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ Ð´ï¿½ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½
+            dos.writeBoolean(true);
+            ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
+            System.out.println(bais.available());
+            DataInputStream dis = new DataInputStream(bais);
+            System.out.println(dis.readDouble());  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½printï¿½ï¿½Ó¡ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨
+            System.out.println(dis.readBoolean());  //ï¿½ï¿½Ð´ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½ï¿½ï¿½readDouble()ï¿½ï¿½readBoolean()ï¿½ï¿½Ç°ï¿½ï¿½
+            dos.close();
+            dis.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }

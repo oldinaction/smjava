@@ -3,25 +3,26 @@ package theSixthChapter;
 import java.io.File;
 
 public class ListFile {
-	public static void main(String[] args){
-		File f = new File("h:/demo");
-		System.out.println(f.getName());
-		tree(f, 1);
-	}
-	//level´ú±íµÄÊÇ×ÓÄ¿Â¼µÄ²ãÊý£¬¼´ÒªËõ½øµÄ¸ñÊý
-	private static void tree(File f, int level){
-		String preString = "";
-		for(int i=0; i<level; i++){
-			preString += "    ";
-		}  //ÒòÎªÊÇµÝ¹é£¬ËùÒÔÃ¿´Îµ÷ÓÃtree,ÄÇÃ´level¾Í·¢ÉúÁË¸Ä±ä£¬´ËÊ±preStringµÃµ½µÄÊÇÑ­»·ÍêÁËµÄÒ»¸öÖµ£¬¼´µÚlevel²ãÒªËõ½øµÄ¸ñÊý
-		
-		File[] childFile = f.listFiles();  //listFiles()·µ»ØÒ»¸ö³éÏóÂ·¾¶ÃûÊý×é£¬ÕâÐ©Â·¾¶Ãû±íÊ¾´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖÐµÄÎÄ¼þ¡£¼´Ö¸·µ»ØËûµÄ×ÓÄ¿Â¼
-		for(int i=0; i<childFile.length; i++){
-			System.out.println(preString + childFile[i].getName());  //getName()·µ»ØÓÉ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼þ»òÄ¿Â¼µÄÃû³Æ¡£
-			if(childFile[i].isDirectory()){
-				tree(childFile[i], level + 1); //µÝ¹éµÄÔËÓÃ£¨ÔÚÒ»¸öº¯ÊýÀïÃæµ÷ÓÃ´Ëº¯Êý£©
-			}  //isDirectory()²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼þÊÇ·ñÊÇÒ»¸öÄ¿Â¼¡£
-		}
-	}
+    public static void main(String[] args) {
+        File f = new File("h:/demo");
+        System.out.println(f.getName());
+        tree(f, 1);
+    }
+
+    //levelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+    private static void tree(File f, int level) {
+        String preString = "";
+        for (int i = 0; i < level; i++) {
+            preString += "    ";
+        }  //ï¿½ï¿½Îªï¿½ÇµÝ¹é£¬ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Îµï¿½ï¿½ï¿½tree,ï¿½ï¿½Ã´levelï¿½Í·ï¿½ï¿½ï¿½ï¿½Ë¸Ä±ä£¬ï¿½ï¿½Ê±preStringï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½levelï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
+
+        File[] childFile = f.listFiles();  //listFiles()ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ð©Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ë³ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ä¿Â¼ï¿½Ðµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
+        for (int i = 0; i < childFile.length; i++) {
+            System.out.println(preString + childFile[i].getName());  //getName()ï¿½ï¿½ï¿½ï¿½ï¿½É´Ë³ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
+            if (childFile[i].isDirectory()) {
+                tree(childFile[i], level + 1); //ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´Ëºï¿½ï¿½ï¿½ï¿½ï¿½
+            }  //isDirectory()ï¿½ï¿½ï¿½Ô´Ë³ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+        }
+    }
 
 }

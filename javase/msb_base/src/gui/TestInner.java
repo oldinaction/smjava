@@ -1,52 +1,60 @@
 package gui;
 
-/*	·¶ÀıÃû³Æ£ºÄÚ²¿ÀàÔÚÊÂ¼ş´¦ÀíÖĞµÄÊ¹ÓÃ
- * 	Ô´ÎÄ¼şÃû³Æ£ºTestInner.java
- *	Òª  µã£º
- *  	1. ÄÚ²¿ÀàµÄĞÔÖÊºÍÓÃ·¨
- *		2. ½«¼àÌıÆ÷Àà¶¨ÒåÎªÆÕÍ¨ÄÚ²¿ÀàµÄºÃ´¦----
- *		   ÄÚ²¿ÀàÖĞ¿ÉÖ±½Ó·ÃÎÊÍâ²ãÀàµÄÊôĞÔºÍ·½·¨
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ê¹ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestInner.java
+ *	Òª  ï¿½ã£º
+ *  	1. ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êºï¿½ï¿½Ã·ï¿½
+ *		2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¶¨ï¿½ï¿½Îªï¿½ï¿½Í¨ï¿½Ú²ï¿½ï¿½ï¿½ÄºÃ´ï¿½----
+ *		   ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ğ¿ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÔºÍ·ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
 import java.awt.event.*;
 
 public class TestInner {
-	Frame f = new Frame("ÄÚ²¿Àà²âÊÔ");
-	TextField tf = new TextField(30);
-	
-	public TestInner(){
-		f.add(new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯"), "North");
-		f.add(tf, "South");
-		f.setBackground(new Color(120,175,175));
-		f.addMouseMotionListener(new InnerMonitor());
-		f.addMouseListener(new InnerMonitor());
-		f.setSize(300, 200);	    	
-		f.setVisible(true);
-	}
-	
-	public static void main(String args[]) {   	
-		TestInner t = new TestInner();
-	}
-	
-	private class InnerMonitor implements MouseMotionListener,MouseListener {
-		public void mouseDragged(MouseEvent e) {
-		    String s = "Êó±êÍÏ¶¯µ½Î»ÖÃ£¨" + e.getX() + "," + e.getY() + ")";
-		    tf.setText(s);
-		}
-		
-		public void mouseEntered(MouseEvent e) {
-		    String s = "Êó±êÒÑ½øÈë´°Ìå";
-		    tf.setText(s);
-		}
-		
-		public void mouseExited(MouseEvent e) {
-		    String s = "Êó±êÒÑÒÆ³ö´°Ìå";
-		    tf.setText(s);
-		}
-		public void mouseMoved(MouseEvent e) { }
-		public void mousePressed(MouseEvent e) { }
-		public void mouseClicked(MouseEvent e) { }
-		public void mouseReleased(MouseEvent e) { }
-	}//end of Inner class
+    Frame f = new Frame("ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    TextField tf = new TextField(30);
+
+    public TestInner() {
+        f.add(new Label("ï¿½ë°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½"), "North");
+        f.add(tf, "South");
+        f.setBackground(new Color(120, 175, 175));
+        f.addMouseMotionListener(new InnerMonitor());
+        f.addMouseListener(new InnerMonitor());
+        f.setSize(300, 200);
+        f.setVisible(true);
+    }
+
+    public static void main(String args[]) {
+        TestInner t = new TestInner();
+    }
+
+    private class InnerMonitor implements MouseMotionListener, MouseListener {
+        public void mouseDragged(MouseEvent e) {
+            String s = "ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½" + e.getX() + "," + e.getY() + ")";
+            tf.setText(s);
+        }
+
+        public void mouseEntered(MouseEvent e) {
+            String s = "ï¿½ï¿½ï¿½ï¿½Ñ½ï¿½ï¿½ë´°ï¿½ï¿½";
+            tf.setText(s);
+        }
+
+        public void mouseExited(MouseEvent e) {
+            String s = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½";
+            tf.setText(s);
+        }
+
+        public void mouseMoved(MouseEvent e) {
+        }
+
+        public void mousePressed(MouseEvent e) {
+        }
+
+        public void mouseClicked(MouseEvent e) {
+        }
+
+        public void mouseReleased(MouseEvent e) {
+        }
+    }//end of Inner class
 }//end of Outer class

@@ -3,12 +3,12 @@ package theSeventhChapter;
 import java.util.*;
 
 public class TestCollection {
-	public static void main(String[] args){
-		Collection c = new ArrayList();  //ArrayList是Collection的子类。可以放入不同类型的对象
-		c.add("hello");
-		c.add(new Integer(100));
-		System.out.println(c.size());
-		System.out.println(c);
-	}
+    public static void main(String[] args) {
+        Collection c = new ArrayList();  //ArrayList锟斤拷Collection锟斤拷锟斤拷锟洁。锟斤拷锟皆凤拷锟诫不同锟斤拷锟酵的讹拷锟斤拷
+        c.add("hello");
+        c.add(new Integer(100));
+        System.out.println(c.size());
+        System.out.println(c);
+    }
 
 }

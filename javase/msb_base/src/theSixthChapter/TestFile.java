@@ -2,25 +2,26 @@ package theSixthChapter;
 
 import java.io.File;
 import java.io.IOException;
-//Èç¹û´ËjavaÎÄ¼şÔÚÒ»¸ö°üÖĞ£¬ÔòÏÈÕÒµ½Õâ¸ö°üµÄ¶¥¼¶°üÄ¿Â¼£¬ÔÙÔÚÕâ¸ö¶¥¼¶°üÄ¿Â¼µÄ¸¸Ä¿Â¼ÏÂ´´½¨³éÏóÂ·¾¶£¬¶ø²»ÊÇÔÚjavaÎÄ¼şµÄ¸¸Ä¿Â¼ÏÂ´´½¨
-//Èç¹ûÕâ¸öÎÄ¼ş²»´æÔÚ£¬µÚÒ»´ÎÔËĞĞ¿ØÖÆÌ¨ÎŞ·´Ó¦£¬µÚ¶ş´ÎÔòÓĞÊä³ö
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½Ä¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½Ä¸ï¿½Ä¿Â¼ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½Ä¼ï¿½ï¿½Ä¸ï¿½Ä¿Â¼ï¿½Â´ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½Ì¨ï¿½Ş·ï¿½Ó¦ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class TestFile {
-	public static void main(String[] args){
-		String separator = File.separator;  //²éAPIÎÄµµseparatorÊÇFileÀàµÄÒ»¸öfinalÊôĞÔ£¬Ö¸·Ö¸ô·û£¨ÀıÈç£º'\'£©
-		String filename = "myFile.txt";
-		String directory = "myFile1" + separator + "myFile2";
-		File f = new File(directory, filename); //File(String parent, String child) ¸ù¾İ parent Â·¾¶Ãû×Ö·û´®ºÍ child Â·¾¶Ãû×Ö·û´®´´½¨Ò»¸öĞÂ File ÊµÀı¡£
-	
-		if(f.exists()){
-			System.out.println("ÎÄ¼şÃû" + f.getAbsolutePath()); //getAbsolutePath()·µ»Ø´Ë³éÏóÂ·¾¶ÃûµÄ¾ø¶ÔÂ·¾¶Ãû×Ö·û´®¡£(¼´ÎÄ¼şÔÚÓ²ÅÌµÄÄÇ¸öÎ»ÖÃ)
-			System.out.println("ÎÄ¼ş´óĞ¡" + f.length());
-		}else{
-			f.getParentFile().mkdirs(); //mkdirs()´´½¨´Ë³éÏóÂ·¾¶ÃûÖ¸¶¨µÄÄ¿Â¼£¬°üÀ¨ËùÓĞ±ØĞèµ«²»´æÔÚµÄ¸¸Ä¿Â¼¡£ÒòÎªmyFile1ÖĞÓĞmyFile2£¬ËùÒÔÊÇÒ»ÏµÁĞµÄ
-			try{
-				f.createNewFile(); //createNewFile()Èç¹ûÖ¸¶¨µÄÎÄ¼ş²»´æÔÚ²¢³É¹¦µØ´´½¨£¬Ôò·µ»Ø true£»Èç¹ûÖ¸¶¨µÄÎÄ¼şÒÑ¾­´æÔÚ£¬Ôò·µ»Ø false 
-			}catch(IOException e){
-				e.printStackTrace();
-			}
-		}	
-	}
+    public static void main(String[] args) {
+        String separator = File.separator;  //ï¿½ï¿½APIï¿½Äµï¿½separatorï¿½ï¿½Fileï¿½ï¿½ï¿½Ò»ï¿½ï¿½finalï¿½ï¿½ï¿½Ô£ï¿½Ö¸ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç£º'\'ï¿½ï¿½
+        String filename = "myFile.txt";
+        String directory = "myFile1" + separator + "myFile2";
+        File f = new File(directory, filename); //File(String parent, String child) ï¿½ï¿½ï¿½ï¿½ parent Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ child Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ File Êµï¿½ï¿½ï¿½ï¿½
+
+        if (f.exists()) {
+            System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½" + f.getAbsolutePath()); //getAbsolutePath()ï¿½ï¿½ï¿½Ø´Ë³ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ó²ï¿½Ìµï¿½ï¿½Ç¸ï¿½Î»ï¿½ï¿½)
+            System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½Ğ¡" + f.length());
+        } else {
+            f.getParentFile().mkdirs(); //mkdirs()ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½èµ«ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ¸ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ÎªmyFile1ï¿½ï¿½ï¿½ï¿½myFile2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ïµï¿½Ğµï¿½
+            try {
+                f.createNewFile(); //createNewFile()ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½É¹ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½ trueï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ò·µ»ï¿½ false
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

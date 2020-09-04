@@ -13,12 +13,13 @@ public class MyTrayIcon extends TrayIcon {
 
     /**
      * 构造方法，创建带指定图像、工具提示和弹出菜单的 MyTrayIcon
+     *
      * @param image 显示在系统托盘的图标
-     * @param ps	鼠标移动到系统托盘图标上的提示信息
-     * @param jMenu	弹出菜单
+     * @param ps    鼠标移动到系统托盘图标上的提示信息
+     * @param jMenu 弹出菜单
      */
     public MyTrayIcon(Image image, String ps, final JPopupMenu jMenu) {
-        super(image,ps);
+        super(image, ps);
 
         //初始化JDialog
         dialog = new JDialog();
@@ -35,11 +36,11 @@ public class MyTrayIcon extends TrayIcon {
             public void mouseReleased(MouseEvent e) {
 
                 //鼠标右键在组件上释放时调用，显示弹出菜单
-                if (e.getButton()==MouseEvent.BUTTON3 && jMenu != null) {
+                if (e.getButton() == MouseEvent.BUTTON3 && jMenu != null) {
 
                     //设置dialog的显示位置
                     Dimension size = jMenu.getPreferredSize();
-                    dialog.setLocation(e.getX()-size.width-3, e.getY() - size.height-3);
+                    dialog.setLocation(e.getX() - size.width - 3, e.getY() - size.height - 3);
                     dialog.setVisible(true);
 
                     //显示弹出菜单Jmenu
@@ -52,7 +53,8 @@ public class MyTrayIcon extends TrayIcon {
         jMenu.addPopupMenuListener(new PopupMenuListener() {
 
             @Override
-            public void popupMenuWillBecomeVisible(PopupMenuEvent e) {}
+            public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
+            }
 
             @Override
             public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {

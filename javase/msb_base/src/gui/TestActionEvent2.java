@@ -1,34 +1,35 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºJavaÊÂ¼þ´¦Àí¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestActionEvent2.java
- *	Òª  µã£º
- *  	1. Ò»¸öÊÂ¼þÔ´×é¼þÉÏ¿ÉÒÔÍ¬Ê±×¢²á¶à¸ö¼àÌýÆ÷
- *		2. Ò»¸ö¼àÌýÆ÷¶ÔÏó¿ÉÒÔÍ¬Ê±×¢²áµ½¶à¸öÊÂ¼þÔ´×é¼þÉÏ
- *		3. ÊÂ¼þÔ´µÄÐÅÏ¢¿ÉÒÔËæËüËù´¥·¢µÄÊÂ¼þ×Ô¶¯´«µÝµ½ËùÓÐ×¢²á¹ýµÄ¼àÌýÆ÷
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Javaï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestActionEvent2.java
+ *	Òª  ï¿½ã£º
+ *  	1. Ò»ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½Í¬Ê±×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		2. Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±×¢ï¿½áµ½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		3. ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
 import java.awt.event.*;
+
 public class TestActionEvent2 {
     public static void main(String args[]) {
-			Frame f = new Frame("Test");
-			Button b1 = new Button("Start");
-			Button b2 = new Button("Stop");
-			Monitor2 bh = new Monitor2();
-			b1.addActionListener(bh);       
-			b2.addActionListener(bh);
-			b2.setActionCommand("game over");
-			f.add(b1,"North");       
-			f.add(b2,"Center");	
-			f.pack();        		
-			f.setVisible(true);
+        Frame f = new Frame("Test");
+        Button b1 = new Button("Start");
+        Button b2 = new Button("Stop");
+        Monitor2 bh = new Monitor2();
+        b1.addActionListener(bh);
+        b2.addActionListener(bh);
+        b2.setActionCommand("game over");
+        f.add(b1, "North");
+        f.add(b2, "Center");
+        f.pack();
+        f.setVisible(true);
     }
 }
 
 class Monitor2 implements ActionListener {
     public void actionPerformed(ActionEvent e) {
-    	System.out.println("a button has been pressed," + 
-    	"the relative info is:\n " + e.getActionCommand());    
-	}
+        System.out.println("a button has been pressed," +
+                "the relative info is:\n " + e.getActionCommand());
+    }
 }

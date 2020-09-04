@@ -3,14 +3,25 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/netty" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/javase/jdk9/jdk9_module1" />
+        <option name="gradleHome" value="D:/software/gradle-4.10.2" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/netty" />
+            <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/javase/jdk9/jdk9_module2" />
+        <option name="gradleHome" value="D:/software/gradle-4.10.2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module2" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

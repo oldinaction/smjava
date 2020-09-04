@@ -1,15 +1,15 @@
 package theThirdChapter;
 
 public class TestEquals {
-	public static void main(String args[]){
-	Cat c1 = new Cat(1, 2, 3);
-	Cat c2 = new Cat(1, 2, 3);
-	System.out.println(c1 == c2); //c1 == c2比较的是c1 和 c2的引用是否相同，每new一个对象，引用都是不同的
-	System.out.println(c1.equals(c2)); //因为Cat类中重写了Object类中的equals方法，重写后，比较的是c1 和 c2的内容是否相同；如果没重写，则效果c1 == c2比较的是c1 和 c2的引用是否相同c1 == c2一样比较的是c1 和 c2的引用是否相同
-	
-	String s1 = new String("hello");
-	String s2 = new String("hello");
-	System.out.println(s1 == s2);
-	System.out.println(s1.equals(s2)); //最终返回时true，因为String类里面也重写了equals方法，参见API文档中的String类
-	}
+    public static void main(String args[]) {
+        Cat c1 = new Cat(1, 2, 3);
+        Cat c2 = new Cat(1, 2, 3);
+        System.out.println(c1 == c2); //c1 == c2锟饺较碉拷锟斤拷c1 锟斤拷 c2锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷同锟斤拷每new一锟斤拷锟斤拷锟斤拷锟斤拷锟矫讹拷锟角诧拷同锟斤拷
+        System.out.println(c1.equals(c2)); //锟斤拷为Cat锟斤拷锟斤拷锟斤拷写锟斤拷Object锟斤拷锟叫碉拷equals锟斤拷锟斤拷锟斤拷锟斤拷写锟襟，比较碉拷锟斤拷c1 锟斤拷 c2锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷同锟斤拷锟斤拷锟矫伙拷锟叫达拷锟斤拷锟叫э拷锟絚1 == c2锟饺较碉拷锟斤拷c1 锟斤拷 c2锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷同c1 == c2一锟斤拷锟饺较碉拷锟斤拷c1 锟斤拷 c2锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷同
+
+        String s1 = new String("hello");
+        String s2 = new String("hello");
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2)); //锟斤拷锟秸凤拷锟斤拷时true锟斤拷锟斤拷为String锟斤拷锟斤拷锟斤拷也锟斤拷写锟斤拷equals锟斤拷锟斤拷锟斤拷锟轿硷拷API锟侥碉拷锟叫碉拷String锟斤拷
+    }
 }

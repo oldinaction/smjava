@@ -9,7 +9,10 @@ import java.net.Socket;
  */
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket s = new Socket("127.0.0.1",8888);
+        Socket s = new Socket("127.0.0.1", 8888);
+        // 一般不需要绑定本地端口，底层会自动随机使用一个端口
+        // s = new Socket("api.weixin.qq.com", 443, InetAddress.getByName("192.168.17.237"), 9021); // 绑定本地端口
+        // s.bind(new InetSocketAddress(9022)); // 绑定本地端口
         s.getOutputStream().write("hello bio...".getBytes());
         s.getOutputStream().flush();
         // s.getOutputStream().close();

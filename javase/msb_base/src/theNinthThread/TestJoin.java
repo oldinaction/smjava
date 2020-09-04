@@ -1,18 +1,18 @@
 package theNinthThread;
 
 public class TestJoin {
-	public static void main(String[] args){
-		MyThread myThread = new MyThread("oldinaction");
-		myThread.start();  //ÏÈÒªÈÃÏß³Ì×¼±¸¾ÍĞ÷
-		try {
-			myThread.join();  //µÈ´ı¸ÃÏß³ÌÖÕÖ¹
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		for(int i=0; i<3; i++){
-			System.out.println("i am main thread");
-		}
-	}
+    public static void main(String[] args) {
+        MyThread myThread = new MyThread("oldinaction");
+        myThread.start();  //ï¿½ï¿½Òªï¿½ï¿½ï¿½ß³ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        try {
+            myThread.join();  //ï¿½È´ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½Ö¹
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        for (int i = 0; i < 3; i++) {
+            System.out.println("i am main thread");
+        }
+    }
 
 }

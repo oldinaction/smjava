@@ -1,13 +1,14 @@
 package theThirdChapter;
 
 public class Animal {
-	String name;
-	Animal(String name){
-		this.name = name;
-	}
-	
-	public void enjoy(){
-		System.out.println("½ÐÉù¡£¡£¡£¡£");
-	}
+    String name;
+
+    Animal(String name) {
+        this.name = name;
+    }
+
+    public void enjoy() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 
 }

@@ -12,7 +12,7 @@ public class StartAnimation extends JWindow implements Runnable {
     Thread splashThread; // 进度条更新线程
     JProgressBar progress; // 进度条
 
-    public StartAnimation () {
+    public StartAnimation() {
         init();
     }
 

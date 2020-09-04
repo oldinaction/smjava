@@ -1,21 +1,23 @@
 package theSixthChapter;
 
 public class TestEnum {
-	public enum MyColor { red, green, blue };  //¶¨ÒåÃ¶¾ÙÀàÐÍ£¬enum¹Ø¼ü×ÖºóÃæµÄÀàÐÍÃûÊÇ´óÐ´¿ªÍ·£¬ÓÃ´óÀ¨ºÅ£¬ºóÃæÓÐ·ÖºÅ
-	
-	public static void main(String[] args){
-		MyColor m = MyColor.red;
-		//×¢ÒâswitchÓï¾ä£¬caseºóÃæÓÐ£º
-		switch(m){
-		case red:
-			System.out.println("red");
-			break;
-		case green:
-			System.out.println("red");
-			break;
-		default:
-			System.out.println("default");
-		}
-		System.out.println(m);	
-	}
+    public enum MyColor {red, green, blue}
+
+    ;  //ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½enumï¿½Ø¼ï¿½ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½Ð´ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·Öºï¿½
+
+    public static void main(String[] args) {
+        MyColor m = MyColor.red;
+        //×¢ï¿½ï¿½switchï¿½ï¿½ä£¬caseï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½
+        switch (m) {
+            case red:
+                System.out.println("red");
+                break;
+            case green:
+                System.out.println("red");
+                break;
+            default:
+                System.out.println("default");
+        }
+        System.out.println(m);
+    }
 }

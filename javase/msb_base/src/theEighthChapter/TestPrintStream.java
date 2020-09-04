@@ -3,71 +3,71 @@ package theEighthChapter;
 import java.io.*;
 import java.util.Date;
 
-//ÏÈÖ´ÐÐµÚ¶þ¸öÀý×Ó£¨´ËÊ±¼üÅÌÊäÈëµÄÃ»ÓÐÔÚµÚÈý¸öÀý×ÓÖÐ´òÓ¡£¬¼üÅÌµÄÊäÈë´«¸øÁËargs[0]£¬ËùÒÔÀýÈý½ÓÊÕ²»µ½£©£¬ÔÙÖ´ÐÐµÚÈý¸öÀý×Ó£¬±ØÐë×îºóÊäÈëÒ»¸öexit³ÌÐò²Å»á´ÓÀýÈýµÄ´úÂëÖÐÌø³ö£¬·ñÔòÀýÒ»ÓÀÔ¶²»Ö´ÐÐ
+//ï¿½ï¿½Ö´ï¿½ÐµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ë´«ï¿½ï¿½ï¿½ï¿½args[0]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½exitï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô¶ï¿½ï¿½Ö´ï¿½ï¿½
 
 public class TestPrintStream {
-	//µÚ¶þ¸öÀý×ÓµÄlist·½·¨£¬f´«µÄÊÇÎÄ¼þÂ·¾¶µÄ×Ö·û´®£¬p´«µÄÊÇSystem.out£¨±ê×¼Êä³öÁ÷£¬Êä³öµ½DOS½çÃæ£©
-	public static void list(String f, PrintStream p){
-		try{
-			BufferedReader br = new BufferedReader(new FileReader(f));  //»º³åÁ÷²ÅÓÐreadLine()·½·¨
-			String s = null;
-			while((s = br.readLine()) != null){
-				p.println(s);  //PrintStreamÀïÃæÓÐÐí¶àprintlnºÍprint·½·¨£¬Ëû¼Ì³ÐÁËFilterOutputStreamÀà
-			}
-			br.close();
-		}catch (IOException e) {
-		// TODO Auto-generated catch block
-		p.println("ÎÞ·¨¶ÁÈ¡ÎÄ¼þ");
-		}
-	}
-	
-	public static void main(String[] args){
-		//µÚ¶þ¸öÀý×Ó£ºÔÚÃüÁîÐÐÊäÈëÒ»¸öÎÄ¼þÃû£¬°ÑËüÀïÃæµÄÄÚÈÝÈ«²¿´òÓ¡³öÀ´
-		String filename = args[0];  //»ñÈ¡ÃüÁîÐÐÖÐµÄ×Ö·û´®£¨Èç£ºC:\\Users\\Administrator\\Desktop/XX.txt£©£¬°ÑËû×÷Îª²ÎÊý´«¸ølist·½·¨
-		if(filename != null)  list(filename, System.out);
-		
-		//µÚÈý¸öÀý×Ó£ºÈÕÖ¾¼ÇÂ¼£¬Êä³ö¼üÅÌÉÏµÄÊäÈëºÍ´ËÊ±µÄÊ±¼ä¡££¿£¿£¿ÎªÊ²Ã´²»ÄÜÒ»Ö±ÊäÈëµ½ÎÄ¼þ£¿£¿£¿
-		String s = null;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		try{
-			FileWriter fw = new FileWriter("C:\\Users\\Administrator\\Desktop/TPS.txt", true);  //ÔÚÓ²ÅÌÖÐ´´½¨ÎÄ¼þ
-			PrintWriter log = new PrintWriter(fw);
-			s = br.readLine();
-			while(s  != null){
-				if(s.equalsIgnoreCase("exit")) break;
-				System.out.println(s.toUpperCase());
-			    log.println(s.toUpperCase());
-			    log.println(new Date());
-			    log.flush();
-			    log.close();
-			    s = br.readLine();
-			}	
-		}catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-		
-		//µÚÒ»¸öÀý×Ó£ºÔÚÒ»¸öÎÄ¼þÀïÃæ´òÓ¡0~60000µÄ×Ö·û
-		PrintStream ps = null;
-		try {
-			FileOutputStream fos = new FileOutputStream("C:\\Users\\Administrator\\Desktop/TPS.txt");  //ÉÏÃæÒÑ¾­´´½¨ÁË´ËÎÄ¼þ
-			ps = new PrintStream(fos);  //Ì××°PrintÁ÷
-			if(ps != null){
-				System.setOut(ps);  //ÖØÐÂ·ÖÅä¡°±ê×¼¡±Êä³öÁ÷£¬Ô­À´Êä³öÔÚDOS¿ØÖÆÌ¨ÖÐ£¬ÏÖÔÚÊä³öµ½psÁ÷ÖÐ
-			}
-			int num = 0;
-			for(char c=0; c<=60000; c++){
-				System.out.print(c + " ");  //ÉÏÃæÒÑ¾­setOutÁË£¬ËùÒÔ×îÖÕ´òÓ¡µ½ÎÄ¼þÀïÃæÁË
-				if(num++ >=100){
-					System.out.println();
-					num = 0;
-				}  //Ã¿100¸ö»»ÐÐ
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-	}
+    //ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½listï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½System.outï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DOSï¿½ï¿½ï¿½æ£©
+    public static void list(String f, PrintStream p) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(f));  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½readLine()ï¿½ï¿½ï¿½ï¿½
+            String s = null;
+            while ((s = br.readLine()) != null) {
+                p.println(s);  //PrintStreamï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½printlnï¿½ï¿½printï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ï¿½ï¿½FilterOutputStreamï¿½ï¿½
+            }
+            br.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            p.println("ï¿½Þ·ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½");
+        }
+    }
+
+    public static void main(String[] args) {
+        //ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
+        String filename = args[0];  //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç£ºC:\\Users\\Administrator\\Desktop/XX.txtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½listï¿½ï¿½ï¿½ï¿½
+        if (filename != null) list(filename, System.out);
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½Ê±ï¿½ï¿½Ê±ï¿½ä¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÊ²Ã´ï¿½ï¿½ï¿½ï¿½Ò»Ö±ï¿½ï¿½ï¿½ëµ½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        String s = null;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            FileWriter fw = new FileWriter("C:\\Users\\Administrator\\Desktop/TPS.txt", true);  //ï¿½ï¿½Ó²ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+            PrintWriter log = new PrintWriter(fw);
+            s = br.readLine();
+            while (s != null) {
+                if (s.equalsIgnoreCase("exit")) break;
+                System.out.println(s.toUpperCase());
+                log.println(s.toUpperCase());
+                log.println(new Date());
+                log.flush();
+                log.close();
+                s = br.readLine();
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        //ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡0~60000ï¿½ï¿½ï¿½Ö·ï¿½
+        PrintStream ps = null;
+        try {
+            FileOutputStream fos = new FileOutputStream("C:\\Users\\Administrator\\Desktop/TPS.txt");  //ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½Ä¼ï¿½
+            ps = new PrintStream(fos);  //ï¿½ï¿½×°Printï¿½ï¿½
+            if (ps != null) {
+                System.setOut(ps);  //ï¿½ï¿½ï¿½Â·ï¿½ï¿½ä¡°ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DOSï¿½ï¿½ï¿½ï¿½Ì¨ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½psï¿½ï¿½ï¿½ï¿½
+            }
+            int num = 0;
+            for (char c = 0; c <= 60000; c++) {
+                System.out.print(c + " ");  //ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½setOutï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ´ï¿½Ó¡ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                if (num++ >= 100) {
+                    System.out.println();
+                    num = 0;
+                }  //Ã¿100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }
 
 

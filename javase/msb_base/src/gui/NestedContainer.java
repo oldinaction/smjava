@@ -1,27 +1,29 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºÈÝÆ÷µÄÇ¶Ì×Ê¹ÓÃ¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºNestedContainer.java
- *	Òª  µã£ºÇ¶Ì×µÄ¶à¸öÈÝÆ÷¿ÉÒÔ·Ö±ð²ÉÓÃ²»Í¬µÄ²¼¾Ö¹ÜÀíÆ÷
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½Ê¹ï¿½Ã¾ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½NestedContainer.java
+ *	Òª  ï¿½ã£ºÇ¶ï¿½×µÄ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô·Ö±ï¿½ï¿½ï¿½Ã²ï¿½Í¬ï¿½Ä²ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
 
 public class NestedContainer {
-	public static void main(String args[]) {
-		Frame f = new Frame("NestedContainer");
-		Button b0 = new Button("display Area");
-		Panel p = new Panel();
-		p.setLayout(new GridLayout(2,2));
-		Button b1 = new Button("1");
-		Button b2 = new Button("2");
-		Button b3 = new Button("3");
-		Button b4 = new Button("4");
-		p.add(b1); 		p.add(b2);
-		p.add(b3);		p.add(b4);
-		f.add(b0, "North");
-		f.add(p, "Center");
-		f.pack(); 
-		f.setVisible(true);    
-	}
+    public static void main(String args[]) {
+        Frame f = new Frame("NestedContainer");
+        Button b0 = new Button("display Area");
+        Panel p = new Panel();
+        p.setLayout(new GridLayout(2, 2));
+        Button b1 = new Button("1");
+        Button b2 = new Button("2");
+        Button b3 = new Button("3");
+        Button b4 = new Button("4");
+        p.add(b1);
+        p.add(b2);
+        p.add(b3);
+        p.add(b4);
+        f.add(b0, "North");
+        f.add(p, "Center");
+        f.pack();
+        f.setVisible(true);
+    }
 }

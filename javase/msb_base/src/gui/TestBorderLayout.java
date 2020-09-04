@@ -1,29 +1,30 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºBorderLayoutÓ¦ÓÃ¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestBorderLayout.java
- *	Òª  µã£ºFlowLayout²¼¾Ö¹ÜÀíÆ÷µÄÐÔÖÊ¼°ÓÃ·¨
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½BorderLayoutÓ¦ï¿½Ã¾ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestBorderLayout.java
+ *	Òª  ï¿½ã£ºFlowLayoutï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ã·ï¿½
  */
 
 import java.awt.*;
+
 public class TestBorderLayout {
-	public static void main(String args[]) {
-		Frame f;
-		f = new Frame("Border Layout");
-		Button bn = new Button("BN");
-		Button bs = new Button("BS");
-		Button bw = new Button("BW");
-		Button be = new Button("BE");
-		Button bc = new Button("BC");
-		
-		f.add(bn, "North");
-		f.add(bs, "South");
-		f.add(bw, "West");
-		f.add(be, "East");
-		f.add(bc, "Center");
-		
-		
-		// Ò²¿ÉÊ¹ÓÃÏÂÊöÓï¾ä
+    public static void main(String args[]) {
+        Frame f;
+        f = new Frame("Border Layout");
+        Button bn = new Button("BN");
+        Button bs = new Button("BS");
+        Button bw = new Button("BW");
+        Button be = new Button("BE");
+        Button bc = new Button("BC");
+
+        f.add(bn, "North");
+        f.add(bs, "South");
+        f.add(bw, "West");
+        f.add(be, "East");
+        f.add(bc, "Center");
+
+
+        // Ò²ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		/*
 		f.add(bn, BorderLayout.NORTH);
 		f.add(bs, BorderLayout.SOUTH);
@@ -31,8 +32,8 @@ public class TestBorderLayout {
 		f.add(be, BorderLayout.EAST);
 		f.add(bc, BorderLayout.CENTER);
 		*/
-		
-		f.setSize(200,200);
-		f.setVisible(true);
-	}
+
+        f.setSize(200, 200);
+        f.setVisible(true);
+    }
 }

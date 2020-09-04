@@ -1,17 +1,17 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºFlowLayout ÓÃ·¨¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestFlowLayout.java
- *	Òª  µã£º
- *		1. ²¼¾Ö¹ÜÀíÆ÷µÄ¸ÅÄîºÍ×÷ÓÃ
- *   	2. FlowLayoutµÄÐÔÖÊ¼°ÓÃ·¨
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½FlowLayout ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestFlowLayout.java
+ *	Òª  ï¿½ã£º
+ *		1. ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *   	2. FlowLayoutï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ã·ï¿½
  */
 
 import java.awt.*;
 
 public class TestFlowLayout {
     public static void main(String args[]) {
-	 			Frame f = new Frame("Flow Layout");
+        Frame f = new Frame("Flow Layout");
         Button button1 = new Button("Ok");
         Button button2 = new Button("Open");
         Button button3 = new Button("Close");
@@ -19,7 +19,7 @@ public class TestFlowLayout {
         f.add(button1);
         f.add(button2);
         f.add(button3);
-        f.setSize(100,100);
+        f.setSize(100, 100);
         f.setVisible(true);
     }
 }

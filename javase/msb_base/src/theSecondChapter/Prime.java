@@ -1,23 +1,25 @@
 package theSecondChapter;
 
 public class Prime {
-	//Êä³ö101µ½200¼äµÄÖÊÊı
-	//´Ë´¦µÄcontinueºÍbreakµÄÔËÓÃ
-	
-	public static void main(String args[]){	
-		for(int n=101; n<=200; n+=2){
-			boolean f = true;  //²»ÄÜĞ´³É³ÉÔ±±äÁ¿
-			for(int i=2; i<n; i++){
-				if(n % i == 0){
-					f = false;
-					break;
-				}
-			}
-					
-		    if(!f){continue;}
-		    
-		    System.out.println(n);
-		     	
-		}	
-	}
+    //ï¿½ï¿½ï¿½101ï¿½ï¿½200ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    //ï¿½Ë´ï¿½ï¿½ï¿½continueï¿½ï¿½breakï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+    public static void main(String args[]) {
+        for (int n = 101; n <= 200; n += 2) {
+            boolean f = true;  //ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½É³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    f = false;
+                    break;
+                }
+            }
+
+            if (!f) {
+                continue;
+            }
+
+            System.out.println(n);
+
+        }
+    }
 }

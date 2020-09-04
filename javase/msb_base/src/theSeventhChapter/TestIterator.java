@@ -1,26 +1,27 @@
 package theSeventhChapter;
+
 import java.util.*;
 
 public class TestIterator {
-	public static void main(String[] args){
-		Collection c = new HashSet();  //¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
-		c.add(new Name("aaaa", "bbb"));
-		c.add(new Name("ccc", "dd"));
-		c.add(new Name("ee", "f"));
-		Iterator i = c.iterator();  //c.iterator()·µ»ØÔÚ´Ë collection µÄÔªËØÉÏ½øĞĞµü´úµÄµü´úÆ÷¡£
-		
-		while(i.hasNext()){
-			Name n = (Name) i.next();
-			System.out.print(n.getFirstName() + "  ");
-		}
-		System.out.println();
-		//×¢Òâ´ËforÑ­»·
-		for(i = c.iterator(); i.hasNext(); ){
-			Name n = (Name) i.next();  //±ØĞëÇ¿ÖÆ×ª»»
-			if(n.getFirstName().length() < 3){
-				i.remove();  //i.remove()´Óµü´úÆ÷Ö¸ÏòµÄ collection ÖĞÒÆ³ıµü´úÆ÷·µ»ØµÄ×îºóÒ»¸öÔªËØ
-			}
-		}
-		System.out.println(c);
-	}
+    public static void main(String[] args) {
+        Collection c = new HashSet();  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        c.add(new Name("aaaa", "bbb"));
+        c.add(new Name("ccc", "dd"));
+        c.add(new Name("ee", "f"));
+        Iterator i = c.iterator();  //c.iterator()ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ collection ï¿½ï¿½Ôªï¿½ï¿½ï¿½Ï½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+        while (i.hasNext()) {
+            Name n = (Name) i.next();
+            System.out.print(n.getFirstName() + "  ");
+        }
+        System.out.println();
+        //×¢ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½
+        for (i = c.iterator(); i.hasNext(); ) {
+            Name n = (Name) i.next();  //ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½×ªï¿½ï¿½
+            if (n.getFirstName().length() < 3) {
+                i.remove();  //i.remove()ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ collection ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+            }
+        }
+        System.out.println(c);
+    }
 }
