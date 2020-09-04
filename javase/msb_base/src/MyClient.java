@@ -4,15 +4,15 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class MyClient {
-	public static void main(String[] args){
-		Frame f = new Frame();
-		f.setSize(100,200);
-		f.setVisible(true);
-		try {
-			Socket s = new Socket("127.0.0.1",8888);
-			System.out.println("ÒÑ¾­Á¬½ÓÉÏ·þÎñÆ÷¶Ë");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        Frame f = new Frame();
+        f.setSize(100, 200);
+        f.setVisible(true);
+        try {
+            Socket s = new Socket("127.0.0.1", 8888);
+            System.out.println("ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

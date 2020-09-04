@@ -2,17 +2,17 @@ package theNinthThread;
 
 import java.util.Date;
 
-public class Runnable2 implements Runnable{
-	//不能再run方法中抛出异常，只能用try catch 处理，因为这是重写的run方法，故不能抛出与原方法不同的异常
-	public void run(){
-		boolean flag = true;
-		while(flag){
-			System.out.println(new Date());
-			try{
-				Thread.sleep(1000);	 //不能直接写sleep(1000)，那个线程调用sleep()，那个线程就睡眠
-			}catch(InterruptedException e){
-				return;
-			}	
-		}
-	}
+public class Runnable2 implements Runnable {
+    //锟斤拷锟斤拷锟斤拷run锟斤拷锟斤拷锟斤拷锟阶筹拷锟届常锟斤拷只锟斤拷锟斤拷try catch 锟斤拷锟斤拷锟斤拷为锟斤拷锟斤拷锟斤拷写锟斤拷run锟斤拷锟斤拷锟斤拷锟绞诧拷锟斤拷锟阶筹拷锟斤拷原锟斤拷锟斤拷锟斤拷同锟斤拷锟届常
+    public void run() {
+        boolean flag = true;
+        while (flag) {
+            System.out.println(new Date());
+            try {
+                Thread.sleep(1000);     //锟斤拷锟斤拷直锟斤拷写sleep(1000)锟斤拷锟角革拷锟竭程碉拷锟斤拷sleep()锟斤拷锟角革拷锟竭程撅拷睡锟斤拷
+            } catch (InterruptedException e) {
+                return;
+            }
+        }
+    }
 }

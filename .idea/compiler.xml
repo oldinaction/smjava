@@ -6,39 +6,40 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algorithms" />
         <module name="concurrent" />
         <module name="demo" />
         <module name="design-pattern" />
         <module name="hibernate3" />
         <module name="hiebernate3" />
+        <module name="jdk8" />
         <module name="jspBlog" />
         <module name="JUC" />
+        <module name="jvm" />
+        <module name="rabbitmq" />
         <module name="servletBlog" />
         <module name="spring" />
         <module name="springArch" />
-        <module name="springmvc" />
-        <module name="sshRegister" />
         <module name="struts2" />
         <module name="testAntXdoclet" />
         <module name="testJsp" />
         <module name="testServlet" />
         <module name="testWeb" />
+        <module name="zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="algorithms" target="1.8" />
       <module name="concurrent" target="11" />
       <module name="demo" target="1.7" />
       <module name="design-pattern" target="1.8" />
       <module name="hibernate3" target="1.6" />
-      <module name="hiebernate3" target="1.6" />
       <module name="javaee" target="1.5" />
       <module name="javase" target="1.5" />
+      <module name="jdk8" target="1.8" />
       <module name="jspBlog" target="1.6" />
-      <module name="JUC" target="1.8" />
-      <module name="juc" target="1.8" />
-      <module name="lucene" target="1.5" />
-      <module name="netty_main" target="1.8" />
-      <module name="netty_test" target="1.8" />
+      <module name="jvm" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
       <module name="servletBlog" target="1.6" />
       <module name="smjava" target="1.8" />
       <module name="spring" target="1.7" />
@@ -46,14 +47,11 @@
       <module name="springmvc" target="1.7" />
       <module name="sshRegister" target="1.7" />
       <module name="struts2" target="1.6" />
-      <module name="struts2 (1)" target="1.6" />
-      <module name="test" target="1.5" />
-      <module name="test-base" target="1.7" />
       <module name="testAntXdoclet" target="1.5" />
       <module name="testJsp" target="1.6" />
       <module name="testServlet" target="1.6" />
       <module name="testWeb" target="1.6" />
-      <module name="testWeb (1)" target="1.6" />
+      <module name="zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

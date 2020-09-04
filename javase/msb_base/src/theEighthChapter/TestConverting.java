@@ -3,35 +3,35 @@ package theEighthChapter;
 import java.io.*;
 
 public class TestConverting {
-	public static void main(String[] args){
-		try {
-			OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10/msb/TC.txt"));  //×ª»»Á÷
-			osw.write("oldinaction");
-			System.out.println(osw.getEncoding());  //getEncoding()·µ»Ø´ËÁ÷Ê¹ÓÃµÄ×Ö·û±àÂëµÄÃû³Æ¡£´ËÊ±Ä¬ÈÏÎªÏµÍ³±àÂë£¨winÖÐÎÄ°æÎªGBK£©
-			osw.close();
-			osw = new OutputStreamWriter(new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10/msb/TC.txt", true), "ISO8859_1");  //Èç¹ûµÚ¶þ¸ö²ÎÊýÎª true£¬Ôò½«×Ö½ÚÐ´ÈëÎÄ¼þÄ©Î²´¦£¬¶ø²»ÊÇÐ´ÈëÎÄ¼þ¿ªÊ¼´¦£»"ISO8859_1"ÊÇÒ»¸öÎ÷ÎÄ±àÂë
-			osw.write('\t' + "oldinaction");  //'\t'ÊÇTabµÄ×ªÒå×Ö·û
-			System.out.println(osw.getEncoding());
-			osw.close();	
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		InputStreamReader isr = new InputStreamReader(System.in);  //Ì××°Ò»¸ö×ª»»Á÷£¬°Ñ×Ö½ÚÁ÷×ª»»³É×Ö·ûÁ÷£¬System.in APIÎÄµµÖÐÊÇÒ»¸öInputStream£¬½ÓÊÜ¼üÅÌµÄÊäÈë
-		BufferedReader br = new BufferedReader(isr);  //Ì××°Ò»¸ö»º³åÁ÷
-		String s =  null;
-		try {
-			s =  br.readLine();  //»º³åÁ÷²ÅÓÐreadLine()
-			while(s != null){	
-				if(s.equalsIgnoreCase("exit")) break;
-				System.out.println(s.toUpperCase());
-				br.close();	
-				s =  br.readLine();  //Ã¿µ÷ÓÃÒ»´ÎreadLine()¾ÍÒªµ÷ÓÃÒ»´ÎSystem.in£¨ÊäÈëenterÇ°µÄÒ»ÐÐÊäÈë£©£¬µ½´ïÁ¬ÐøÊäÈë
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        try {
+            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10/msb/TC.txt"));  //×ªï¿½ï¿½ï¿½ï¿½
+            osw.write("oldinaction");
+            System.out.println(osw.getEncoding());  //getEncoding()ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½Ê±Ä¬ï¿½ï¿½ÎªÏµÍ³ï¿½ï¿½ï¿½ë£¨winï¿½ï¿½ï¿½Ä°ï¿½ÎªGBKï¿½ï¿½
+            osw.close();
+            osw = new OutputStreamWriter(new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10/msb/TC.txt", true), "ISO8859_1");  //ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª trueï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½Ä©Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½"ISO8859_1"ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+            osw.write('\t' + "oldinaction");  //'\t'ï¿½ï¿½Tabï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½
+            System.out.println(osw.getEncoding());
+            osw.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        InputStreamReader isr = new InputStreamReader(System.in);  //ï¿½ï¿½×°Ò»ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½System.in APIï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½InputStreamï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½
+        BufferedReader br = new BufferedReader(isr);  //ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        String s = null;
+        try {
+            s = br.readLine();  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½readLine()
+            while (s != null) {
+                if (s.equalsIgnoreCase("exit")) break;
+                System.out.println(s.toUpperCase());
+                br.close();
+                s = br.readLine();  //Ã¿ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½readLine()ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½System.inï¿½ï¿½ï¿½ï¿½ï¿½ï¿½enterÇ°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ë£©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }

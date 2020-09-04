@@ -1,14 +1,14 @@
 package theThirdChapter;
 
 public class TestOverLoad {
-	//¸ù¾Ý´«µÄ²ÎÊýÀ´È·¶¨Òªµ÷ÓÃµÄ·½·¨
-	
-	void max(int a, int b){
-		System.out.println(a > b ? a : b);
-	}
-	
-	void max(float a, float b){
-		System.out.println(a > b ? a : b);
-	}
+    //ï¿½ï¿½ï¿½Ý´ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Òªï¿½ï¿½ï¿½ÃµÄ·ï¿½ï¿½ï¿½
+
+    void max(int a, int b) {
+        System.out.println(a > b ? a : b);
+    }
+
+    void max(float a, float b) {
+        System.out.println(a > b ? a : b);
+    }
 
 }

@@ -1,38 +1,46 @@
 package theThirdChapter;
 
 public class Circle {
-	private Point2 o; //Ô²ÀàÓĞÔ²ĞÄºÍ°ë¾¶µÄÊôĞÔ£¬Ô²ĞÄÓÖÊÇÒ»¸öµã¶ÔÏó
-	private double radius;
-	Circle(Point2 p, double r){
-		o = p;
-		radius = r;
-	}
-	Circle(double r){
-		o = new Point2(0.0, 0.0);
-		radius = r;	
-	}
-	
-	boolean contains(Point2 p){
-		double x = p.getX() - o.getX();
-		double y = p.getY() - o.getY();
-		if(x*x + y*y > radius * radius) return false;
-		else return true;
-	}
-	
-	public void set(double x, double y){
-		o.setX(x);
-		o.setY(y);
-	}
-	public Point2 getO() { return o; }
-	public double getRadius() { return radius; }
-	public void setRadius(double r) { radius = r; }
-	public double area(){
-		return 3.14 * radius * radius;
-	}
-	
-	
-	
-	
-	
+    private Point2 o; //Ô²ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ÄºÍ°ë¾¶ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private double radius;
+
+    Circle(Point2 p, double r) {
+        o = p;
+        radius = r;
+    }
+
+    Circle(double r) {
+        o = new Point2(0.0, 0.0);
+        radius = r;
+    }
+
+    boolean contains(Point2 p) {
+        double x = p.getX() - o.getX();
+        double y = p.getY() - o.getY();
+        if (x * x + y * y > radius * radius) return false;
+        else return true;
+    }
+
+    public void set(double x, double y) {
+        o.setX(x);
+        o.setY(y);
+    }
+
+    public Point2 getO() {
+        return o;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double r) {
+        radius = r;
+    }
+
+    public double area() {
+        return 3.14 * radius * radius;
+    }
+
 
 }

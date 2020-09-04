@@ -3,18 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javase/tankWar/TankWar.iml" filepath="$PROJECT_DIR$/javase/tankWar/TankWar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javase/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/javase/concurrent/concurrent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/concurrent/concurrent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/javaee.iml" filepath="$PROJECT_DIR$/javaee/javaee.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/jdk8/jdk8.iml" filepath="$PROJECT_DIR$/javase/jdk8/jdk8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9_module1.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9_module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" filepath="$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/msb_base/msb_base.iml" filepath="$PROJECT_DIR$/javase/msb_base/msb_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty.iml" filepath="$PROJECT_DIR$/.idea/modules/netty.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/netty_main.iml" group="netty" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/netty_test.iml" group="netty" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" filepath="$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/smjava.iml" filepath="$PROJECT_DIR$/smjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/spring/spring.iml" filepath="$PROJECT_DIR$/javaee/spring/spring.iml" />
@@ -26,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaee/testJsp/testJsp.iml" filepath="$PROJECT_DIR$/javaee/testJsp/testJsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/testServlet/testServlet.iml" filepath="$PROJECT_DIR$/javaee/testServlet/testServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/testWeb/testWeb.iml" filepath="$PROJECT_DIR$/javaee/testWeb/testWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper.iml" />
     </modules>
   </component>
 </project>

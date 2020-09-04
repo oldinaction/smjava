@@ -1,34 +1,39 @@
 package gui;
 
-/*	·¶ÀıÃû³Æ£ºÄäÃûÀàÔÚÊÂ¼ş´¦ÀíÖĞµÄÊ¹ÓÃ
- * 	Ô´ÎÄ¼şÃû³Æ£ºTestAnonymous.java
- *	Òª  µã£º
- *  	1. ÄäÃûÀàµÄĞÔÖÊºÍÓÃ·¨
- *		2. ½«¼àÌıÆ÷Àà¶¨ÒåÎªÄäÃûÀàµÄºÃ´¦----
- *		   ÔÚÄÚ²¿ÀàµÄ»ù´¡ÉÏ½øÒ»²½¼ò»¯ÁË´úÂë
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ê¹ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestAnonymous.java
+ *	Òª  ï¿½ã£º
+ *  	1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êºï¿½ï¿½Ã·ï¿½
+ *		2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¶¨ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄºÃ´ï¿½----
+ *		   ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ï½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
 import java.awt.event.*;
+
 public class TestAnonymous {
-	Frame f = new Frame("ÄäÃûÄÚ²¿Àà²âÊÔ");
-	TextField tf = new TextField(30);
-	public TestAnonymous(){
-		f.add(new Label("Çë°´ÏÂÊó±ê×ó¼ü²¢ÍÏ¶¯"), "North");
-		f.add(tf, "South");
-		f.addMouseMotionListener(
-			new MouseMotionAdapter(){
-				public void mouseDragged(MouseEvent e) {
-			    String s = "Êó±êÍÏ¶¯µ½Î»ÖÃ£¨" + e.getX() + "," + e.getY() + ")";
-			    tf.setText(s);
-				}	
-				public void mouseMoved(MouseEvent e) { }		
-			}
-			);
-		f.setSize(300, 200);	    	
-		f.setVisible(true);
-	}
-	public static void main(String args[]) {   	
-		TestAnonymous t = new TestAnonymous();
-	}
+    Frame f = new Frame("ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    TextField tf = new TextField(30);
+
+    public TestAnonymous() {
+        f.add(new Label("ï¿½ë°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½"), "North");
+        f.add(tf, "South");
+        f.addMouseMotionListener(
+                new MouseMotionAdapter() {
+                    public void mouseDragged(MouseEvent e) {
+                        String s = "ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½" + e.getX() + "," + e.getY() + ")";
+                        tf.setText(s);
+                    }
+
+                    public void mouseMoved(MouseEvent e) {
+                    }
+                }
+        );
+        f.setSize(300, 200);
+        f.setVisible(true);
+    }
+
+    public static void main(String args[]) {
+        TestAnonymous t = new TestAnonymous();
+    }
 }

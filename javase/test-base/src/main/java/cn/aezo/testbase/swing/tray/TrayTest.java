@@ -17,18 +17,18 @@ public class TrayTest {
         JPopupMenu jMenu = new JPopupMenu();
 
         // 为JPopupMenu设置UI
-        jMenu.setUI(new BasicPopupMenuUI(){
+        jMenu.setUI(new BasicPopupMenuUI() {
             @Override
-            public void paint(Graphics g, JComponent c){
+            public void paint(Graphics g, JComponent c) {
                 super.paint(g, c);
 
                 // 画弹出菜单左侧的灰色背景
-                g.setColor(new Color(236,237,238));
+                g.setColor(new Color(236, 237, 238));
                 g.fillRect(0, 0, 25, c.getHeight());
 
                 // 画弹出菜单右侧的白色背景
-                g.setColor(new Color(255,255,255));
-                g.fillRect(25, 0, c.getWidth()-25, c.getHeight());
+                g.setColor(new Color(255, 255, 255));
+                g.fillRect(25, 0, c.getWidth() - 25, c.getHeight());
             }
         });
 
@@ -51,7 +51,7 @@ public class TrayTest {
 
         // 创建带指定图像、工具提示和弹出菜单的 MyTrayIcon
         ImageIcon trayImage = new ImageIcon(TrayTest.class.getClassLoader().getResource("images/tray/tray-warning.png"));
-        final MyTrayIcon trayIcon = new MyTrayIcon(trayImage.getImage(),"MyQQ", jMenu);
+        final MyTrayIcon trayIcon = new MyTrayIcon(trayImage.getImage(), "MyQQ", jMenu);
 
         // 将TrayIcon添加到系统托盘
         try {
@@ -61,18 +61,18 @@ public class TrayTest {
         }
 
         // 设置单击系统托盘图标显示主窗口
-        trayIcon.addMouseListener(new MouseAdapter(){
+        trayIcon.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 String outStr = "";
-                if(e.getButton() == e.BUTTON1) {
+                if (e.getButton() == e.BUTTON1) {
                     outStr = "左键";
-                } else if(e.getButton() == e.BUTTON3) {
+                } else if (e.getButton() == e.BUTTON3) {
                     outStr = "右键";
                 } else {
                     outStr = "中键";
                 }
 
-                if(e.getClickCount() == 2) {
+                if (e.getClickCount() == 2) {
                     outStr = outStr + "双击";
                 } else {
                     outStr = outStr + "点击";
@@ -86,13 +86,13 @@ public class TrayTest {
         ActionListener MenuListen = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(e.getActionCommand().equals("修改托盘图标")) {
+                if (e.getActionCommand().equals("修改托盘图标")) {
                     System.out.println("修改托盘图标, actionPerformed = " + e);
                     ImageIcon trayImage = new ImageIcon(TrayTest.class.getClassLoader().getResource("images/tray/tray-running.png"));
                     trayIcon.setImage(trayImage.getImage());
-                } else if(e.getActionCommand().equals("打开主面板")) {
+                } else if (e.getActionCommand().equals("打开主面板")) {
                     System.out.println("打开主面板, actionPerformed = " + e);
-                } else if (e.getActionCommand().equals("退出MyQQ")){
+                } else if (e.getActionCommand().equals("退出MyQQ")) {
                     systemtray.remove(trayIcon);
                     System.exit(0);
                 }

@@ -1,27 +1,28 @@
 package theSixthChapter;
-//°Ñ×Ö·û´®"1, 2; 3, 4, 5; 6, 7, 8"ÓÃ·Ö¸ô·û·Ö¿ª£¬ÔÙ·Åµ½Ò»¸ö¶þÎ¬µÄdoubleÐÍÊý×éÖÐ
+
+//ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½"1, 2; 3, 4, 5; 6, 7, 8"ï¿½Ã·Ö¸ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½ï¿½Ù·Åµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½doubleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class ArrayForStr {
-	public static void main(String[] args){
-		double[][] d;
-		String s = "1, 2; 3, 4, 5; 6, 7, 8";
-		String[] sFirst = s.split(";");  //ÓÃ;·Ö³öµÚÒ»Î¬
-		d = new double[sFirst.length][]; //½«µÚÒ»Î¬µÄ³¤¶È¸³¸ødoubleÐÍÊý×éµÄµÚÒ»Î¬£¬´ËÊ±doubleºóÃæÓÐÁ½¸öÖÐÀ¨ºÅ
-		
-		for(int i=0; i<sFirst.length; i++){
-			String[] sSecond = sFirst[i].split(",");  //ÓÃ,·Ö³öµÚ¶þÎ¬
-		    d[i] = new double[sSecond.length]; //½«µÚ¶þÎ¬µÄ³¤¶È¸³¸ødoubleÐÍÊý×éµÄµÚ¶þÎ¬£¬´ËÊ±doubleºóÃæÖ»ÓÐÒ»¸öÖÐÀ¨ºÅ
-			for(int j=0; j<sSecond.length; j++){
-				d[i][j] = Double.parseDouble(sSecond[j]); // ·µ»ØÒ»¸öÐÂµÄ double Öµ£¬¸ÃÖµ±»³õÊ¼»¯ÎªÓÃÖ¸¶¨ String ±íÊ¾µÄÖµ£¬ÕâÓë Double ÀàµÄ valueOf ·½·¨Ò»Ñù¡£
-			}
-		}
-		
-		for(int i=0; i<d.length; i++){
-			for(int j=0; j<d[i].length; j++){
-				System.out.println(d[i][j] + " ");
-			}
-			System.out.println();
-		}
-		
-	}
+    public static void main(String[] args) {
+        double[][] d;
+        String s = "1, 2; 3, 4, 5; 6, 7, 8";
+        String[] sFirst = s.split(";");  //ï¿½ï¿½;ï¿½Ö³ï¿½ï¿½ï¿½Ò»Î¬
+        d = new double[sFirst.length][]; //ï¿½ï¿½ï¿½ï¿½Ò»Î¬ï¿½Ä³ï¿½ï¿½È¸ï¿½ï¿½ï¿½doubleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ò»Î¬ï¿½ï¿½ï¿½ï¿½Ê±doubleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+        for (int i = 0; i < sFirst.length; i++) {
+            String[] sSecond = sFirst[i].split(",");  //ï¿½ï¿½,ï¿½Ö³ï¿½ï¿½Ú¶ï¿½Î¬
+            d[i] = new double[sSecond.length]; //ï¿½ï¿½ï¿½Ú¶ï¿½Î¬ï¿½Ä³ï¿½ï¿½È¸ï¿½ï¿½ï¿½doubleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµÚ¶ï¿½Î¬ï¿½ï¿½ï¿½ï¿½Ê±doubleï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            for (int j = 0; j < sSecond.length; j++) {
+                d[i][j] = Double.parseDouble(sSecond[j]); // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½ double Öµï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Îªï¿½ï¿½Ö¸ï¿½ï¿½ String ï¿½ï¿½Ê¾ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Double ï¿½ï¿½ï¿½ valueOf ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+            }
+        }
+
+        for (int i = 0; i < d.length; i++) {
+            for (int j = 0; j < d[i].length; j++) {
+                System.out.println(d[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
 
 }

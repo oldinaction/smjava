@@ -1,19 +1,20 @@
 package theNinthThread;
 
-public class MyThread extends Thread{
-	//MyThread(String name)¹¹Ôì·½·¨£¬name ÊÇÄ³¸öÏß³Ì¶ÔÏóµÄÃû×Ö
-	MyThread(String name){
-		super(name);
-	}
-	public void run(){
-		for(int i=0; i<3; i++){
-			System.out.println("i am " + getName());  //getName()ÊÇThreadÀàÀïÃæµÄ·½·¨
-			try {
-				sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			}
-	}
+public class MyThread extends Thread {
+    //MyThread(String name)ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½name ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ß³Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    MyThread(String name) {
+        super(name);
+    }
+
+    public void run() {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("i am " + getName());  //getName()ï¿½ï¿½Threadï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
 }

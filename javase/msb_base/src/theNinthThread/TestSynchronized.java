@@ -1,33 +1,34 @@
 package theNinthThread;
-//ÓÐÎÊÌâ£¿£¿£¿Thread.sleep(5000);µÄÓÐÎÞÓ°Ïì½á¹û£¿£¿£¿Thread.sleep(5000);ÀïÃæµÄºÁÃëÊýÓ°Ïì½á¹û£¿£¿£¿
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½â£¿ï¿½ï¿½ï¿½ï¿½Thread.sleep(5000);ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Thread.sleep(5000);ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class TestSynchronized implements Runnable {
-	int b = 100;
-	
-	public synchronized void m1() throws Exception{
-		b = 1000;
-		//Thread.sleep(5000);
-		System.out.println("b = " + b);
-	}
-	
-	public synchronized void m2() throws Exception {
-		//Thread.sleep(2500);
-		b = 2000;
-	}
-	
-	public void run() {
-		try {
-			m1();
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public static void main(String[] args) throws Exception {
-		TestSynchronized ts = new TestSynchronized();
-		Thread t = new Thread(ts);
-		t.start();
-		
-		ts.m2();
-		System.out.println(ts.b);
-	}
+    int b = 100;
+
+    public synchronized void m1() throws Exception {
+        b = 1000;
+        //Thread.sleep(5000);
+        System.out.println("b = " + b);
+    }
+
+    public synchronized void m2() throws Exception {
+        //Thread.sleep(2500);
+        b = 2000;
+    }
+
+    public void run() {
+        try {
+            m1();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        TestSynchronized ts = new TestSynchronized();
+        Thread t = new Thread(ts);
+        t.start();
+
+        ts.m2();
+        System.out.println(ts.b);
+    }
 }

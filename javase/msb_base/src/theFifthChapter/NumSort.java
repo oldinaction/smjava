@@ -1,21 +1,22 @@
 package theFifthChapter;
-//ÔÚDos»·¾³ÏÂÔËĞĞÒª°Ñ°üÉùÃ÷È¥µô
-//Ïßjavac NumSort.java ÔÙjava NumSort 1 2 ÔòÊä³ö1 2  
+
+//ï¿½ï¿½Dosï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½
+//ï¿½ï¿½javac NumSort.java ï¿½ï¿½java NumSort 1 2 ï¿½ï¿½ï¿½ï¿½ï¿½1 2  
 public class NumSort {
-	public static void main(String[] args){
-		int[] a = new int[args.length];
-		for(int i=0; i<args.length; i++){
-			a[i] = Integer.parseInt(args[i]);
-			
-		}
-		print(a);
-	}
-	
-	private static void print(int[] a){
-		for(int i=0; i<a.length; i++){
-			System.out.print(a[i] + " ");
-		}
-		
-	}
+    public static void main(String[] args) {
+        int[] a = new int[args.length];
+        for (int i = 0; i < args.length; i++) {
+            a[i] = Integer.parseInt(args[i]);
+
+        }
+        print(a);
+    }
+
+    private static void print(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+
+    }
 
 }

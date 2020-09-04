@@ -1,36 +1,36 @@
 package theSecondChapter;
 
 public class Fab {
-	
-	//FebÊýÁÐ£º1 1 2 3 5 8 13 21 ¡£¡£¡£¡£¡£¡£
-	
-	public static void main(String args[]){
-		System.out.println(f(40));
-	}
-	
-	public static long f(int index){
-		
-		if(index < 1){
-			System.out.println("ÎÞÐ§²ÎÊý£¬ÄúÓ¦¸Ã´«Èë´óÓÚ1µÄ²ÎÊý");
-			return -1;
-		}
-		
-		if(index == 1 || index == 2){
-			return 1;
-		}
-		
-		long f1 = 1L;
-		long f2 = 1L;
-		long f = 0;
-		
-		for(int i=0; i<index-2; i++){
-			f = f1 + f2;
-			f1 = f2;
-			f2 = f;
-		}
-		
-		return f;
-		
-	}
+
+    //Febï¿½ï¿½ï¿½Ð£ï¿½1 1 2 3 5 8 13 21 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+    public static void main(String args[]) {
+        System.out.println(f(40));
+    }
+
+    public static long f(int index) {
+
+        if (index < 1) {
+            System.out.println("ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½Ä²ï¿½ï¿½ï¿½");
+            return -1;
+        }
+
+        if (index == 1 || index == 2) {
+            return 1;
+        }
+
+        long f1 = 1L;
+        long f2 = 1L;
+        long f = 0;
+
+        for (int i = 0; i < index - 2; i++) {
+            f = f1 + f2;
+            f1 = f2;
+            f2 = f;
+        }
+
+        return f;
+
+    }
 
 }

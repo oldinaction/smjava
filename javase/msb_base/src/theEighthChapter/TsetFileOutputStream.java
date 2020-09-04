@@ -3,41 +3,41 @@ package theEighthChapter;
 import java.io.*;
 
 public class TsetFileOutputStream {
-	public static void main(String[] args){
-		int num = 0;
-		int b = 0;
-		FileInputStream in = null; //ÈôÓÃFileReaderºÍFileWriterÔò²»»á°ÉÖÐÎÄ¶ÁÒ»°ë£¬¶øÊÇ¿ÉÒÔÊä³öÖÐÎÄ
-		FileOutputStream out = null;
-		
-		try{
-			in  = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter/TsetFileOutputStream.java");
-			while((b = in.read()) != -1){
-				System.out.print((char)b); //in.read()·µ»Ø¶Áµ½µÄÒ»¸ö×Ö½Ú¶ÔÓ¦µÃÕûÊý£¬ÔÙÇ¿ÖÆ×ª»»ÎªcharÐÍ£¬µ«ÊÇÎÄ¼þÖÐµÄÖÐÎÄÊÇ2¸ö×Ö½Ú£¬¶ÁÖ»ÄÜ¶ÁÈ¡Ò»¸ö×Ö½Ú£¬¹Ê²»ÍêÕû£¬×ª»»ºóÊä³öÂÒÂë
-				num++;
-			}
-			in.close();  //Ò»¶¨Òª¹Ø±ÕÎÄ¼þ
-		}catch(IOException e){
-			System.out.println("ÎÄ¼þ¶ÁÈ¡´íÎó");
-			System.exit(-1);
-		}
-		System.out.println("ÎÄ¼þ´óÐ¡£º" + num);
-		
-		try{
-			//System.out.println(in.read());Èç¹ûÐ´ÔÚÕâ£¬½á¹û³ö´í£¬Êä³ö¡°ÎÄ¼þ¸´ÖÆ´íÎó¡±£¬£¿£¿£¿´ËÊ± inµ½µ×ÊÇÊ²Ã´£¿£¿£¿
-			in  = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter/TsetFileOutputStream.java");
-			//System.out.println(in.read());Èç¹ûÐ´ÔÚÕâ,½á¹ûÕýÈ·£¬Êä³ö112£¨¶ÔÓ¦µÄÊÇ×ÖÄ¸p£©,¼´in.read()¶ÁµÄÊÇµÚÒ»¸ö×Ö½Ú
-			out  = new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\TFOS.java"); //ÔÚÓ²ÅÌÉÏ´´½¨ÁËÒ»¸ö¿ÕÄÚÈÝTFOS.javaÎÄ¼þ,Ó²ÅÌÉÏ±ØÐëÓÐÇ°ÃæµÄÄ¿Â¼£¬Ëû²»ÄÜ´´½¨Ä¿Â¼
-			//ÓÃSystem.out.println(b);¿ÉµÃÖª´ËÊ± b = -1; 
-			while((b = in.read()) != -1){
-				out.write(b);
-			}
-			in.close();
-			out.close();	
-		}catch(IOException e){
-			System.out.println("ÎÄ¼þ¸´ÖÆ´íÎó");
-			System.exit(-1);
-		}
-		System.out.println("ÎÄ¼þ¸´ÖÆ³É¹¦£¡");  //Â·¾¶ÏÂ¶à³öÒ»¸öTFOS.javaÎÄ¼þ
-	
-	}
+    public static void main(String[] args) {
+        int num = 0;
+        int b = 0;
+        FileInputStream in = null; //ï¿½ï¿½ï¿½ï¿½FileReaderï¿½ï¿½FileWriterï¿½ò²»»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½Ò»ï¿½ë£¬ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        FileOutputStream out = null;
+
+        try {
+            in = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter/TsetFileOutputStream.java");
+            while ((b = in.read()) != -1) {
+                System.out.print((char) b); //in.read()ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö½Ú¶ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½×ªï¿½ï¿½Îªcharï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½ï¿½Ö»ï¿½Ü¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½Ê²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                num++;
+            }
+            in.close();  //Ò»ï¿½ï¿½Òªï¿½Ø±ï¿½ï¿½Ä¼ï¿½
+        } catch (IOException e) {
+            System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½");
+            System.exit(-1);
+        }
+        System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½" + num);
+
+        try {
+            //System.out.println(in.read());ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ó¡±£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê± inï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            in = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter/TsetFileOutputStream.java");
+            //System.out.println(in.read());ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½112ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸pï¿½ï¿½,ï¿½ï¿½in.read()ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+            out = new FileOutputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\TFOS.java"); //ï¿½ï¿½Ó²ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TFOS.javaï¿½Ä¼ï¿½,Ó²ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½Ä¿Â¼
+            //ï¿½ï¿½System.out.println(b);ï¿½Éµï¿½Öªï¿½ï¿½Ê± b = -1;
+            while ((b = in.read()) != -1) {
+                out.write(b);
+            }
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½");
+            System.exit(-1);
+        }
+        System.out.println("ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ³É¹ï¿½ï¿½ï¿½");  //Â·ï¿½ï¿½ï¿½Â¶ï¿½ï¿½Ò»ï¿½ï¿½TFOS.javaï¿½Ä¼ï¿½
+
+    }
 }

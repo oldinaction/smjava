@@ -1,20 +1,21 @@
 package theThirdChapter;
 
-public class Teacher extends Person {	
-	private String capital;
-	
-	Teacher(String name, String capital){
-		this(name, "beijing", capital); //µ÷ÓÃ´ËÀàÖÐÏàÓ¦µÄÁíÒ»¸ö¹¹Ôìº¯Êý
-	}
-	//ÖØÔØ¹¹Ôìº¯Êý
-	Teacher(String n, String l, String capital){
-		super(n, l); //Ö´ÐÐ¸¸ÀàÏàÓ¦µÄ¹¹Ôìº¯Êý
-		this.capital = capital;
-	}
-	
-	//ÖØÐ´¸¸ÀàµÄº¯Êýinfo()
-	public String info(){
-		return super.info() + "capital:" + capital;
-	}
+public class Teacher extends Person {
+    private String capital;
+
+    Teacher(String name, String capital) {
+        this(name, "beijing", capital); //ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½
+    }
+
+    //ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ìº¯ï¿½ï¿½
+    Teacher(String n, String l, String capital) {
+        super(n, l); //Ö´ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä¹ï¿½ï¿½ìº¯ï¿½ï¿½
+        this.capital = capital;
+    }
+
+    //ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½info()
+    public String info() {
+        return super.info() + "capital:" + capital;
+    }
 
 }

@@ -86,18 +86,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/javaee/struts2/pom.xml" />
-        <option value="$PROJECT_DIR$/javaee/hibernate3/pom.xml" />
-        <option value="$PROJECT_DIR$/javaee/spring/pom.xml" />
-        <option value="$PROJECT_DIR$/javaee/springmvc/pom.xml" />
-        <option value="$PROJECT_DIR$/javaee/sshRegister/pom.xml" />
-        <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/msb/juc/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/javase/jdk8/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/javase/test/pom.xml" />
+        <option value="$PROJECT_DIR$/jvm/pom.xml" />
       </set>
     </option>
   </component>

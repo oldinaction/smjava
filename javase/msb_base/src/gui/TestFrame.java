@@ -1,18 +1,19 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºFrame Ó¦ÓÃ¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestFrame.java
- *	Òª  µã£ºFrame×é¼þµÄ´´½¨¼°ÏÔÊ¾ÉèÖÃ
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Frame Ó¦ï¿½Ã¾ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestFrame.java
+ *	Òª  ï¿½ã£ºFrameï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
+
 public class TestFrame {
-	public static void main( String args[]) {
-		Frame f = new Frame("My First Test");
-		f.setLocation(300, 300);
-		f.setSize( 170,100);
-		f.setBackground( Color.blue);
-		f.setResizable(false);
-		f.setVisible( true);
-	}
+    public static void main(String args[]) {
+        Frame f = new Frame("My First Test");
+        f.setLocation(300, 300);
+        f.setSize(170, 100);
+        f.setBackground(Color.blue);
+        f.setResizable(false);
+        f.setVisible(true);
+    }
 }

@@ -1,11 +1,11 @@
 package gui;
 
-/*	·¶ÀýÃû³Æ£ºJavaÊÂ¼þ´¦Àí¾ÙÀý
- * 	Ô´ÎÄ¼þÃû³Æ£ºTestActionEvent.java
- *	Òª  µã£º
- *  	1. JavaÊÂ¼þ´¦Àí»úÖÆ
- *		2. ÊÂ¼þÔ´¡¢ÊÂ¼þ¼àÌýÆ÷¸ÅÄî¼°×÷ÓÃ
- *		3. ÈçºÎÔÚÒ»¸öÏÖÓÐ×é¼þÉÏ×¢²á¼àÌýÆ÷
+/*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Javaï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æ£ï¿½TestActionEvent.java
+ *	Òª  ï¿½ã£º
+ *  	1. Javaï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		2. ï¿½Â¼ï¿½Ô´ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¼°ï¿½ï¿½ï¿½ï¿½
+ *		3. ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 import java.awt.*;
@@ -13,18 +13,18 @@ import java.awt.event.*;
 
 public class TestActionEvent {
     public static void main(String args[]) {
-			Frame f = new Frame("Test");
-			Button b = new Button("Press Me!");
-			Monitor1 bh = new Monitor1();
-			b.addActionListener(bh);
-			f.add(b,BorderLayout.CENTER);
-			f.pack();
-			f.setVisible(true);
+        Frame f = new Frame("Test");
+        Button b = new Button("Press Me!");
+        Monitor1 bh = new Monitor1();
+        b.addActionListener(bh);
+        f.add(b, BorderLayout.CENTER);
+        f.pack();
+        f.setVisible(true);
     }
 }
 
 class Monitor1 implements ActionListener {
     public void actionPerformed(ActionEvent e) {
-        System.out.println("a button has been pressed");    
+        System.out.println("a button has been pressed");
     }
 }

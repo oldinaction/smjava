@@ -1,19 +1,19 @@
 package theNinthThread;
 
 public class TestThread1 {
-	public static void main(String[] args){
-		Runnable1 target = new Runnable1();
-		Thread myThread = new Thread(target);
-		myThread.start();  //µ÷ÓÃµÄstart()ÊÇThreadÀàµÄ·½·¨£¬´ËÊ±²»ÄÜÖ±½ÓĞ´myThread.run();ÕâÑùÊÇÖ±½Óµ÷ÓÃÁËrun·½·¨¡£Ïß³ÌÆô¶¯ºó£¬CPU½»ÌæÔËĞĞÏß³Ì£¬¹Ê½»ÌæÊä³ö
-		
-		for(int i=0; i<100; i++){
-			System.out.println("mainÔÚÖ´ĞĞ£º" + i);
-		}
-	}
+    public static void main(String[] args) {
+        Runnable1 target = new Runnable1();
+        Thread myThread = new Thread(target);
+        myThread.start();  //ï¿½ï¿½ï¿½Ãµï¿½start()ï¿½ï¿½Threadï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ğ´myThread.run();ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½runï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½CPUï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì£ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println("mainï¿½ï¿½Ö´ï¿½Ğ£ï¿½" + i);
+        }
+    }
 }
 
 /*
- * µÚ¶şÖÖ´´½¨Ïß³Ì·½·¨
+ * ï¿½Ú¶ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ß³Ì·ï¿½ï¿½ï¿½
 public class TestThread1 {
 	public static void main(String args[]) {
 		MyThread myThread = new MyThread();

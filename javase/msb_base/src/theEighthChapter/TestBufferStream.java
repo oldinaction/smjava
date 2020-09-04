@@ -3,53 +3,53 @@ package theEighthChapter;
 import java.io.*;
 
 public class TestBufferStream {
-	public static void main(String[] args){
-		try {
-			int c = 0;
-			FileInputStream fis = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter\\TestBufferStream.java");
-			BufferedInputStream bis = new BufferedInputStream(fis);
-			System.out.println(bis.read());
-			
-			//ÒòÎªÇ°Ãæ¶ÁÁËpÕâ¸ö×Ö·û£¬ËùÒÔÏÂÃæ´Óa¿ªÊ¼¶ÁµÄ
-			bis.mark(100);  //ÔÚ´ËÊäÈëÁ÷ÖĞ±ê¼Çµ±Ç°µÄÎ»ÖÃ,²»¹ÜÀïÃæµÄÖµÊÇ¶àÉÙ×ÜÊÇÔÚµ±Ç°Î»ÖÃ 
-			for(int i=0; i<10 && (c = bis.read()) != -1; i++){
-				System.out.print((char)c+" ");
-			}
-			System.out.println();
-			
-			bis.reset();
-			for(int i=0; i<10 && (c = bis.read()) != -1; i++){
-				System.out.print((char)c+" ");
-				System.out.print(c + " ");
-				System.out.print(",");
-			}
-			
-			bis.close();
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println();
-		
-		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("H:\\java\\Workspaces\\MyEclipse 10\\msb/TBS.txt"));  //ÔÚÓ²ÅÌÉÏ´´½¨ÁËÒ»¸ö¿ÕÄÚÈİTBS.javaÎÄ¼ş
-			BufferedReader br = new BufferedReader(new FileReader("H:\\java\\Workspaces\\MyEclipse 10\\msb/TBS.txt"));
-			String s = null;
-			for(int i=0; i<100; i++){
-				s = String.valueOf(Math.random());  //°ÑdoubleĞÍµÄËæ»úÊı×ª»»Îª×Ö·û´®
-				bw.write(s);
-				bw.newLine();  //Ğ´ÈëÒ»¸öĞĞ·Ö¸ô·û
-			}
-			bw.flush();
-			while((s = br.readLine()) != null){
-				System.out.println(s);
-			}  //readLine()¶ÁÈ¡Ò»ĞĞ×Ö·û´®
-			bw.close();
-			br.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        try {
+            int c = 0;
+            FileInputStream fis = new FileInputStream("H:\\java\\Workspaces\\MyEclipse 10\\msb\\src\\theEighthChapter\\TestBufferStream.java");
+            BufferedInputStream bis = new BufferedInputStream(fis);
+            System.out.println(bis.read());
+
+            //ï¿½ï¿½ÎªÇ°ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½aï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+            bis.mark(100);  //ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½Çµï¿½Ç°ï¿½ï¿½Î»ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ç°Î»ï¿½ï¿½
+            for (int i = 0; i < 10 && (c = bis.read()) != -1; i++) {
+                System.out.print((char) c + " ");
+            }
+            System.out.println();
+
+            bis.reset();
+            for (int i = 0; i < 10 && (c = bis.read()) != -1; i++) {
+                System.out.print((char) c + " ");
+                System.out.print(c + " ");
+                System.out.print(",");
+            }
+
+            bis.close();
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        System.out.println();
+
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("H:\\java\\Workspaces\\MyEclipse 10\\msb/TBS.txt"));  //ï¿½ï¿½Ó²ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TBS.javaï¿½Ä¼ï¿½
+            BufferedReader br = new BufferedReader(new FileReader("H:\\java\\Workspaces\\MyEclipse 10\\msb/TBS.txt"));
+            String s = null;
+            for (int i = 0; i < 100; i++) {
+                s = String.valueOf(Math.random());  //ï¿½ï¿½doubleï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½
+                bw.write(s);
+                bw.newLine();  //Ğ´ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ğ·Ö¸ï¿½ï¿½ï¿½
+            }
+            bw.flush();
+            while ((s = br.readLine()) != null) {
+                System.out.println(s);
+            }  //readLine()ï¿½ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+            bw.close();
+            br.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }

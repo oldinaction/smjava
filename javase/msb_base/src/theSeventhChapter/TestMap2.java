@@ -1,21 +1,22 @@
 package theSeventhChapter;
 
 import java.util.*;
+
 public class TestMap2 {
-  public static void main(String args[]) {
-    Map<String, Integer> m1 = new HashMap<String , Integer>();  //<String, Integer>此时运用了泛型，定义了容器类元素的类型
-    m1.put("one", 1);
-    m1.put("two", 2);
-    m1.put("three", 3);
+    public static void main(String args[]) {
+        Map<String, Integer> m1 = new HashMap<String, Integer>();  //<String, Integer>锟斤拷时锟斤拷锟斤拷锟剿凤拷锟酵ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷元锟截碉拷锟斤拷锟斤拷
+        m1.put("one", 1);
+        m1.put("two", 2);
+        m1.put("three", 3);
 
-    System.out.println(m1.size());
-    System.out.println(m1.containsKey("one"));
+        System.out.println(m1.size());
+        System.out.println(m1.containsKey("one"));
 
-    if(m1.containsKey("two")) {
-      //int i = ((Integer)m1.get("two")).intValue(); 运用泛型后，不需要强制转换
-      int i = m1.get("two");
-      System.out.println(i);
+        if (m1.containsKey("two")) {
+            //int i = ((Integer)m1.get("two")).intValue(); 锟斤拷锟矫凤拷锟酵后，诧拷锟斤拷要强锟斤拷转锟斤拷
+            int i = m1.get("two");
+            System.out.println(i);
+        }
+
     }
-
-  }
 }
