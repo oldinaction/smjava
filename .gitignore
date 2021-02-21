@@ -14,4 +14,7 @@ hs_err_pid*
 classes/
 
 !com/**/*.class
+!**/WEB-INF/**/*.jar
+
+file-lock.txt
 

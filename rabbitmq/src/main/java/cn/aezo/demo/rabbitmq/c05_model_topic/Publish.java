@@ -20,7 +20,7 @@ public class Publish {
         Channel channel = connection.createChannel();
 
         /*
-        * 什么一个Exchange交换机，参数如下
+        * 声明一个Exchange交换机，参数如下
         * 1.exchange: 交换机名称
         * 2.type: 交换机类型，fanout/direct/topic等。在管理端Exchanges-Type中会显示
         * */
