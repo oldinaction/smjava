@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-activator" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-client" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-service" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle-service" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/karafboot-testapp" />
     <file type="web" url="file://$PROJECT_DIR$/lucene" />
   </component>
   <component name="MarkdownProjectSettings" wasCopied="true">
@@ -89,6 +99,9 @@
         <option value="$PROJECT_DIR$/msb/juc/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/javase/jdk8/pom.xml" />
+        <option value="$PROJECT_DIR$/javaee/spring_src/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -96,6 +109,7 @@
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/javase/test/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/pom.xml" />
       </set>
     </option>
   </component>

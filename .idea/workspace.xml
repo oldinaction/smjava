@@ -12,192 +12,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e0e4d37-fd7e-4452-9f2a-acca4b5b355a" name="Default" comment="up">
-      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c01_sort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c01_sort/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T01_MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T02_ComparatorHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/Jdk8Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/c01_lambda/T01_Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk8/src/test/java/cn/aezo/javase/jdk8/Jdk8ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module1/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module1/Module1Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module1/ProcessAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module2/src/main/java/cn/aezo/javase/jdk/jdk9_module2/Module2Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/jdk9_module2/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/jdk9/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/classes/StaticTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/jvm/doc/jvm_code-master/第5章/EclipseStartTime_1.0.0.201011281102.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/jvm/permgen/classloader/classes/Hello.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/RabbitmqApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_model_point/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_model_point/Publish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c02_model_work/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c02_model_work/Publish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Publish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c04_model_direct/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c04_model_direct/Publish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/util/RabbitmqU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/src/test/java/cn/aezo/demo/rabbitmq/RabbitmqApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/TwoSum.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrent/src/main/java/cn/aezo/concurrent/FileLock/FileLockMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/spring_src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/xml/AppXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/MyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/condition/MyWindowsCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/EnableAezo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/MyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/SmImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importselector/MyImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importselector/MyImportSelectorBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importtest/AppImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/MyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/MyFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mapper/MyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/AezoFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/EnableAezo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/MyMapperInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/SmImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/resources/spring5/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/main/resources/spring5/person.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/spring_src/src/test/java/cn/aezo/smjava/javaee/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/springmvc/WebRoot/WEB-INF/lib.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaee/springmvc/WebRoot/WEB-INF/lib/aspectjrt-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/README_Zh.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/karaf-springboot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/osgi-intro-sample-activator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/src/main/java/com/baeldung/osgi/sample/activator/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-client/osgi-intro-sample-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-client/src/main/java/com/baeldung/osgi/sample/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-client/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/osgi-intro-sample-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/src/main/java/com/baeldung/osgi/sample/service/definition/Greeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/src/main/java/com/baeldung/osgi/sample/service/implementation/GreeterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/osgi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osgi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/target/test-classes/META-INF/BenchmarkList" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/target/test-classes/META-INF/CompilerHints" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/spring_src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/MyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/MyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/condition/MyWindowsCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBean4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo1/lifecycle/MyBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/EnableAezo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/MyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/SmImportBeanDefinitionRegistrar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importselector/MyImportSelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importselector/MyImportSelectorBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo2/importtest/AppImport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/MyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/factorybean/MyFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mapper/MyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/AezoFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/EnableAezo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/MyMapperInvocationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/Select.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/demo3/mybatis/SmImportBeanDefinitionRegistrar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/main/resources/spring5/person.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaee/springArch/src/test/java/cn/aezo/smjava/javaee/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/javaee/springmvc/springmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaee/springmvc/springmvc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaee/sshRegister/sshRegister.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaee/sshRegister/sshRegister.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/MyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/MyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/MyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/AWTDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/AWTDrawing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/AWTDrawing2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/AWTDrawing2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/CenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/CenterPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/MyMouseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/MyMouseAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/MyMouseAdapterGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/MyMouseAdapterGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/NestedContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/NestedContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TFActionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TFActionEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMathTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMathTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TFMathTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TFPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TFPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TenButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TenButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestActionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestActionEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestActionEvent2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestActionEvent2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestAnonymous.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestAnonymous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestAnonymous2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestAnonymous2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestBorderLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestBorderLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFlowLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFlowLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFlowLayout2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFlowLayout2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFrameWithPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestFrameWithPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestGridLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestGridLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestInner.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestInner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMouseMotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMouseMotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMouseMotionGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMouseMotionGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMultiFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMultiFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMultiPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestMultiPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestPaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestPaint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/gui/TestWindowClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/gui/TestWindowClose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/socket/MyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/socket/MyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/socket/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/socket/MyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestBufferStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestBufferStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestConverting.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestConverting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestDataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestPrintStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TestPrintStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TsetFileOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theEighthChapter/TsetFileOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/Count3Quite.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/Count3Quite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/NumSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/NumSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theFifthChapter/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/MyThread3.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/MyThread3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Runnable1.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Runnable1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Runnable2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Runnable2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/SyncStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/SyncStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestInterrupt.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestInterrupt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestSync.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestSync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestSynchronized.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestSynchronized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestThread1.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestThread1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestYield.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/TestYield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/WoTou.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theNinthThread/WoTou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Fab.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Fab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Feb_digui.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Feb_digui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSecondChapter/Prime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestMap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSeventhChapter/TestMap2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/ArrayForStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/ArrayForStr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/ListFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/ListFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/SearchChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/SearchChar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestStringEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theSixthChapter/TestStringEquals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/BirthDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/BirthDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/BirthDateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/BirthDateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Cat1.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Cat1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Lady.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Lady.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Point2.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Point2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/PointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestEnjoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestEnjoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestEquals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestOverLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestOverLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/msb_base/src/theThirdChapter/TestTeacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javase/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Blood.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Blood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Missile.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Missile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/ProperMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/ProperMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/TankClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/TankClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/tankWar/src/com/exjava/tankWar/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/cmd/BrowserLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/cmd/BrowserLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/DynamicProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/MyInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/MyInvocationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/dynamicProxy/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/jvm/permgen/classloader/PermGenOOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/jvm/permgen/classloader/PermGenOOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/dialog/DialogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/dialog/DialogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/start/StartAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/start/StartAnimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/tray/MyTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/tray/MyTrayIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/tray/TrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/swing/tray/TrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/GetPid.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/GetPid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/GouLv.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/GouLv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/Regexp.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/Regexp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/TestString.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/TestString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/UtilCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/UtilCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/arrayVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/test-base/src/main/java/cn/aezo/testbase/test/arrayVar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/cn/aezo/jvm/c02_classloader/T06_LazyLoading.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/cn/aezo/jvm/c02_classloader/T06_LazyLoading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/netty/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/src/main/java/cn/aezo/netty/c1_bio_nio_aio_netty/t1_bio/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty/src/main/java/cn/aezo/netty/c1_bio_nio_aio_netty/t1_bio/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/javase/jdk9/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/javase/jdk9/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/jdk9/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/javase/target/" />
     <ignored path="$PROJECT_DIR$/javase/test/target/" />
@@ -241,12 +161,40 @@
     <ignored path="$PROJECT_DIR$/javase/jdk9/jdk9_module1/build/" />
     <ignored path="$PROJECT_DIR$/rabbitmq/target/" />
     <ignored path="$PROJECT_DIR$/javase/jdk8/target/" />
+    <ignored path="$PROJECT_DIR$/javaee/spring_src/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-intro-sample-service/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-intro-sample-client/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-springboot/karafboot-testapp/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-springboot/integration-test/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-springboot/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle-service/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/aether/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies/target/" />
+    <ignored path="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -323,7 +271,7 @@
     <favorites_list name="smjava" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -334,35 +282,13 @@
         <option value="FxmlFile" />
         <option value="package-info" />
         <option value="module-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CLI_LINGER</find>
-      <find>CLI_NO_DELAY</find>
-      <find>CLI_TCP_NODELAY</find>
-      <find>step2:</find>
-      <find>step2:client</find>
-      <find>1   size</find>
-      <find>bbbbbbbbbbbbbb</find>
-      <find>bbbbbb</find>
-      <find>T1_HelloWorld4</find>
-      <find>findClass</find>
-      <find>registerNatives</find>
-      <find>WARN No appenders could be found for logger```</find>
-      <find>testGet1</find>
-      <find>0x1000083a8bd0002</find>
-      <find>ChildrenCallback</find>
-      <find>myService</find>
-      <find>beanDefinitionMap</find>
-      <find>beanDefinitionMap.put</find>
-      <find>ForkJoinPool</find>
-      <find>leftEmpty</find>
-      <find>localport</find>
-      <find>DemoListener</find>
       <find>rabbit</find>
       <find>rabbit-amqp-client.versio</find>
       <find>deliver</find>
@@ -371,6 +297,28 @@
       <find>MIN_TREEIFY_CAPACITY</find>
       <find>DEFAULT_INITIAL_CAPACITY</find>
       <find>64</find>
+      <find>table</find>
+      <find>QUE</find>
+      <find>ReentrantLock</find>
+      <find>put</find>
+      <find>karaf</find>
+      <find>karafboot-configuration</find>
+      <find>ec.devnull.rest.springboot.app.JWTRestApplicationDummy</find>
+      <find>login</find>
+      <find>Please sign in</find>
+      <find>601f1889667efaebb33b8c12572835da3f027f78`</find>
+      <find>601f1889667efaebb33b8c12572835da3f027f78</find>
+      <find>doDispatch</find>
+      <find>TRACE</find>
+      <find>UsernamePasswordAuthenticationFilter</find>
+      <find>APISecurityConfig</find>
+      <find>BundleURL</find>
+      <find>JavassistTransformer</find>
+      <find>patchClasses</find>
+      <find>instrumentClassesIn</find>
+      <find>getClasses</find>
+      <find>patch</find>
+      <find>2.8.2</find>
     </findStrings>
     <replaceStrings>
       <replace>client port:</replace>
@@ -378,7 +326,11 @@
       <replace>bbbbbb</replace>
       <replace>Hello World</replace>
       <replace>testGetSync</replace>
+      <replace>2.13.2</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\gitwork\smjava\osgi\karaf-springboot</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -893,9 +845,9 @@
         <entry key="$PROJECT_DIR$/javase/jdk9/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/javase/jdk9/build.gradle" value="3465223402" />
         <entry key="$PROJECT_DIR$/javase/jdk9/gradle/wrapper/gradle-wrapper.properties" value="1741342742" />
-        <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module1" value="1539406908447" />
+        <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module1" value="1604832156641" />
         <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module1/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module2" value="1539406908447" />
+        <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module2" value="1604832156641" />
         <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module2/build.gradle" value="3465223402" />
         <entry key="$PROJECT_DIR$/javase/jdk9/jdk9_module2/settings.gradle" value="1258679712" />
         <entry key="$PROJECT_DIR$/javase/jdk9/settings.gradle" value="460281460" />
@@ -1467,39 +1419,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javase/jdk9/src/main/java/aezo.module1/aezo/module1/Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/build.gradle" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/jdk9/module1/cn/aezo/javase/jdk/jdk9_module1/jdk9.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/jdk9_module1/cn/aezo/javase/jdk/jdk9_module1/Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/jdk9_module1/cn/aezo/javase/jdk/jdk9_module1/Module1Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/ModuleMain.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/Module1Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module/Module1Main.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/translation.json" />
-        <option value="$PROJECT_DIR$/javase/jdk9/README.md" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/module-info.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module2/src/main/java/cn/aezo/javase/jdk/jdk9_module2/Module2Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module2/src/main/java/module-info.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/build.gradle" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module1/Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module1/Module1Main.java" />
-        <option value="$PROJECT_DIR$/javase/jdk9/jdk9_module1/src/main/java/cn/aezo/javase/jdk/jdk9_module1/ProcessAPI.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/PalindromicSubstrings.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T01_BigHeap.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T02_CustomerHeap.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T01_MaxHeap.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c04_heap/T02_ComparatorHeap.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c01_sort/QuickSort.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c01_sort/MergeSort.java" />
-        <option value="$PROJECT_DIR$/netty/src/main/java/cn/aezo/netty/c1_bio_nio_aio_netty/t1_bio/Client.java" />
-        <option value="$PROJECT_DIR$/jvm/src/main/java/cn/aezo/jvm/c02_classloader/T06_LazyLoading.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_point/Provider.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_point/Publish.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_work/Consumer.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_work/Publish.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_point/Consumer.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c02_work/Consumer.java" />
@@ -1513,13 +1432,49 @@
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Publish.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Consumer.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c04_model_direct/Consumer.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Consumer.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/util/RabbitmqU.java" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/c01_lambda/T01_Lambda.java" />
+        <option value="$PROJECT_DIR$/javaee/springArch/pom.xml" />
+        <option value="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/xml/AppXml.java" />
+        <option value="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/xml/beans.xml" />
+        <option value="$PROJECT_DIR$/javaee/spring_src/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/App.java" />
+        <option value="$PROJECT_DIR$/concurrent/src/main/java/cn/aezo/concurrent/FileLock/FileLockMain.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-intro-sample-service/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-intro-sample-client/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/README.md" />
+        <option value="$PROJECT_DIR$/osgi/README_Zh.md" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle-service/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/karafboot-testapp/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/osgi-springboot/integration-test/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/src/test/java/ec/devnull/springboot/test/AbstractKarafBootTest.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/src/test/java/ec/devnull/springboot/app/test/JWTRestApplicationDummyTest.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/src/main/java/ec/devnull/springboot/config/KarafConfigService.java" />
+        <option value="$PROJECT_DIR$/javaee/sshRegister/sshRegister.iml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/javaee/springmvc/springmvc.iml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/src/test/resources/karaf.springboot-test.cfg" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/test.http" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APISecurityConfig.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/WebApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/BundleURL.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/JavassistTransformer.java" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/README.md" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -1546,12 +1501,18 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rabbitmq" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Karaf Boot ::: Spring Boot Test APP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rabbitmq" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Karaf Boot ::: Spring Boot Test APP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Karaf Boot ::: Spring Boot Test APP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="karafboot" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
@@ -1561,9 +1522,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="width" value="1610" />
-    <option name="height" value="1084" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1574,6 +1536,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1581,12 +1544,29 @@
               <item name="smjava" type="b2602c69:ProjectViewProjectNode" />
               <item name="smjava" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="smjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smjava" type="462c0819:PsiDirectoryNode" />
+              <item name="osgi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smjava" type="462c0819:PsiDirectoryNode" />
+              <item name="osgi" type="462c0819:PsiDirectoryNode" />
+              <item name="karaf-springboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smjava" type="462c0819:PsiDirectoryNode" />
+              <item name="osgi" type="462c0819:PsiDirectoryNode" />
+              <item name="karaf-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="karafboot-test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1595,27 +1575,31 @@
     <property name="GO_FMT" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/gitwork/smjava/javase/concurrent/src/main/java/cn/aezo/javase/msb/c05_4_Map/T2_WeakHashMap.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/javase/jdk9/jdk9_module2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javaee/springmvc/WebRoot/WEB-INF/lib/aspectjrt-1.8.0.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.15073766" />
     <property name="project.structure.side.proportion" value="0.34113207" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\gitwork\smjava\zookeeper\src\main\resources" />
       <recent name="D:\gitwork\smjava" />
+      <recent name="D:\gitwork\smjava\javaee\spring_src\src\main\resources\spring5" />
+      <recent name="D:\gitwork\smjava\zookeeper\src\main\resources" />
       <recent name="D:\gitwork\smjava\jvm\src\main\java\cn\aezo\jvm\c02_classloader" />
       <recent name="D:\gitwork\smjava\jvm\src\main\java\cn\aezo\jvm\c01_class" />
-      <recent name="D:\gitwork\smjava\design-pattern\src\cn\aezo\designpatternmsb\c18_observer\t1_child" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -1630,12 +1614,144 @@
       <recent name="cn.aezo.netty.c1_bio_nio_aio.t1_bio" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitwork\smjava\osgi\karaf-springboot\karafboot-test\karafboot-testapp\src\main\resources" />
+      <recent name="D:\gitwork\smjava\javaee\springmvc\WebRoot\WEB-INF\lib" />
+      <recent name="D:\gitwork\smjava\osgi" />
+      <recent name="D:\gitwork\smjava\javaee\spring_src\src\main\java\cn\aezo\smjava\javaee\spring5\bean\c01_ioc_flow\xml" />
       <recent name="D:\gitwork\smjava\javase\jdk8\src\main\java\cn\aezo\javase\jdk8\c01_lambda" />
-      <recent name="D:\gitwork\smjava\rabbitmq\src\main\java\cn\aezo\demo\rabbitmq\c05_model_topic" />
-      <recent name="D:\gitwork\smjava\rabbitmq\src\main\java\cn\aezo\demo\rabbitmq\c04_model_direct" />
-      <recent name="D:\gitwork\smjava\rabbitmq\src\main\java\cn\aezo\demo\rabbitmq" />
-      <recent name="D:\gitwork\smjava\rabbitmq\src\main\java\cn\aezo\demo\rabbitmq\c03_fanout" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/api/order/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="api" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="api" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="id=999&amp;value=content" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/users/sign-up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="api" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="api" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/users/sign-up" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="api" />
+                <option name="value" value="601f1889667efaebb33b8c12572835da3f027f78" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/users/sign-up" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8990/users/sign-up" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="POST http://localhost:8990/api/order/&#10;api: 601f1889667efaebb33b8c12572835da3f027f78&#10;&#10;{&#10;  &quot;id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="karafboot-testapp" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1649,17 +1765,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.T01_Lambda">
+  <component name="RunManager" selected="Spring Boot.JWTRestApplicationDummy">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.annotation.App" />
-      <module name="springArch" />
+      <module name="spring_src" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.annotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="AppXml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.xml.AppXml" />
+      <module name="spring_src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1675,17 +1802,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Consumer (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.aezo.demo.rabbitmq.c05_model_topic.Consumer" />
-      <module name="rabbitmq" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.aezo.demo.rabbitmq.c05_model_topic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.aezo.demo.rabbitmq.c01_model_point.Consumer" />
       <module name="rabbitmq" />
@@ -1697,24 +1813,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Publish (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.aezo.demo.rabbitmq.c01_model_point.Publish" />
-      <module name="rabbitmq" />
+    <configuration name="FileLockMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.aezo.concurrent.FileLock.FileLockMain" />
+      <module name="concurrent" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.aezo.demo.rabbitmq.c01_model_point.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Publish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.aezo.demo.rabbitmq.c05_model_topic.Publish" />
-      <module name="rabbitmq" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.aezo.demo.rabbitmq.c05_model_topic.*" />
+          <option name="PATTERN" value="cn.aezo.concurrent.FileLock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1733,6 +1838,29 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="JWTRestApplicationDummyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="integration-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ec.devnull.springboot.app.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ec.devnull.springboot.app.test" />
+      <option name="MAIN_CLASS_NAME" value="ec.devnull.springboot.app.test.JWTRestApplicationDummyTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1748,6 +1876,10 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="JWTRestApplicationDummy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="karafboot-testapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ec.devnull.rest.springboot.app.JWTRestApplicationDummy" />
     </configuration>
     <configuration name="Jdk8Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jdk8" />
@@ -1941,22 +2073,26 @@
     <list>
       <item itemvalue="Tomcat Server.javaee" />
       <item itemvalue="Spring Boot.RabbitmqApplication" />
-      <item itemvalue="Application.Consumer (3)" />
-      <item itemvalue="Application.Publish" />
-      <item itemvalue="Application.Publish (3)" />
-      <item itemvalue="Application.Consumer" />
       <item itemvalue="Spring Boot.Jdk8Application" />
+      <item itemvalue="Spring Boot.JWTRestApplicationDummy" />
+      <item itemvalue="Application.Consumer" />
       <item itemvalue="Application.T01_Lambda" />
+      <item itemvalue="Application.AppXml" />
+      <item itemvalue="Application.FileLockMain" />
+      <item itemvalue="JUnit.JWTRestApplicationDummyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JWTRestApplicationDummyTest" />
+        <item itemvalue="Application.FileLockMain" />
+        <item itemvalue="Application.AppXml" />
         <item itemvalue="Application.T01_Lambda" />
         <item itemvalue="Application.Consumer" />
-        <item itemvalue="Application.Publish (3)" />
-        <item itemvalue="Application.Publish" />
-        <item itemvalue="Application.Consumer (3)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -2055,7 +2191,16 @@
       <workItem from="1598606190751" duration="1346000" />
       <workItem from="1598687298241" duration="15571000" />
       <workItem from="1598929911292" duration="3737000" />
-      <workItem from="1599189322210" duration="1980000" />
+      <workItem from="1599189322210" duration="3302000" />
+      <workItem from="1599529049170" duration="4624000" />
+      <workItem from="1599626057643" duration="9006000" />
+      <workItem from="1606283132366" duration="148000" />
+      <workItem from="1606303391258" duration="27000" />
+      <workItem from="1609832330406" duration="1548000" />
+      <workItem from="1611715107932" duration="2589000" />
+      <workItem from="1612843686806" duration="2578000" />
+      <workItem from="1612846472529" duration="8735000" />
+      <workItem from="1613833760360" duration="28755000" />
     </task>
     <task id="LOCAL-00001" summary="pom 1">
       <created>1544190583052</created>
@@ -2117,18 +2262,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main_test_(1) - 2020.07.26 at 13h 05m 47s.xml">
-      <configuration name="Main.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test_(1) - 2020.07.26 at 13h 19m 18s.xml">
-      <configuration name="Main.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test_(1) - 2020.07.26 at 13h 42m 58s.xml">
-      <configuration name="Main.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test_(1) - 2020.07.26 at 13h 44m 53s.xml">
-      <configuration name="Main.test (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Main_test_(1) - 2020.07.26 at 13h 45m 20s.xml">
       <configuration name="Main.test (1)" configurationId="JUnit" />
     </history-entry>
@@ -2147,9 +2280,21 @@
     <history-entry file="Main_test_(1) - 2020.07.26 at 13h 57m 07s.xml">
       <configuration name="Main.test (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JWTRestApplicationDummyTest - 2021.02.21 at 00h 18m 59s.xml">
+      <configuration name="JWTRestApplicationDummyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JWTRestApplicationDummyTest - 2021.02.21 at 00h 20m 07s.xml">
+      <configuration name="JWTRestApplicationDummyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JWTRestApplicationDummyTest - 2021.02.21 at 22h 31m 11s.xml">
+      <configuration name="JWTRestApplicationDummyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JWTRestApplicationDummyTest - 2021.02.21 at 22h 33m 04s.xml">
+      <configuration name="JWTRestApplicationDummyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604905000" />
+    <option name="totallyTimeSpent" value="664237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2163,14 +2308,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+      <window_info anchor="right" auto_hide="true" id="Key Promoter X" order="0" side_tool="true" type="SLIDING" weight="0.31626666" />
       <window_info anchor="right" id="PlantUML" order="12" sideWeight="0.49888143" weight="0.304" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="RestServices" order="21" weight="0.2528" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50186664" side_tool="true" weight="0.3769575" />
       <window_info anchor="bottom" id="Application Servers" order="18" weight="0.32997763" />
-      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.5010661" side_tool="true" weight="0.2673378" />
-      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.4966443" weight="0.23413333" />
+      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.5024" side_tool="true" weight="0.27964205" />
+      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.4966443" weight="0.22986667" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
+      <window_info anchor="right" id="CDI" order="22" weight="0.25866666" />
       <window_info anchor="right" id="Flutter Outline" order="13" show_stripe_button="false" sideWeight="0.49888143" weight="0.3296" />
       <window_info anchor="bottom" id="MyBatis Log" order="22" />
       <window_info id="Capture Tool" order="1" />
@@ -2180,85 +2328,91 @@
       <window_info anchor="right" auto_hide="true" id="Translate" order="15" show_stripe_button="false" type="SLIDING" weight="0.3296" />
       <window_info anchor="right" id="Ant Build" order="8" sideWeight="0.49888143" weight="0.2496" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49813333" weight="0.5111857" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49813333" weight="0.37136465" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.45973155" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49813333" weight="0.3210291" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4976" weight="0.36241612" />
+      <window_info anchor="right" x="496" y="73" width="928" height="894" id="Codota" order="20" weight="0.29386666" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32997763" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Flutter Performance" order="21" show_stripe_button="false" sideWeight="0.50159913" side_tool="true" weight="0.2785235" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49813333" weight="0.3769575" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49813333" visible="true" weight="0.5861297" />
       <window_info anchor="right" id="leetcode" order="0" sideWeight="0.50223714" side_tool="true" weight="0.19306667" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49870968" weight="0.2181208" />
-      <window_info anchor="bottom" id="Spring" order="15" weight="0.32997763" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3657718" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5244095" visible="true" weight="0.19573334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49870968" weight="0.27293065" />
+      <window_info anchor="bottom" id="Sequence" order="23" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.18791947" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.75950783" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5244095" visible="true" weight="0.26133335" />
+      <window_info anchor="bottom" id="Problems" order="27" sideWeight="0.49973333" weight="0.32885906" />
       <window_info anchor="right" id="Bean Validation" order="9" show_stripe_button="false" sideWeight="0.49888143" weight="0.2224" />
       <window_info id="Web" order="8" sideWeight="0.50782996" side_tool="true" weight="0.17750533" />
       <window_info id="JRebel" order="7" show_stripe_button="false" sideWeight="0.5080386" side_tool="true" weight="0.17750533" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
       <window_info anchor="right" id="Gradle" order="11" sideWeight="0.49776286" weight="0.15573333" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" sideWeight="0.51007754" side_tool="true" weight="0.22334754" />
       <window_info anchor="right" id="Flutter Inspector" order="14" show_stripe_button="false" sideWeight="0.49888143" weight="0.3296" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.38255033" />
-      <window_info anchor="bottom" id="Docker" order="20" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.32960895" />
-      <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info anchor="right" id="jclasslib" order="16" weight="0.42537314" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
-      <window_info anchor="bottom" id="REST Client" order="7" weight="0.4082774" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Struts Assistant" order="10" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="17" side_tool="true" weight="0.32995737" />
-      <window_info anchor="bottom" id="JProfiler" order="17" weight="0.32997763" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="22" weight="0.22706935" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="JProfiler" order="17" weight="0.32997763" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info id="Persistence" order="9" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="17" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="28" weight="0.32997763" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
+      <window_info id="Struts Assistant" order="10" />
+      <window_info anchor="right" id="jclasslib" order="16" weight="0.42537314" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="26" weight="0.32997763" />
+      <window_info anchor="bottom" id="Docker" order="20" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="22" weight="0.22706935" />
+      <window_info anchor="bottom" id="Jindent" order="29" weight="0.21029083" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="REST Client" order="7" weight="0.4082774" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.38255033" />
     </layout>
     <layout-to-restore>
       <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="1" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Build" order="23" weight="0.22706935" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="PlantUML" order="12" sideWeight="0.49888143" weight="0.304" />
       <window_info anchor="bottom" id="REST Client" order="8" weight="0.4082774" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4989339" weight="0.34787473" />
       <window_info id="JRebel" order="7" show_stripe_button="false" sideWeight="0.5080386" side_tool="true" weight="0.17750533" />
-      <window_info anchor="bottom" id="Application Servers" order="20" weight="0.32997763" />
       <window_info anchor="bottom" id="Spring" order="17" weight="0.32997763" />
       <window_info anchor="bottom" id="Database Console" order="18" weight="0.38255033" />
       <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49870968" visible="true" weight="0.26174498" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" sideWeight="0.49888143" weight="0.2496" />
       <window_info id="Struts Assistant" order="10" />
-      <window_info anchor="right" id="Flutter Inspector" order="14" show_stripe_button="false" sideWeight="0.49888143" weight="0.3296" />
+      <window_info id="UI Designer" order="3" />
       <window_info id="Web" order="8" sideWeight="0.50782996" side_tool="true" weight="0.17750533" />
       <window_info id="Favorites" order="6" sideWeight="0.51007754" side_tool="true" weight="0.22334754" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.33892617" />
       <window_info id="Capture Tool" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Gradle" order="11" sideWeight="0.49776286" weight="0.19306667" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012903" side_tool="true" weight="0.27510917" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49840087" weight="0.25950783" />
+      <window_info anchor="right" id="Flutter Inspector" order="14" show_stripe_button="false" sideWeight="0.49888143" weight="0.3296" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="17" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Flutter Outline" order="13" show_stripe_button="false" sideWeight="0.49888143" weight="0.3296" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="bottom" id="JProfiler" order="19" weight="0.32997763" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="20" weight="0.32997763" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4989339" weight="0.3769575" />
       <window_info anchor="right" id="leetcode" order="0" sideWeight="0.50223714" side_tool="true" weight="0.19306667" />
       <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.4966443" weight="0.23413333" />
       <window_info anchor="bottom" id="Flutter Performance" order="22" show_stripe_button="false" sideWeight="0.50159913" side_tool="true" weight="0.2785235" />
       <window_info anchor="bottom" id="Docker" order="21" show_stripe_button="false" />
       <window_info anchor="bottom" id="MyBatis Log" order="24" />
-      <window_info anchor="right" id="Gradle" order="11" sideWeight="0.49776286" weight="0.19306667" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5244095" visible="true" weight="0.25333333" />
       <window_info anchor="bottom" id="JRebel Console" order="13" sideWeight="0.5010661" side_tool="true" weight="0.2673378" />
@@ -2274,7 +2428,7 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32997763" />
       <window_info anchor="right" id="Bean Validation" order="9" show_stripe_button="false" sideWeight="0.49888143" weight="0.2224" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4989339" weight="0.34787473" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="1" visible="true" weight="0.32960895" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2352,22 +2506,10 @@
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/javaee/springArch/src/main/java/cn/aezo/smjava/javaee/spring5/bean/c01_ioc_flow/annotation/App.java</url>
           <line>8</line>
           <properties />
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java</url>
-          <line>271</line>
-          <properties />
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigUtils.java</url>
@@ -2376,19 +2518,109 @@
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java</url>
-          <line>215</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/main/java/cn/aezo/algorithms/c01_sort/MergeSort.java</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIAuthenticationManager.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/controller/OrderController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIKeyAuthFilter.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIKeyAuthFilter.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/JWTAuthorizationFilter.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.3.RELEASE/spring-security-web-5.1.3.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIKeyAuthenticationFilter.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/ProviderManager.class</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APISecurityConfig.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/BasicAuthenticationPoint.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/WebApplicationConfig.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APISecurityConfig.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/BundleURL.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/KarafBootMojo.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/KarafBootMojo.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/KarafBootMojo.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="76" />
+      <option name="time" value="116" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -2397,6 +2629,39 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>FrameworkUtil.getBundle(JWTRestApplicationDummy.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.osgi.framework.FrameworkUtil,ec.devnull.rest.springboot.app.JWTRestApplicationDummy</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FrameworkUtil.getBundle()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.osgi.framework.FrameworkUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FrameworkUtil.getBundle(BundleURL.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.osgi.framework.FrameworkUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FrameworkUtil</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>org.osgi.framework.FrameworkUtil.getBundle(this.getClass())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>InetAddress.getAllByName(&quot;192.168.17.237&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -2412,398 +2677,389 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>!f.exists()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>f.exists()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string />
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string />
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string />
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string />
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/soft/java/jdk1.8.0_111/src.zip!/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="267" column="31" lean-forward="true" selection-start-line="267" selection-start-column="31" selection-end-line="267" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty/src/main/java/cn/aezo/netty/c1_bio_nio_aio_netty/t1_bio/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jvm/src/main/java/cn/aezo/jvm/c02_classloader/T06_LazyLoading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jvm/src/main/java/cn/aezo/jvm/c02_classloader/T09_ClassReloading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee/testServlet/WebRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="170" column="13" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaee/testServlet/src/com/smalle/listener/OnlineListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar!/org/springframework/context/ApplicationListener.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.3.RELEASE/spring-security-web-5.1.3.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaee/spring/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="152">
-            <caret line="189" column="64" selection-start-line="189" selection-start-column="45" selection-end-line="189" selection-end-column="64" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/soft/java/jdk1.8.0_111/src.zip!/java/util/EventListener.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/test.http">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="209">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java/apache-tomcat-8.5.33/lib/servlet-api.jar!/javax/servlet/ServletContextListener.class">
+    <entry file="jar://C:/soft/java/jdk1.8.0_111/src.zip!/java/security/AccessController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="169">
+          <caret line="263" column="19" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaee/testServlet/src/com/smalle/listener/DemoListener.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state>
+          <caret column="88" lean-forward="true" selection-start-column="88" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29-sources.jar!/org/apache/catalina/core/StandardContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="4791" selection-start-line="4791" selection-end-line="4791" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/HELP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="171">
-            <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-amqp/2.3.0.RELEASE/spring-boot-starter-amqp-2.3.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.3.0.RELEASE/spring-boot-dependencies-2.3.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="2094" column="19" lean-forward="true" selection-start-line="2090" selection-start-column="6" selection-end-line="2094" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0.jar!/com/rabbitmq/client/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="608" selection-start-line="608" selection-end-line="608" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0.jar!/com/rabbitmq/client/Channel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="209" column="15" lean-forward="true" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/RabbitmqApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="54" column="63" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/DefaultConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/CancelCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/AMQP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="846" column="19" selection-start-line="846" selection-start-column="19" selection-end-line="846" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c02_model_work/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c02_model_work/Publish.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/JWTAuthorizationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.9.0/amqp-client-5.9.0-sources.jar!/com/rabbitmq/client/Channel.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="314" column="23" selection-start-line="314" selection-start-column="23" selection-end-line="314" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Consumer.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/controller/OSGServiceWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c04_model_direct/Consumer.java">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.2.RELEASE/spring-boot-dependencies-2.1.2.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state relative-caret-position="289">
+          <caret line="2694" column="12" selection-start-line="2694" selection-start-column="12" selection-end-line="2694" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c03_model_fanout/Publish.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/PropertiesMergingResourceTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="445">
+          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c04_model_direct/Publish.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="-2468">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/osgi-intro-sample-client/target/classes/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Publish.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c05_model_topic/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_model_point/Publish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/util/RabbitmqU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/concurrent/src/main/java/cn/aezo/concurrent_msb/c05_4_Map/T2_WeakHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/soft/java/jdk-11.0.2/lib/src.zip!/java.base/java/util/WeakHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="137" column="16" lean-forward="true" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/soft/java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/soft/java/jdk-11.0.2/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="642" column="34" lean-forward="true" selection-start-line="642" selection-start-column="34" selection-end-line="642" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/cn/aezo/demo/rabbitmq/c01_model_point/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/translation.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/PalindromicSubstrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/leetcode/editor/cn/TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javase/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/c01_lambda/T01_Lambda.class">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/SecurityConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/WebApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/jdk8/target/classes/cn/aezo/javase/jdk8/c01_lambda/T01_Lambda.class">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIKeyAuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="76">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
           <folding>
-            <element signature="e#0#538#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/c01_lambda/T01_Lambda.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIKeyAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javase/jdk8/src/main/java/cn/aezo/javase/jdk8/Jdk8Application.java">
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APIAuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/BasicAuthenticationPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/context/support/ServletContextResourcePatternResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/target/classes/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="91" selection-start-column="91" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.4.RELEASE/spring-core-5.1.4.RELEASE.jar!/org/springframework/core/io/support/PathMatchingResourcePatternResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
+          <folding>
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/PropertiesPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-554">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="96" column="99" selection-start-line="96" selection-start-column="99" selection-end-line="96" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/KarafBootPatchMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="769" selection-start-line="769" selection-end-line="769" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/JavassistTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/src/test/java/ec/devnull/springboot/test/AbstractKarafBootTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/target/classes/ec/devnull/rest/springboot/app/JWTRestApplicationDummy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/target/classes/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/aether/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-889">
+          <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/SpringBootActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/JoinClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/src/test/java/ec/devnull/springboot/app/test/JWTRestApplicationDummyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.3.RELEASE/spring-security-config-5.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/config/APISecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar!/org/osgi/framework/FrameworkUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="135" column="47" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/aether/src/main/java/ec/devnull/aether/KarafBootMaven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/mojo/exec-maven-plugin/1.6.0/exec-maven-plugin-1.6.0-sources.jar!/org/codehaus/mojo/exec/ExecJavaMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/src/main/java/ec/devnull/springboot/plugin/KarafBootMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/src/main/java/ec/devnull/springboot/patch/BundleURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/src/main/java/ec/devnull/springboot/config/SrpingBootConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/src/main/java/ec/devnull/springboot/config/Activator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/src/main/java/ec/devnull/springboot/config/ConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/src/main/java/ec/devnull/springboot/config/KarafConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/src/main/java/ec/devnull/rest/springboot/app/JWTRestApplicationDummy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2875,7 +3131,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>netty</last-edited>
+          <last-edited>springmvc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

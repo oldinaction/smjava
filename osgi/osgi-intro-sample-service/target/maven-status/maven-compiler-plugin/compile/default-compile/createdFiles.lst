@@ -1,0 +1,2 @@
+com\baeldung\osgi\sample\service\implementation\GreeterImpl.class
+com\baeldung\osgi\sample\service\definition\Greeter.class
