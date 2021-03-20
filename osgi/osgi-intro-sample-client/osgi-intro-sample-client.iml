@@ -2,7 +2,7 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="osgi-intro-sample-client-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="com.baeldung.osgi.sample.client.Client" bundleSymbolicName="cn.aezo.osgi-intro-sample-client" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="osgi-intro-sample-client-1.0-SNAPSHOT.jar" outputPathType="OsgiOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="com.baeldung.osgi.sample.client.Client" bundleSymbolicName="cn.aezo.osgi-intro-sample-client" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="true" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="osgi-intro-sample-client" />
           <property key="Private-Package" value="com.baeldung.osgi.sample.client" />
