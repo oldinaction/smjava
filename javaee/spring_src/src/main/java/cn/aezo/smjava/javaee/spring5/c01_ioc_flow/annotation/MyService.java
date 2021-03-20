@@ -1,4 +1,4 @@
-package cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.annotation;
+package cn.aezo.smjava.javaee.spring5.c01_ioc_flow.annotation;
 
 import org.springframework.stereotype.Service;
 

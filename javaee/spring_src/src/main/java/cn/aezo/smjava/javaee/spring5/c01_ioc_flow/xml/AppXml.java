@@ -1,6 +1,6 @@
-package cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.xml;
+package cn.aezo.smjava.javaee.spring5.c01_ioc_flow.xml;
 
-import cn.aezo.smjava.javaee.spring5.bean.c01_ioc_flow.annotation.MyService;
+import cn.aezo.smjava.javaee.spring5.c01_ioc_flow.annotation.MyService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
