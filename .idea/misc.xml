@@ -11,6 +11,8 @@
     <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle-service" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/osgi/osgi-springboot/karafboot-testapp" />
+    <file type="web" url="file://$PROJECT_DIR$/javase/jdk9/jdk9_module1" />
+    <file type="web" url="file://$PROJECT_DIR$/javase/jdk9/jdk9_module2" />
     <file type="web" url="file://$PROJECT_DIR$/lucene" />
   </component>
   <component name="MarkdownProjectSettings" wasCopied="true">
@@ -100,20 +102,35 @@
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/javase/jdk8/pom.xml" />
         <option value="$PROJECT_DIR$/javaee/spring_src/pom.xml" />
-        <option value="$PROJECT_DIR$/osgi/pom.xml" />
-        <option value="$PROJECT_DIR$/osgi/karaf-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/hadoop/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-hadoop/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-hbase/pom.xml" />
+        <option value="$PROJECT_DIR$/javaee/springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-hadoop-project/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_log_source/pom.xml" />
+        <option value="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/bigdata-hive/pom.xml" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/javase/test/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/pom.xml" />
         <option value="$PROJECT_DIR$/osgi/osgi-springboot/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="Osmorc">
+    <option name="bndAutoImport" value="true" />
+    <option name="bundlesOutputPath" value="$PROJECT_DIR$/classes/bundles" />
+    <option name="frameworkInstanceName" value="Felix (7.0.0)" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

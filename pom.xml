@@ -10,15 +10,19 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>javase</module>
-        <module>javaee</module>
-        <module>design-pattern</module>
+        <module>algorithms</module>
+        <module>bigdata-hadoop</module>
+        <module>bigdata-hadoop-project</module>
+        <module>bigdata-hbase</module>
+        <!--<module>bigdata-hive</module>-->
         <module>concurrent</module>
         <module>demo</module>
+        <module>design-pattern</module>
+        <module>javase</module>
+        <module>javaee</module>
         <module>jvm</module>
         <module>zookeeper</module>
-        <module>algorithms</module>
-        <module>osgi</module>
+        <!--<module>osgi</module>-->
         <!--<module>lucene</module>-->
     </modules>
 

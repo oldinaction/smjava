@@ -2,53 +2,35 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/algorithms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-hbase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-hbase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-hive/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaee" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaee/servletBlog" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/javaee/spring_src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaee/spring_src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaee/spring_src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaee/testServlet" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/javase" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/javase/jdk8" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javase/jdk8/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javase/jdk8/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jvm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/aether" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/aether" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-activator" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-intro-sample-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-springboot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-springboot/dummy-bundle-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-springboot/integration-test" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/osgi/osgi-springboot/karafboot-testapp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/src/main/resources" charset="UTF-8" />
   </component>
 </project>

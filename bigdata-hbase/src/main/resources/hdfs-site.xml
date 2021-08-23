@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/var/bigdata/hadoop/dfs/name</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/var/bigdata/hadoop/dfs/data</value>
+    </property>
+    <!-- 一个hdfs实例的唯一标识 -->
+    <property>
+        <name>dfs.nameservices</name>
+        <value>aezocn</value>
+    </property>
+    <!-- NameNode标识(dfs.ha.namenodes.[dfs.nameservices])，多个用逗号分割 -->
+    <property>
+        <name>dfs.ha.namenodes.aezocn</name>
+        <value>nn1,nn2</value>
+    </property>
+    <!-- rpc协议用于hdfs文件上传和读取 -->
+    <property>
+        <name>dfs.namenode.rpc-address.aezocn.nn1</name>
+        <value>node01:8020</value>
+    </property>
+    <property>
+        <name>dfs.namenode.rpc-address.aezocn.nn2</name>
+        <value>node02:8020</value>
+    </property>
+    <!-- http协议用于后台监控 -->
+    <property>
+        <name>dfs.namenode.http-address.aezocn.nn1</name>
+        <value>node01:50070</value>
+    </property>
+    <property>
+        <name>dfs.namenode.http-address.aezocn.nn2</name>
+        <value>node02:50070</value>
+    </property>
+
+    <!-- 指定3台JournalNode服务地址，jndir目录会自动新建，用于存放edits数据 -->
+    <property>
+        <name>dfs.namenode.shared.edits.dir</name>
+        <value>qjournal://node02:8485;node03:8485;node04:8485/jndir</value>
+    </property>
+    <!-- 为JournalNode存放edits数据文件的根目录(会在此目录创建jndir)，会自动创建 -->
+    <property>
+        <name>dfs.journalnode.edits.dir</name>
+        <value>/var/bigdata/hadoop/dfs/jn</value>
+    </property>
+
+    <!-- 启用Zookeeper Failover Controller自动切换 -->
+    <property>
+        <name>dfs.ha.automatic-failover.enabled</name>
+        <value>true</value>
+    </property>
+    <!-- HA角色切换的代理类，帮助客户端查询一个活动的NameNode(Active)，固定为下面的类名 -->
+    <property>
+        <name>dfs.client.failover.proxy.provider.aezocn</name>
+        <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    <!-- 对NameNode进行远程切换时，此处通过ssh实现运行远程命令。设置ssh免密 -->
+    <property>
+        <name>dfs.ha.fencing.methods</name>
+        <value>sshfence</value>
+    </property>
+    <property>
+        <name>dfs.ha.fencing.ssh.private-key-files</name>
+        <value>/home/test/.ssh/id_rsa</value>
+    </property>
+</configuration>
