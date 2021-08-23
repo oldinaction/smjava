@@ -3,19 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javase/tankWar/TankWar.iml" filepath="$PROJECT_DIR$/javase/tankWar/TankWar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/aether/aether.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/aether/aether.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/aether/aether.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/aether/aether.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop/bigdata-hadoop.iml" filepath="$PROJECT_DIR$/bigdata-hadoop/bigdata-hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop-project/bigdata-hadoop-project.iml" filepath="$PROJECT_DIR$/bigdata-hadoop-project/bigdata-hadoop-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata-hbase/bigdata-hbase.iml" filepath="$PROJECT_DIR$/bigdata-hbase/bigdata-hbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/concurrent/concurrent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/dummy-bundle.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/dummy-bundle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/dummy-bundle (1) (ec.devnull).iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle/dummy-bundle (1) (ec.devnull).iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/dummy-bundle-service.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/dummy-bundle-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/dummy-bundle-service (1) (ec.devnull).iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/dummy-bundle-service/dummy-bundle-service (1) (ec.devnull).iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/hadoop_project_analyse.iml" filepath="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/hadoop_project_analyse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_log_source/hadoop_project_log_source.iml" filepath="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_log_source/hadoop_project_log_source.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/integration-test.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/integration-test/integration-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/javaee.iml" filepath="$PROJECT_DIR$/javaee/javaee.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/jdk8/jdk8.iml" filepath="$PROJECT_DIR$/javase/jdk8/jdk8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9.iml" />
@@ -23,31 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" filepath="$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karaf-springboot.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karaf-springboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karaf-springboot.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karaf-springboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/karafboot-configuration.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/karafboot-configuration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/karafboot-configuration.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-configuration/karafboot-configuration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies/karafboot-dependencies.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies/karafboot-dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies/karafboot-dependencies.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-dependencies/karafboot-dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features/karafboot-features.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features/karafboot-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features/karafboot-features.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-features/karafboot-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/karafboot-maven-plugin.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/karafboot-maven-plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/karafboot-maven-plugin.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-maven-plugin/karafboot-maven-plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/karafboot-patch.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/karafboot-patch.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/karafboot-patch.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-patch/karafboot-patch.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/karafboot-starter-base.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/karafboot-starter-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/karafboot-starter-base.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starter-base/karafboot-starter-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starters.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starters.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starters.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-starters/karafboot-starters.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-test.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-test (1) (ec.devnull).iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-test (1) (ec.devnull).iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/karafboot-testapp.iml" filepath="$PROJECT_DIR$/osgi/karaf-springboot/karafboot-test/karafboot-testapp/karafboot-testapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/msb_base/msb_base.iml" filepath="$PROJECT_DIR$/javase/msb_base/msb_base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/netty.iml" filepath="$PROJECT_DIR$/.idea/modules/netty.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/osgi.iml" filepath="$PROJECT_DIR$/osgi/osgi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/osgi-intro-sample-activator/osgi-intro-sample-activator.iml" filepath="$PROJECT_DIR$/osgi/osgi-intro-sample-activator/osgi-intro-sample-activator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/osgi-intro-sample-client/osgi-intro-sample-client.iml" filepath="$PROJECT_DIR$/osgi/osgi-intro-sample-client/osgi-intro-sample-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/osgi/osgi-intro-sample-service/osgi-intro-sample-service.iml" filepath="$PROJECT_DIR$/osgi/osgi-intro-sample-service/osgi-intro-sample-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" filepath="$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/smjava.iml" filepath="$PROJECT_DIR$/smjava.iml" />

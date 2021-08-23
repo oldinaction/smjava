@@ -2,74 +2,51 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aether" />
-        <module name="algorithms" />
-        <module name="concurrent" />
-        <module name="demo" />
-        <module name="design-pattern" />
-        <module name="dummy-bundle" />
-        <module name="dummy-bundle-service" />
-        <module name="hibernate3" />
-        <module name="hiebernate3" />
-        <module name="integration-test" />
-        <module name="jdk8" />
-        <module name="jspBlog" />
-        <module name="JUC" />
         <module name="jvm" />
-        <module name="karafboot-configuration" />
-        <module name="karafboot-features" />
-        <module name="karafboot-maven-plugin" />
-        <module name="karafboot-patch" />
-        <module name="karafboot-starter-base" />
-        <module name="karafboot-testapp" />
-        <module name="osgi-intro-sample-activator" />
-        <module name="osgi-intro-sample-client" />
-        <module name="osgi-intro-sample-service" />
-        <module name="rabbitmq" />
-        <module name="servletBlog" />
-        <module name="spring" />
+        <module name="algorithms" />
         <module name="spring_src" />
-        <module name="struts2" />
-        <module name="testAntXdoclet" />
         <module name="testJsp" />
-        <module name="testServlet" />
-        <module name="testWeb" />
         <module name="zookeeper" />
+        <module name="concurrent" />
+        <module name="bigdata-hbase" />
+        <module name="rabbitmq" />
+        <module name="demo" />
+        <module name="testAntXdoclet" />
+        <module name="testServlet" />
+        <module name="spring" />
+        <module name="hadoop_project_analyse" />
+        <module name="servletBlog" />
+        <module name="design-pattern" />
+        <module name="jspBlog" />
+        <module name="struts2" />
+        <module name="testWeb" />
+        <module name="hibernate3" />
+        <module name="jdk8" />
+        <module name="bigdata-hadoop" />
+        <module name="springmvc" />
+        <module name="hadoop_project_log_source" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="aether" target="1.8" />
       <module name="algorithms" target="1.8" />
-      <module name="concurrent" target="11" />
+      <module name="bigdata-hadoop" target="1.8" />
+      <module name="bigdata-hadoop-project" target="1.5" />
+      <module name="bigdata-hbase" target="1.8" />
+      <module name="concurrent" target="16" />
       <module name="demo" target="1.7" />
       <module name="design-pattern" target="1.8" />
-      <module name="dummy-bundle" target="1.8" />
-      <module name="dummy-bundle-service" target="1.8" />
+      <module name="hadoop_project_analyse" target="1.8" />
+      <module name="hadoop_project_log_source" target="1.5" />
       <module name="hibernate3" target="1.6" />
-      <module name="integration-test" target="1.8" />
       <module name="javaee" target="1.5" />
-      <module name="javase" target="1.5" />
       <module name="jdk8" target="1.8" />
       <module name="jspBlog" target="1.6" />
       <module name="jvm" target="1.8" />
-      <module name="karaf-springboot" target="1.8" />
-      <module name="karafboot-configuration" target="1.8" />
-      <module name="karafboot-dependencies" target="1.8" />
-      <module name="karafboot-features" target="1.8" />
-      <module name="karafboot-maven-plugin" target="1.8" />
-      <module name="karafboot-patch" target="1.8" />
-      <module name="karafboot-starter-base" target="1.8" />
-      <module name="karafboot-starters" target="1.8" />
-      <module name="karafboot-test" target="1.8" />
-      <module name="karafboot-testapp" target="1.8" />
-      <module name="osgi" target="1.8" />
-      <module name="osgi-intro-sample-activator" target="1.8" />
-      <module name="osgi-intro-sample-client" target="1.8" />
-      <module name="osgi-intro-sample-service" target="1.8" />
       <module name="rabbitmq" target="1.8" />
       <module name="servletBlog" target="1.6" />
       <module name="smjava" target="1.8" />
