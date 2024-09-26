@@ -1,13 +1,13 @@
-StringÀàµÄequals·½·¨ºÍ==
-TestStringEquals¼´ÎªÀý×Ó
+Stringç±»çš„equalsæ–¹æ³•å’Œ==
+TestStringEqualså³ä¸ºä¾‹å­
 
-ÔÚÒ»¸öÊý×éÖÐÕÒ³öÐ¡Ð´×ÖÄ¸¡¢´óÐ´×ÖÄ¸ºÍÆäËû×Ö·ûµÄ¸öÊý£¬²¢ÕÒ³öÒ»¸ö×Ó×Ö·û´®³öÏÖµÄ´ÎÊý
-searchChar¼´ÎªÒ»¸öÀý×Ó
+åœ¨ä¸€ä¸ªæ•°ç»„ä¸­æ‰¾å‡ºå°å†™å­—æ¯ã€å¤§å†™å­—æ¯å’Œå…¶ä»–å­—ç¬¦çš„ä¸ªæ•°ï¼Œå¹¶æ‰¾å‡ºä¸€ä¸ªå­å­—ç¬¦ä¸²å‡ºçŽ°çš„æ¬¡æ•°
+searchCharå³ä¸ºä¸€ä¸ªä¾‹å­
 
-¹ØÓÚFileÀà£º
-TestFileÊÇÒ»¸öÀý×Ó(ÊÓÆµ£º³£ÓÃÀà10)
-ListFileÊÇÒ»¸öÔËÓÃµÝ¹éÑ°ÕÒÒ»¸öÂ·¾¶ÏÂµÄËùÓÐ×ÓÄ¿Â¼ºÍÎÄ¼þ
+å…³äºŽFileç±»ï¼š
+TestFileæ˜¯ä¸€ä¸ªä¾‹å­(è§†é¢‘ï¼šå¸¸ç”¨ç±»10)
+ListFileæ˜¯ä¸€ä¸ªè¿ç”¨é€’å½’å¯»æ‰¾ä¸€ä¸ªè·¯å¾„ä¸‹çš„æ‰€æœ‰å­ç›®å½•å’Œæ–‡ä»¶
 
-Ã¶¾ÙÀàÐÍ£º
+æžšä¸¾ç±»åž‹ï¼š
 TestEnum
 

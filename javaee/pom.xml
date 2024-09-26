@@ -11,12 +11,12 @@
 
     <modules>
         <module>testWeb</module>
-        <module>testServlet</module>
+        <!--<module>testServlet</module>-->
         <module>servletBlog</module>
-        <module>testJsp</module>
+        <!--<module>testJsp</module>-->
         <module>jspBlog</module>
         <module>testAntXdoclet</module>
-        <module>struts2</module>
+        <!--<module>struts2</module>-->
         <module>hibernate3</module>
         <module>spring</module>
     </modules>

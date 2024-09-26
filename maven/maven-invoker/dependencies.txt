@@ -1,0 +1,6 @@
+
+The following files have been resolved:
+   org.codehaus.plexus:plexus-utils:jar:3.0.20:compile:/Users/smalle/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar
+   org.codehaus.plexus:plexus-component-annotations:jar:1.6:compile:/Users/smalle/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+   org.apache.maven.shared:maven-invoker:jar:2.2:compile:/Users/smalle/.m2/repository/org/apache/maven/shared/maven-invoker/2.2/maven-invoker-2.2.jar
+

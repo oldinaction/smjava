@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="LOG_HOME">${sys:user.dir}/logs</Property>
+        <Property name="LOG_FILE">@logging.file-web@</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- 必须使用log4j1的格式 -->
+            <PatternLayout pattern="%m%n"/>
+            <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        </Console>
+
+        <Console name="console_appender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %p [%t] %C.%M(%L) | %m%n"/>
+        </Console>
+        <RollingFile name="file_appender" immediateFlush="true" fileName="${LOG_HOME}/${LOG_FILE}"
+                     filePattern="${LOG_HOME}/${LOG_FILE}.%d{yyyy-MM-dd}">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %p [%t] %C.%M(%L) | %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile >
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="console_appender"/>
+            <AppenderRef ref="file_appender"/>
+        </Root>
+    </Loggers>
+</Configuration>

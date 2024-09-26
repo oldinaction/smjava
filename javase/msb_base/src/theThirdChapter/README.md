@@ -1,14 +1,14 @@
-ÄÚ´æ·ÖÎö£º
-(1) BirthDateºÍBirthDateTestÀàÊÇÀà´æ·ÖÎöµÄÒ»¸öÀı×Ó
-(2) PointºÍPointTestÊÇÒ»¸öÀı×Ó
-*(3) Point2¡¢Circle¡¢CircleTestÊÇÒ»¸öÀı×Ó£¨ÊÓÆµ:JAVAÊÓÆµ½Ì³ÌµÚÈıÕÂ£ºÃæÏò¶ÔÏó14¡¢15£©
-(4) Person¡¢Teacher¡¢TestTeacherÊÇÒ»¸öÀı×Ó£¨ÊÓÆµ£ºJAVAÊÓÆµ½Ì³ÌµÚÈıÕÂ£ºÃæÏò¶ÔÏó31¡¢32¡¢33£©£¨Í¼½â£ºworldÎÄµµ¡¶ÄÚ´æ·ÖÎö¡·_TestTeacher)
+å†…å­˜åˆ†æï¼š
+(1) BirthDateå’ŒBirthDateTestç±»æ˜¯ç±»å­˜åˆ†æçš„ä¸€ä¸ªä¾‹å­
+(2) Pointå’ŒPointTestæ˜¯ä¸€ä¸ªä¾‹å­
+*(3) Point2ã€Circleã€CircleTestæ˜¯ä¸€ä¸ªä¾‹å­ï¼ˆè§†é¢‘:JAVAè§†é¢‘æ•™ç¨‹ç¬¬ä¸‰ç« ï¼šé¢å‘å¯¹è±¡14ã€15ï¼‰
+(4) Personã€Teacherã€TestTeacheræ˜¯ä¸€ä¸ªä¾‹å­ï¼ˆè§†é¢‘ï¼šJAVAè§†é¢‘æ•™ç¨‹ç¬¬ä¸‰ç« ï¼šé¢å‘å¯¹è±¡31ã€32ã€33ï¼‰ï¼ˆå›¾è§£ï¼šworldæ–‡æ¡£ã€Šå†…å­˜åˆ†æã€‹_TestTeacher)
 
-·½·¨ÖØÔØ£º
+æ–¹æ³•é‡è½½ï¼š
 TestOverLoad
 
-equals·½·¨:
-CatºÍTestEqualsÊÇÒ»¸öËµÃ÷ÖØĞ´equals·½·¨µÄÀı×Ó
+equalsæ–¹æ³•:
+Catå’ŒTestEqualsæ˜¯ä¸€ä¸ªè¯´æ˜é‡å†™equalsæ–¹æ³•çš„ä¾‹å­
 
-¶àÌ¬µÄÄÚ´æ·ÖÎö£º
-Animal¡¢Cat1¡¢Dog¡¢Lady¡¢TestEnjoyÊÇÒ»¸öÀı×Ó£¨Í¼½â£ºworldÎÄµµ¡¶ÄÚ´æ·ÖÎö¡·_TestEnjoy£©
+å¤šæ€çš„å†…å­˜åˆ†æï¼š
+Animalã€Cat1ã€Dogã€Ladyã€TestEnjoyæ˜¯ä¸€ä¸ªä¾‹å­ï¼ˆå›¾è§£ï¼šworldæ–‡æ¡£ã€Šå†…å­˜åˆ†æã€‹_TestEnjoyï¼‰

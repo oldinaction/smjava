@@ -1,0 +1,6 @@
+cn/aezo/smjava/proguard/Application$CustomGenerator.class
+cn/aezo/smjava/proguard/controller/TestController.class
+cn/aezo/smjava/proguard/Application.class
+cn/aezo/smjava/proguard/service/impl/TestServiceImpl.class
+cn/aezo/smjava/proguard/entity/User.class
+cn/aezo/smjava/proguard/service/TestService.class

@@ -1,0 +1,105 @@
+2022-01-21 09:27:29,957 INFO  main                             - SOFABoot Runtime Starting!
+2022-01-21 09:27:33,620 INFO  main                             - Registering component: reference:com.glmapper.bridge.service.SampleJvmService:#414599042
+2022-01-21 09:27:33,620 INFO  main                             -  >>In Binding [jvm] Begins - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:33,623 INFO  main                             -  >>In Binding [jvm] Ends - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:33,623 INFO  main                             - Registering component: reference:com.glmapper.bridge.extension.IExtension:#414599042
+2022-01-21 09:27:33,623 INFO  main                             -  >>In Binding [jvm] Begins - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:33,624 INFO  main                             -  >>In Binding [jvm] Ends - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:33,624 INFO  main                             - Registering component: reference:com.glmapper.bridge.datasource.DatasourceExtension:#414599042
+2022-01-21 09:27:33,624 INFO  main                             -  >>In Binding [jvm] Begins - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:33,633 INFO  main                             -  >>In Binding [jvm] Ends - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:33,642 INFO  main                             - Registering component: extension:extension$word$23f3dbf0
+2022-01-21 09:27:33,644 INFO  main                             - Registering component: extension:extension$simpleSpring$31d6f3fe
+2022-01-21 09:27:33,648 INFO  main                             - Registering component: extension:datasourceExtension$datasourcePoint$aa149ed
+2022-01-21 09:27:34,557 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of demo Start +++++++++++++++++
+2022-01-21 09:27:34,565 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of demo End +++++++++++++++++
+2022-01-21 09:27:34,566 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of demo Start +++++++++++++++++
+2022-01-21 09:27:34,568 INFO  main                             - 
+All activated module list(2) >>>>>>>
+  ├─ com.glmapper.bridge.glmapper-sofa-consumer
+  └─ com.glmapper.bridge.glmapper-sofa-provider
+
+Modules that could install(2) >>>>>>>
+  ├─ com.glmapper.bridge.glmapper-sofa-provider
+  └─ com.glmapper.bridge.glmapper-sofa-consumer
+
+2022-01-21 09:27:34,569 INFO  main                             - Start install demos module: com.glmapper.bridge.glmapper-sofa-provider
+2022-01-21 09:27:34,644 INFO  main                             - Start install demos module: com.glmapper.bridge.glmapper-sofa-consumer
+2022-01-21 09:27:34,665 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Begin refresh Spring Application Context of module com.glmapper.bridge.glmapper-sofa-provider of application demo.
+2022-01-21 09:27:37,894 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: extension-point:extension$word
+2022-01-21 09:27:40,869 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: extension-point:extension$simpleSpring
+2022-01-21 09:27:40,945 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: extension-point:datasourceExtension$datasourcePoint
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: service:com.glmapper.bridge.service.SampleJvmService
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Begins - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Ends - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Begins - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Ends - com.glmapper.bridge.service.SampleJvmService.
+2022-01-21 09:27:40,963 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Register Service - com.glmapper.bridge.service.SampleJvmService
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: service:com.glmapper.bridge.extension.IExtension
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Begins - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Ends - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Begins - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Ends - com.glmapper.bridge.extension.IExtension.
+2022-01-21 09:27:40,964 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Register Service - com.glmapper.bridge.extension.IExtension
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Registering component: service:com.glmapper.bridge.datasource.DatasourceExtension
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Begins - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<PreOut Binding [jvm] Ends - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Begins - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider -  <<Out Binding [jvm] Ends - com.glmapper.bridge.datasource.DatasourceExtension.
+2022-01-21 09:27:40,965 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-provider - Register Service - com.glmapper.bridge.datasource.DatasourceExtension
+2022-01-21 09:27:41,009 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-consumer - Begin refresh Spring Application Context of module com.glmapper.bridge.glmapper-sofa-consumer of application demo.
+2022-01-21 09:27:41,189 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-consumer - Registering component: reference:com.glmapper.bridge.service.SampleJvmService:annotationImpl#414599042
+2022-01-21 09:27:41,193 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-consumer -  >>In Binding [jvm] Begins - com.glmapper.bridge.service.SampleJvmService:annotationImpl.
+2022-01-21 09:27:41,193 INFO  sofa-module-start-com.glmapper.bridge.glmapper-sofa-consumer -  >>In Binding [jvm] Ends - com.glmapper.bridge.service.SampleJvmService:annotationImpl.
+2022-01-21 09:27:41,209 ERROR sofa-module-start-com.glmapper.bridge.glmapper-sofa-consumer - Refreshing Spring Application Context of module com.glmapper.bridge.glmapper-sofa-consumer got an error.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumer' defined in file [/Users/smalle/gitwork/github/smjava/sofa/sofaboot-extension/sofaboot-extension-consumer/target/classes/META-INF/spring/service-consumer.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: JVM Reference[interface com.glmapper.bridge.service.SampleJvmService#annotationImpl] cant not find the corresponding JVM service. Please check if there is a SOFA deployment publish the corresponding JVM service. If this exception occurred when the application starts up, please add Require-Module to SOFA deployment's MANIFEST.MF to indicate the startup dependency of SOFA modules.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at com.alipay.sofa.isle.spring.factory.BeanLoadCostBeanFactory.createBean(BeanLoadCostBeanFactory.java:49)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage.doRefreshSpringContext(SpringContextInstallStage.java:279)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage.access$000(SpringContextInstallStage.java:44)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage$1.run(SpringContextInstallStage.java:241)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: JVM Reference[interface com.glmapper.bridge.service.SampleJvmService#annotationImpl] cant not find the corresponding JVM service. Please check if there is a SOFA deployment publish the corresponding JVM service. If this exception occurred when the application starts up, please add Require-Module to SOFA deployment's MANIFEST.MF to indicate the startup dependency of SOFA modules.
+	at com.alipay.sofa.runtime.service.binding.JvmBindingAdapter$JvmServiceInvoker.doInvoke(JvmBindingAdapter.java:187)
+	at com.alipay.sofa.runtime.spi.service.ServiceProxy.invoke(ServiceProxy.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy62.hello(Unknown Source)
+	at com.glmapper.bridge.consumer.JvmServiceConsumer.init(JvmServiceConsumer.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1760)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1627)
+	... 19 common frames omitted
+2022-01-21 09:27:41,224 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of demo End +++++++++++++++++
+2022-01-21 09:27:41,224 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of demo Start +++++++++++++++++
+2022-01-21 09:27:41,225 INFO  main                             - 
+Spring context initialize success module list(1) >>>>>>> [totalTime = 6333 ms, realTime = 6333 ms]
+  └─ com.glmapper.bridge.glmapper-sofa-provider [6333 ms]
+       `---/Users/smalle/gitwork/github/smjava/sofa/sofaboot-extension/sofaboot-extension-provider/target/classes/META-INF/spring/service-provide.xml
+
+Spring context initialize failed module list(1) >>>>>>>
+  └─ com.glmapper.bridge.glmapper-sofa-consumer
+
+Spring bean load time cost list(1) >>>>>>> [totalTime = 6333 ms, realTime = 6333 ms]
+  └─ com.glmapper.bridge.glmapper-sofa-provider [6333 ms]
+       `---com.alipay.sofa.runtime.ext.spring.ExtensionPointFactoryBean	[6138 ms]
+
+2022-01-21 09:27:41,226 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of demo End +++++++++++++++++

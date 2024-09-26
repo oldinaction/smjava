@@ -1,0 +1,2 @@
+2021-12-10 22:13:07.831 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(16) | log4j debug message
+2021-12-10 22:13:07.833 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(19) | log4j info message

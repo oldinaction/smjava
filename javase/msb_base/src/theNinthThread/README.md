@@ -1,14 +1,14 @@
-Ïß³ÌµÄ´´½¨ºÍÆô¶¯£º
-TestThread1ºÍRunnable1ÊÇÒ»¸öÀı×Ó
+çº¿ç¨‹çš„åˆ›å»ºå’Œå¯åŠ¨ï¼š
+TestThread1å’ŒRunnable1æ˜¯ä¸€ä¸ªä¾‹å­
 
-sleep()ºÍinterrupt():
-TestInterruptºÍRunnable2ÊÇÒ»¸öÀı×Ó
+sleep()å’Œinterrupt():
+TestInterruptå’ŒRunnable2æ˜¯ä¸€ä¸ªä¾‹å­
 
 join():
-TestJoinºÍMyThreadÊÇÒ»¸öÀı×Ó
+TestJoinå’ŒMyThreadæ˜¯ä¸€ä¸ªä¾‹å­
 
 yield():
-TestYieldºÍMyThread3ÊÇÒ»¸öÀı×Ó£¨´ËÀı×ÓÓĞµãÎÊÌâ£¬²»ÊÇÃ¿´Î¶¼ÊÇµ½±»10Õû³ı¾Í»»ÏÂÒ»¸öÖ´ĞĞ£©
+TestYieldå’ŒMyThread3æ˜¯ä¸€ä¸ªä¾‹å­ï¼ˆæ­¤ä¾‹å­æœ‰ç‚¹é—®é¢˜ï¼Œä¸æ˜¯æ¯æ¬¡éƒ½æ˜¯åˆ°è¢«10æ•´é™¤å°±æ¢ä¸‹ä¸€ä¸ªæ‰§è¡Œï¼‰
 
-synchronized¹Ø¼ü×Ö£º
-TestSyncºÍTimerÊÇÒ»¸öÀı×Ó
+synchronizedå…³é”®å­—ï¼š
+TestSyncå’ŒTimeræ˜¯ä¸€ä¸ªä¾‹å­

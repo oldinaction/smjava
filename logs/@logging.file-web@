@@ -1,0 +1,12 @@
+2021-12-11 19:48:11.531 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 19:48:11.538 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message
+2021-12-11 19:48:21.384 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 19:48:21.386 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message
+2021-12-11 19:48:46.349 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 19:48:46.352 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message
+2021-12-11 19:54:06.636 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 19:54:06.647 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message
+2021-12-11 20:43:16.456 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 20:43:16.460 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message
+2021-12-11 20:52:31.713 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(20) | log4j debug message
+2021-12-11 20:52:31.719 DEBUG [main] cn.aezo.logging.log4j_1_2_api.Log4j12ApiApp.main(23) | log4j info message

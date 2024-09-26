@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.aezo.smjava.extend</groupId>
+	<artifactId>proguard-springboot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>proguard-springboot</name>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/>
+		<!-- lookup parent from repository -->
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+
+    <build>
+		<plugins>
+			<!-- proguard混淆插件 -->
+			<plugin>
+				<groupId>com.github.wvengen</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>2.5.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!-- 需要混淆的jar文件 -->
+					<injar>${project.build.finalName}.jar</injar>
+					<!-- 混淆后的jar文件 -->
+					<outjar>${project.build.finalName}-pg.jar</outjar>
+					<!-- 启动混淆功能 -->
+					<obfuscate>true</obfuscate>
+					<options>
+						<!-- 不做收缩（删除注释、未被引用代码） -->
+						<option>-dontshrink</option>
+						<!-- 不做优化（变更代码实现逻辑） -->
+						<option>-dontoptimize</option>
+						<!-- 这个选项将用新的类名替换反射方法调用中的所有字符串。例如，调用Class.forName('className')-->
+                        <option>-adaptclassstrings</option>
+                        <!-- 此选项将保存所有原始注释等，否则我们将从文件中删除。-->
+                        <option>-keepattributes Exceptions,InnerClasses,Signature,Deprecated,
+                            SourceFile,LineNumberTable,*Annotation*,EnclosingMethod</option>
+                        <!-- 此选项将在接口中保存所有原始名称(不混淆)。-->
+                        <!--<option>-keepnames interface **</option>   -->
+                        <!-- 此选项将所有原始方法参数保存在-keep节中定义的文件中，否则，所有参数名称将被混淆。
+                        <option>-keepparameternames</option>-->
+						<option>-keep public class **.entity.* {
+								*;
+							}
+						</option>
+						<!-- 保持枚举不被混淆 -->
+						<!--<option>-keepclassmembers enum * {
+								public static **[] values();
+								public static ** valueOf(java.lang.String);
+							}
+						</option>-->
+					</options>
+					<libs>
+						<lib>${java.home}/lib/rt.jar</lib>
+						<lib>${java.home}/lib/jsse.jar</lib>
+					</libs>
+					<dependencies>
+                    	<dependency>
+						    <groupId>net.sf.proguard</groupId>
+						    <artifactId>proguard-base</artifactId>
+						    <version>6.0.3</version>
+						</dependency>
+               		 </dependencies>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

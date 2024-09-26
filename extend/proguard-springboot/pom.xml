@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.aezo.smjava.extend</groupId>
+	<artifactId>proguard-springboot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>proguard-springboot</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/>
+	</parent>
+
+	<!--<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.2.4.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>-->
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+	<build>
+		<plugins>
+			<!-- proguard混淆插件. spring-boot-maven-plugin需要放到此插件的后面 -->
+			<!-- 之后打包后，会生成 proguard_map.txt 的映射文件(源码名称和混淆后名称的映射) -->
+			<plugin>
+				<groupId>com.github.wvengen</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>2.5.1</version>
+				<executions>
+					<execution>
+						<id>run-proguard</id>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!-- 是否将生成的文件安装部署. 不能设置成true, 否则打包出来的文件未加密 -->
+					<!--<attach>true</attach>-->
+					<!-- 指定生成文件分类 -->
+					<!--<attachArtifactClassifier>pg</attachArtifactClassifier>-->
+					<!--<outjar>${project.build.directory}</outjar>-->
+					<!-- 使用外部配置规则文件的形式 -->
+					<!--<proguardInclude>${basedir}/proguard.conf</proguardInclude>-->
+					<!--<libs>
+						<lib>${java.home}/lib/rt.jar</lib>
+						<lib>${java.home}/lib/jce.jar</lib>
+						<lib>${java.home}/lib/jsse.jar</lib>
+					</libs>-->
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<mainClass>cn.aezo.smjava.proguard.Application</mainClass>
+						</configuration>
+					</execution>
+				</executions>-->
+			</plugin>
+		</plugins>
+	</build>
+</project>

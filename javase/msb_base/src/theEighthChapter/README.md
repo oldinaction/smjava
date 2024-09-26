@@ -1,8 +1,8 @@
-½ÚµãÁ÷(FileOutputStream)µÄ·½·¨¡¢´´½¨Ò»¸öĞÂÎÄ¼ş£º
-TsetFileOutputStreamÊÇÒ»¸öÀı×Ó
+èŠ‚ç‚¹æµ(FileOutputStream)çš„æ–¹æ³•ã€åˆ›å»ºä¸€ä¸ªæ–°æ–‡ä»¶ï¼š
+TsetFileOutputStreamæ˜¯ä¸€ä¸ªä¾‹å­
 
-´¦ÀíÁ÷:
-»º³åÁ÷£ºTestBufferStreamÊÇÒ»¸öÀı×Ó
-×ª»»Á÷£ºTestConvertingÊÇÒ»¸öÀı×Ó
-Êı¾İÁ÷£º TestDataStreamÊÇÒ»¸öÀı×Ó
-PrintÁ÷£ºTestPrintStream£¨ÆäÖĞµÄÀı×ÓÈı»¹ÓĞÎÊÌâ£©
+å¤„ç†æµ:
+ç¼“å†²æµï¼šTestBufferStreamæ˜¯ä¸€ä¸ªä¾‹å­
+è½¬æ¢æµï¼šTestConvertingæ˜¯ä¸€ä¸ªä¾‹å­
+æ•°æ®æµï¼š TestDataStreamæ˜¯ä¸€ä¸ªä¾‹å­
+Printæµï¼šTestPrintStreamï¼ˆå…¶ä¸­çš„ä¾‹å­ä¸‰è¿˜æœ‰é—®é¢˜ï¼‰

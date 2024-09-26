@@ -1,0 +1,14 @@
+cn.aezo.smjava.proguard.Application
+cn.aezo.smjava.proguard.Application: void main(java.lang.String[])
+cn.aezo.smjava.proguard.entity.User
+cn.aezo.smjava.proguard.entity.User: java.lang.String name
+cn.aezo.smjava.proguard.entity.User: int age
+cn.aezo.smjava.proguard.entity.User: java.lang.String sex
+cn.aezo.smjava.proguard.entity.User: User()
+cn.aezo.smjava.proguard.entity.User: java.lang.String getName()
+cn.aezo.smjava.proguard.entity.User: void setName(java.lang.String)
+cn.aezo.smjava.proguard.entity.User: int getAge()
+cn.aezo.smjava.proguard.entity.User: void setAge(int)
+cn.aezo.smjava.proguard.entity.User: java.lang.String getSex()
+cn.aezo.smjava.proguard.entity.User: void setSex(java.lang.String)
+cn.aezo.smjava.proguard.entity.User: java.lang.String information()

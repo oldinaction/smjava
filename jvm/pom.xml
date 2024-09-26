@@ -22,14 +22,15 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <!-- 外部jar包，此处groupId、artifactId、version可随便填写 -->
+        <!-- 外部jar包，此处groupId、artifactId、version可随便填写 -->
+        <!-- 测试的时候再打开 -->
+        <!--<dependency>
             <groupId>cn.aezo</groupId>
             <artifactId>jvm-object-size-agent</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
             <systemPath>${basedir}/src/main/resources/ObjectSizeAgent.jar</systemPath>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>

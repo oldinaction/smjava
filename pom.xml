@@ -22,8 +22,12 @@
         <module>javaee</module>
         <module>jvm</module>
         <module>zookeeper</module>
+        <module>logging</module>
         <!--<module>osgi</module>-->
         <!--<module>lucene</module>-->
+        <module>maven</module>
+        <module>extend</module>
+        <!--<module>sofa</module>-->
     </modules>
 
 

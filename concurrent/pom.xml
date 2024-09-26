@@ -9,9 +9,10 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>cn.aezo.smjava</groupId>
-        <artifactId>javase</artifactId>
+        <groupId>cn.aezo</groupId>
+        <artifactId>smjava</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <repositories>
@@ -31,11 +32,11 @@
         </dependency>
 
         <!-- 测试并发 -->
-        <dependency>
+        <!--<dependency>
             <groupId>net.sourceforge.groboutils</groupId>
             <artifactId>groboutils-core</artifactId>
             <version>5</version>
-        </dependency>
+        </dependency>-->
 
         <!-- JMH测试 -->
         <!-- https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core -->

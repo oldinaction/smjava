@@ -1,0 +1,30 @@
+cn.aezo.smjava.proguard.Application -> cn.aezo.smjava.proguard.Application:
+    10:10:void <init>() -> <init>
+    20:23:void main(java.lang.String[]) -> main
+cn.aezo.smjava.proguard.Application$CustomGenerator -> cn.aezo.smjava.proguard.Application$a:
+    11:11:void <init>() -> <init>
+    15:15:java.lang.String generateBeanName(org.springframework.beans.factory.config.BeanDefinition,org.springframework.beans.factory.support.BeanDefinitionRegistry) -> generateBeanName
+cn.aezo.smjava.proguard.controller.TestController -> cn.aezo.smjava.proguard.a.a:
+    cn.aezo.smjava.proguard.service.TestService testService -> a
+    11:11:void <init>() -> <init>
+    18:30:java.lang.String test() -> a
+    35:35:java.lang.String test2() -> b
+cn.aezo.smjava.proguard.entity.User -> cn.aezo.smjava.proguard.entity.User:
+    java.lang.String name -> name
+    int age -> age
+    java.lang.String sex -> sex
+    3:6:void <init>() -> <init>
+    9:9:java.lang.String getName() -> getName
+    12:13:void setName(java.lang.String) -> setName
+    15:15:int getAge() -> getAge
+    18:19:void setAge(int) -> setAge
+    21:21:java.lang.String getSex() -> getSex
+    24:25:void setSex(java.lang.String) -> setSex
+    28:28:java.lang.String information() -> information
+cn.aezo.smjava.proguard.service.TestService -> cn.aezo.smjava.proguard.b.a:
+    java.lang.String method1() -> a
+    java.lang.String getUserName(java.lang.String) -> a
+cn.aezo.smjava.proguard.service.impl.TestServiceImpl -> cn.aezo.smjava.proguard.b.a.a:
+    7:7:void <init>() -> <init>
+    10:10:java.lang.String method1() -> a
+    14:14:java.lang.String getUserName(java.lang.String) -> a

@@ -18,3 +18,5 @@ classes/
 
 file-lock.txt
 
+logs
+/extend/proguard-springboot/target/proguard-springboot-0.0.1-SNAPSHOT.jar.original

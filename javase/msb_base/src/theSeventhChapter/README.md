@@ -1,12 +1,12 @@
-ÈİÆ÷API:
-Collection½Ó¿ÚµÄ·½·¨Ê¹ÓÃ£º
-TestCollectionÊÇÒ»¸öÀı×Ó
+å®¹å™¨API:
+Collectionæ¥å£çš„æ–¹æ³•ä½¿ç”¨ï¼š
+TestCollectionæ˜¯ä¸€ä¸ªä¾‹å­
 
-Iterator½Ó¿ÚµÄ·½·¨Ê¹ÓÃ£º
-TestIteratorºÍNameÊÇÒ»¸öÀı×Ó
+Iteratoræ¥å£çš„æ–¹æ³•ä½¿ç”¨ï¼š
+TestIteratorå’ŒNameæ˜¯ä¸€ä¸ªä¾‹å­
 
-×Ô¶¯´ò°üºÍ½â°ü¡¢Map½Ó¿Ú£º
-TestMapÊÇÒ»¸öÀı×Ó
+è‡ªåŠ¨æ‰“åŒ…å’Œè§£åŒ…ã€Mapæ¥å£ï¼š
+TestMapæ˜¯ä¸€ä¸ªä¾‹å­
 
-·ºĞÍµÄÓ¦ÓÃ£º
-TestMapºÍTestMap2¶Ô±È¿´
+æ³›å‹çš„åº”ç”¨ï¼š
+TestMapå’ŒTestMap2å¯¹æ¯”çœ‹
