@@ -142,6 +142,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -2209,7 +2214,7 @@
       <workItem from="1662699910979" duration="44000" />
       <workItem from="1662866029108" duration="1227000" />
       <workItem from="1662956611243" duration="1651000" />
-      <workItem from="1727319714470" duration="768000" />
+      <workItem from="1727319714470" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="pom 1">
       <created>1544190583052</created>
