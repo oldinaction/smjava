@@ -10,21 +10,32 @@
       <module fileurl="file://$PROJECT_DIR$/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/concurrent/concurrent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven/eclipse-aether/eclipse-aether.iml" filepath="$PROJECT_DIR$/maven/eclipse-aether/eclipse-aether.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extend/extend.iml" filepath="$PROJECT_DIR$/extend/extend.iml" />
       <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/hadoop_project_analyse.iml" filepath="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_analyse/hadoop_project_analyse.iml" />
       <module fileurl="file://$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_log_source/hadoop_project_log_source.iml" filepath="$PROJECT_DIR$/bigdata-hadoop-project/hadoop_project_log_source/hadoop_project_log_source.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hibernate3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" filepath="$PROJECT_DIR$/javaee/hibernate3/hiebernate3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/javaee.iml" filepath="$PROJECT_DIR$/javaee/javaee.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/jdk8/jdk8.iml" filepath="$PROJECT_DIR$/javase/jdk8/jdk8.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9_module1.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9_module1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" filepath="$PROJECT_DIR$/.idea/modules/jdk9_module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" filepath="$PROJECT_DIR$/javaee/jspBlog/jspBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logging/log4j-1.2-api/log4j-1.2-api.iml" filepath="$PROJECT_DIR$/logging/log4j-1.2-api/log4j-1.2-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logging/log4j1-jdklog/log4j1-jdklog.iml" filepath="$PROJECT_DIR$/logging/log4j1-jdklog/log4j1-jdklog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logging/log4j2/log4j2.iml" filepath="$PROJECT_DIR$/logging/log4j2/log4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logging/logging.iml" filepath="$PROJECT_DIR$/logging/logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven/maven.iml" filepath="$PROJECT_DIR$/maven/maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven/maven-invoker/maven-invoker.iml" filepath="$PROJECT_DIR$/maven/maven-invoker/maven-invoker.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/msb_base/msb_base.iml" filepath="$PROJECT_DIR$/javase/msb_base/msb_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" filepath="$PROJECT_DIR$/javaee/servletBlog/servletBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/smjava.iml" filepath="$PROJECT_DIR$/smjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofa.iml" filepath="$PROJECT_DIR$/sofa/sofa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension.iml" filepath="$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-consumer/sofaboot-extension-consumer.iml" filepath="$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-consumer/sofaboot-extension-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-facade/sofaboot-extension-facade.iml" filepath="$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-facade/sofaboot-extension-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-provider/sofaboot-extension-provider.iml" filepath="$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-provider/sofaboot-extension-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-web/sofaboot-extension-web.iml" filepath="$PROJECT_DIR$/sofa/sofaboot-extension/sofaboot-extension-web/sofaboot-extension-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/spring/spring.iml" filepath="$PROJECT_DIR$/javaee/spring/spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/spring_src/spring_src.iml" filepath="$PROJECT_DIR$/javaee/spring_src/spring_src.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaee/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/javaee/springmvc/springmvc.iml" />

@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../javase/jdk9/jdk9_module2/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../javase/jdk9/jdk9_module2/build" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

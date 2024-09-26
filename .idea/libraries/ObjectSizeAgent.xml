@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ObjectSizeAgent">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/jvm/src/main/resources/ObjectSizeAgent.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
